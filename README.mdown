@@ -1,0 +1,206 @@
+---
+title: The Ultimate Laser Guide
+subtitle: Wie man es nicht falsch macht
+author:
+    - name: Fabian Morón Zirfas
+      affiliation: University of Applied Sciences Potsdam (Germany)
+      email: moron-zirfas@fh-potsdam.de
+    - name: Anne Boenisch
+      affiliation: University of Applied Sciences Potsdam (Germany)
+    - name: Andreas Schulz
+      affiliation: University of Applied Sciences Potsdam (Germany)
+abstract: Dies ist ein Step by Step Guide zur Bedienung des 100W C02 Lasers der Fachhochschule Potsdam.  
+keywords: Laser,
+toc: True
+papersize: "A4"
+...
+
+
+# Einleitung
+
+tbd 
+
+## Grundlegende Vorraussetzungen sind… 
+
+- Die Unterzeichnung und Anerkennung der Werkstattordnung.
+- Die Teilnahme an der Sicherheitseinweisung durch Anne Boenisch und oder eine Freigabe durch sie.
+- Der Laser wird immer in Gruppen von 2 oder mehr Personen betrieben.  
+- Der Laser wird nicht alleine gelassen während er Läuft.  
+- Die Werkstatt wird nach Nutzung wieder aufgeräumt.  
+- Es dürfen **KEINE** PVC haltigen oder leicht entflammbare Materialen geschnitten werden.  
+
+\newpage
+
+## Inbetriebnahme
+
+Die folgenden Punkte **müssen** in der angegebenen Reihenfolge ausgeführt werden.  
+
+### Oberlicht Öffnen
+
+Damit eine arbeitsgerechte Abluft stattfinden kann, muss das Oberlicht an das die Lüftung angeschlossen ist, geöffnet werden.  
+
+### Lüftung Einschalten
+
+![luefter1](./assets/images/lueftung-steuerung.jpg "Lüfter Steuerung"){width=0.5\textwidth}  
+An der Lüftung gibt es den 4 Steuerungsbereiche.  
+
+1. Netz/Power
+2. Filter
+3. Start/Stop
+4. Motor
+
+Über den Hauptschalter in Bereich 1 wird die Lüftung aktiviert. Wenn im Bereich 2 die Status-LED OK (grün) anzeigt kann die Maschine in Betrieb genommen werden. Steht sie auf Prüfen oder Wechseln müssen zuallererst die zuständigen Personen kontaktiert werden. Die Anlage wird bis dahin **nicht** in Betrieb genommen.  
+
+Über den Start/Stop Knopf in Bereich 3 kann die Lüftung pausiert werden.  
+
+Um die Ohren zu schonen kann der Motor der Lüftung in Bereich 4 runter gedreht werden solange kein Job läuft. *Dies darf jedoch nicht vergessen werden wieder zu aktivieren.*  
+
+
+### Arbeitsfläche leeren
+
+Damit der Laserkopf bei der ersten Referenzfahrt in die rechte Obere Ecke nicht beschädigt wird, darf kein Material bei der Inbetriebnahme auf der Arbeitsfläche liegen.  
+
+### Gitter Überprüfen  
+
+Das Gitter, dass in der Maschine liegt ist frei beweglich. Es muss vor der Inbetriebnahme sichergestellt werden, dass es nicht unter die Absätze links und rechts rutschen kann. Bei einem Autofokus könnte sonst die Ausrichtung der Z-Achse beschädigt werden.  
+
+### Hauptstrom  
+
+Auf der Rückseite des Lasers ist ein großer rot gelber Hauptschalter. Dieser muss aktiviert werden um der Maschine Strom zu geben  
+
+### Distanztaster Überprüfung
+
+Am Laserkopf ist links der Distanztaster.[^taster] Dieser dient dazu die Distanz des Lasers zur Oberfläche des Materials einzustellen.^[Die Distanz beträgt 21,2mm.] Vor dem einschalten der Lasersteuerung muss überprüft werden:  
+
+1. Ob der Taster sich bewegt.[^tasterfrei]
+2. Ob der Taster über dem Gitter beziehungsweise den Lamellen steht und nirgendwo anstoßen kann bei einer Referenzfahrt.
+
+\newpage
+
+### Einschalten  
+
+Wenn alle entsprechenden Überprüfungen stattgefunden haben, kann die Maschine über den An/Aus Drehschalter mit dem Schlüssel aktiviert werden. **Hierbei ist die eine Hand über dem Notaus**, für den Fall dass etwas unvorhergesehenes passiert.^[Die Referenzfahrt stoppt nicht, es wurde vergessen Material aus der Arbeitsfläche zu nehmen o.ä.]  
+
+#### Referenzfahrt  
+
+Bei jedem Einschalten (oder nach einem Notaus) führt die Maschine eine Referenzfahrt in die rechte obere Ecke aus. Dies lässt sich nicht unterbinden. Aus diesem Grund ist es besonders wichtig beim Einschalten die Maschine im Falle eines Problems schnell wieder abschalten zu können. Um Probleme zu vermeiden ist es "Best Practice" den Laserkopf vor dem Abschalten in die rechte obere Ecke zu fahren und dort den "Origin" zu setzten. Dadurch können Probleme beim nächsten Anschalten des Anlage vermieden werden. Ebenfalls empfiehlt es sich die Z-Achse ein Stück abzusenken. Siehe Abschnitt "Gitter Überprüfen".  
+
+### Z-Achse  
+
+tbd
+
+### Material Einlegen  
+
+Wenn die Maschine betriebsbereit ist, kann das zu schneidende Material eingelegt werden. Die Arbeitsfläche der Anlage hat 1200mm Breite und 900mm Höhe. Abhängig von der Tiefe/Stärke des Materials ist jedoch die Fläche nicht komplett nutzbar.  
+
+Ein Beispiel: Beim Lasern einer diagonale  über eine 5 × 1000 × 700 mm (t × b × h) mitteldichten Faserplatte (MDF Platte) mit einer Geschwindigkeit von 5mm/s und einer Leistung von 95% ist der Laserstrahl bei ungefähr der Hälfte des Materials nicht mehr durchgegangen.  
+
+Das bedeutet: Je stärker das Material desto kleiner wird der Bereich in dem ein Schnitt gewährleistet ist. Es empfiehlt sich bei starken Materialien kleinere Nutzen anzulegen und mehrere Jobs auszuführen.  
+
+
+### Fokus Setzen  
+
+Um den Laserkopf in seiner Distanz zur Oberfläche des Materials einzustellen, hat die Maschine eine Autofokus Funktion. Dazu wird der Distanztaster[^taster] mit dem Steuerkreuz in die Mitte des Materials gefahren. **Achtung: Ein üblicher Fehler den es jedoch zu vermeiden gilt, ist dass nicht der Taster über das Material gesetzt wird sondern der Laserpunkt. Das könnte zur Folge haben, dass der Distanztaster im Gitter versenkt wird.[^fuckuptaster]** Gegebenenfalls muss die Z-Achse noch runter gefahren werden, wenn dies nicht schon beim einlegen des Materials passiert ist (siehe Abschnitt "Z-Achse").  
+Wenn das Material unter dem Taster liegt kann das Menü über die Z/U Taste aktiviert werden. Mit dem Punkt "Autofocus" wird die Distanz automatisch auf 21,2mm eingestellt. Über die  ↑ ↓ Tasten kann der Punkt Autofocus ausgewählt werden. Mit Enter wird er aktiviert. **Achtung: Beim einstellen des Autofokus sollte immer ein Finger auf dem ESC Knopf liegen, für den Fall, dass etwas unvorhergesehenes passiert (Der Taster bohrt sich durch das Material, der Taster reagiert nicht, der Taster ist doch nicht über dem Material).** Nach dem Autofokus Prozess liegt der Brennpunkt des Lasers auf der Oberfläche des Materials.[^hackfokus] 
+
+### Null Null (Origin)
+
+Um die Maschine für den Laser Job bereits zu haben, kann nun der Laserkopf mit den ← ↑ ↓ → Tasten an die gewünschte Position gefahren werden. Um diese Position als Ausgangspunkt für einen Schnitt, eine Gravur oder eine Perforation zu setzten muss dies mit der Taste "Origin" bestätigt werden.[^origin] Falls Unsicherheit besteht ob der Origin auch der aktuellen Position des Laserkopfes entspricht, kann über einen Druck auf die Taste ESC (Escape) der Kopf auf seinen letzten Origin zurückgesetzt werden.  
+
+**Achtung: Vor dem Starten eines Jobs sollte nochmals sichergestellt werden, dass der Origin stimmt. Der Laser beginnt einen Job von dieser Position aus. Falls die Position vom Origin abweicht könnte das Material an einer anderen Stelle bearbeitet werden.**  
+
+
+\newpage
+
+## Laser Job  
+
+Die einfachste Methode einen Job zu starten ist über die USB Verbindung aus der RDWorks Software heraus mit der Start Taste. Es existiert auch die Möglichkeit Job Dateien aus RDWorks heraus auf ein USB Stick zu speichern und diesen direkt in die Maschine zu stecken. Dafür muss der Stick FAT formatiert sein und die Dateien müssen auf der untersten Ebene des Dateisystems liegen. Unterordner werden nicht erkannt. Im weiteren Verlauf dieses Handbuches wird diese Möglichkeit nicht berücksichtigt. Ebenfalls werden hier nur die minimalen Schritte beschrieben um einen Job mit RDWorks einzurichten und      auszuführen. Ein komplette Übersicht würde den Rahmen diese Dokuments sprengen. Hierfür existiert ein Benutzerhandbuch das vom Hersteller der Software zusammen mit dieser ausgeliefert wird.
+
+### Daten Vorbereiten  
+
+Die Steuerungssoftware RDWorks kann mit zwei unterschiedlichen Dateitypen umgehen.
+
+1. Vektor Daten
+2. Pixel Bilder
+
+### Vektor Daten  
+
+Vektor Daten können für das Schneiden, Perforieren und Gravieren genutzt werden. Es existieren einige Applikationen zum erstellen von Vektordaten. Adobe Illustrator (AI), Inkscape, Affinity Designer, Sketch. Hier werden Beispiele aus AI gezeigt.  
+
+Für Schnitt und Perforation können Pfade angelegt werden die offen sind. Diese werden von dem Laserkopf nachgefahren. Hierbei ist zu beachten, dass die Software jeden Pfad erkennt der im Dokument liegt. Es werden nur Pfade erkannt, keine Konturen. in Abildung
+
+
+Für die Gravur funktionieren nur geschlossene Pfade.  
+
+1. .ai (Version 3)
+2. .dxf (R14)
+
+### Pixelbilder
+
+### Schneiden
+
+### Gravieren
+
+### Perforieren
+
+### Lüftung  
+
+**Achtung: Das aktivieren der Lüftung darf nicht vergessen werden.**
+
+### Den Job Starten  
+
+\newpage
+
+## Abschaltung
+
+### Laserkopf in Ausgangspostion
+
+### Z-Achse Runter Fahren
+
+### Hauptstrom
+
+### Lüftung
+
+### Oberlicht Schließen
+
+
+## Weiter Steuermethoden
+
+### Speed
+
+## Materialen  
+
+## Der Computer
+
+## Feuer?  
+
+## Notaus?  
+
+## F.A.Q.
+
+\newpage
+
+## Checklist
+
+
+
+
+## Über dieses Dokument
+
+### Generieren
+
+Das Dokument ist überwiegend in Pandoc Markdown [M↓] geschrieben. Dort wo [M↓] nciht mehr weiter kommt wurde \LaTeX genutzt
+- [Pandoc - About pandoc](https://pandoc.org/)  
+
+### Fignos
+
+- [tomduck/pandoc-fignos: A pandoc filter for numbering figures and figure references.](https://github.com/tomduck/pandoc-fignos)   
+
+<!-- Fussnoten -->
+
+
+[^taster]: Der Taster ähnelt einem Kugelschreiber.
+[^fuckuptaster]: Wenn der Distanztaster im Gitter steckt bleibt die Maschine Abgeschaltet und muss erst wird erst wieder durch die zuständigen Personen freigegeben werden.  
+[^hackfokus]: Bei starken Materialien kann es nützlich sein den Fokus nicht auf der Oberfläche, sondern im Material zu haben. Um bei einem 10mm starken Material dies zu bewerkstelligen, bedarf es eines 5mm starken Materials. Auf dieses wird der Fokus gesetzt. Dann wird es durch das 10mm starke Material ausgetauscht. Hierbei ist jedoch drauf zu achten, dass der Taster nicht gegen das Material stoßen darf. Diese Methode ist nur ratsam für bereits erfahrene Benutzer. 
+[^tasterfrei]: Es kann passieren, dass der Taster verrußt und dadurch nicht mehr reagiert.
+[^origin]: Die Taste bestätigt, dass sie gedrückt wurde mit einem Piep. Mehr nicht. Es empfiehlt sich vor einem Job mehrfach zu überprüfen ob der Origin auch gesetzt ist. 
