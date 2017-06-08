@@ -13,7 +13,11 @@ abstract: Dies ist ein Step by Step Guide zur Bedienung des 100W C02 Lasers der 
 keywords: Laser,
 toc: True
 papersize: "A4"
-...
+fignos-cleveref: On
+fignos-plus-name: Abbildung
+fignos-caption-name: Abbildung
+fignos-star-name: Abbildung
+---
 
 
 # Einleitung
@@ -41,8 +45,9 @@ Damit eine arbeitsgerechte Abluft stattfinden kann, muss das Oberlicht an das di
 
 ### Lüftung Einschalten
 
-![luefter1](./assets/images/lueftung-steuerung.jpg "Lüfter Steuerung"){width=0.5\textwidth}  
-An der Lüftung gibt es den 4 Steuerungsbereiche.  
+![Lüfter Steuerung](./assets/images/lueftung-steuerung.jpg){#fig:luefter width=50%}  
+
+An der Lüftung gibt es den 4 Steuerungsbereiche. Siehe +@fig:luefter
 
 1. Netz/Power
 2. Filter
@@ -70,7 +75,7 @@ Auf der Rückseite des Lasers ist ein großer rot gelber Hauptschalter. Dieser m
 
 ### Distanztaster Überprüfung
 
-Am Laserkopf ist links der Distanztaster.[^taster] Dieser dient dazu die Distanz des Lasers zur Oberfläche des Materials einzustellen.^[Die Distanz beträgt 21,2mm.] Vor dem einschalten der Lasersteuerung muss überprüft werden:  
+Am Laserkopf ist links der Distanztaster.[^taster] Dieser dient dazu die Distanz des Lasers zur Oberfläche des Materials einzustellen.[^distanz] Vor dem einschalten der Lasersteuerung muss überprüft werden:  
 
 1. Ob der Taster sich bewegt.[^tasterfrei]
 2. Ob der Taster über dem Gitter beziehungsweise den Lamellen steht und nirgendwo anstoßen kann bei einer Referenzfahrt.
@@ -91,9 +96,9 @@ tbd
 
 ### Material Einlegen  
 
-Wenn die Maschine betriebsbereit ist, kann das zu schneidende Material eingelegt werden. Die Arbeitsfläche der Anlage hat 1200mm Breite und 900mm Höhe. Abhängig von der Tiefe/Stärke des Materials ist jedoch die Fläche nicht komplett nutzbar.  
+Wenn die Maschine betriebsbereit ist, kann das zu schneidende Material eingelegt werden. Die Arbeitsfläche der Anlage hat 1200 Millimeter (mm) Breite und 900mm Höhe. Abhängig von der Tiefe/Stärke des Materials ist jedoch die Fläche nicht komplett nutzbar.  
 
-Ein Beispiel: Beim Lasern einer diagonale  über eine 5 × 1000 × 700 mm (t × b × h) mitteldichten Faserplatte (MDF Platte) mit einer Geschwindigkeit von 5mm/s und einer Leistung von 95% ist der Laserstrahl bei ungefähr der Hälfte des Materials nicht mehr durchgegangen.  
+Ein Beispiel: Beim Lasern einer diagonale  über eine 5 × 1000 × 700mm (t × b × h) mitteldichten Faserplatte (MDF Platte) mit einer Geschwindigkeit von 5mm/s und einer Leistung von 95% ist der Laserstrahl bei ungefähr der Hälfte des Materials nicht mehr durchgegangen.  
 
 Das bedeutet: Je stärker das Material desto kleiner wird der Bereich in dem ein Schnitt gewährleistet ist. Es empfiehlt sich bei starken Materialien kleinere Nutzen anzulegen und mehrere Jobs auszuführen.  
 
@@ -112,9 +117,21 @@ Um die Maschine für den Laser Job bereits zu haben, kann nun der Laserkopf mit 
 
 \newpage
 
+
 ## Laser Job  
 
 Die einfachste Methode einen Job zu starten ist über die USB Verbindung aus der RDWorks Software heraus mit der Start Taste. Es existiert auch die Möglichkeit Job Dateien aus RDWorks heraus auf ein USB Stick zu speichern und diesen direkt in die Maschine zu stecken. Dafür muss der Stick FAT formatiert sein und die Dateien müssen auf der untersten Ebene des Dateisystems liegen. Unterordner werden nicht erkannt. Im weiteren Verlauf dieses Handbuches wird diese Möglichkeit nicht berücksichtigt. Ebenfalls werden hier nur die minimalen Schritte beschrieben um einen Job mit RDWorks einzurichten und      auszuführen. Ein komplette Übersicht würde den Rahmen diese Dokuments sprengen. Hierfür existiert ein Benutzerhandbuch das vom Hersteller der Software zusammen mit dieser ausgeliefert wird.
+
+### Die Parameter Verstehen
+
+Die Parameter die zur Verfügung stehen sind 
+
+1. Die Geschwindigkeit des Laserkopfes gemessen in Millimieter pro Sekunde (mm/s).
+2. Die Intensität des Laserstahls gemessen in Prozent (%).  
+
+Ausgehend von diesen beiden Parametern muss der Job eingerichtet werden. Ein 3mm Acrylplatte würde zum Beispiel bei 10mm/s und 90% Leistung geschnitten werden. Eine Gravur auf dieser Platte kann schon bei 80mm/s und 15% Leistung gut aussehen.  
+
+Stärkere Materialien bedürfen mehr Leistung und eine langsamere Bewegung. Dünne Materialien können bei einer schnellen Fahrt auch schon mit geringer Leistung geschnitten werden. Wobei eine zu hohe Geschwindigkeit sich auch auf die Qualität von Kurven und Ecken auswirkt. Es gilt hier eigenen Erfahrungswerte zu sammeln. Ebenfalls können die Außentemperatur, die Feuchtigkeit des Materials oder auch die Reinigung der Umwerfspiegel die Werte beeinflussen.  
 
 ### Daten Vorbereiten  
 
@@ -127,22 +144,97 @@ Die Steuerungssoftware RDWorks kann mit zwei unterschiedlichen Dateitypen umgehe
 
 Vektor Daten können für das Schneiden, Perforieren und Gravieren genutzt werden. Es existieren einige Applikationen zum erstellen von Vektordaten. Adobe Illustrator (AI), Inkscape, Affinity Designer, Sketch. Hier werden Beispiele aus AI gezeigt.  
 
-Für Schnitt und Perforation können Pfade angelegt werden die offen sind. Diese werden von dem Laserkopf nachgefahren. Hierbei ist zu beachten, dass die Software jeden Pfad erkennt der im Dokument liegt. Es werden nur Pfade erkannt, keine Konturen. in Abildung
+Für Schnitt und Perforation können Pfade angelegt werden die offen sind. Diese werden von dem Laserkopf nachgefahren. Hierbei ist zu beachten, dass die Software jeden Pfad erkennt der im Dokument liegt. Es werden nur Pfade erkannt, keine Konturen. In +@fig:ai-kontur ist die GPU-Vorschau von AI zu sehen. Dies ist jedoch nicht was der Laser erkennt.
 
+![Adobe Illustrator GPU-Vorschau](assets/images/ai-kontur.png){#fig:ai-kontur}
 
-Für die Gravur funktionieren nur geschlossene Pfade.  
+Was in +@fig:ai-pfad zu sehen ist, entspricht dem was von dem Laserkopf nach fahren würde. Die Abbildung zeigt die Pfadansicht. Um zwischen GPU-Vorschau und Pfadansicht zu wechseln kann die Tastenkombination `⌘ Y` (macOS) oder `Strg Y` (Win) genutzt werden.[^keys]  
 
-1. .ai (Version 3)
-2. .dxf (R14)
+![Adobe Illustrator Pfad Ansicht](assets/images/ai-pfad.png){#fig:ai-pfad}  
 
-### Pixelbilder
+Für die Gravuren funktionieren nur geschlossene Vektorpfade. In +@fig:offengpu sieht es so aus als ob beide Flächen geschlossen sind. Die Pfadansicht zeigt jedoch, dass die rechte Form nicht geschlossen ist +@fig:offen. Somit würde die rechte Form für eine Gravur nicht beachtet werden.  
 
-### Schneiden
+![Adobe Illustrator Fläche offen GPU-Vorschau](assets/images/ai-flaeche-offen-gpu.png){#fig:offengpu}  
 
-### Gravieren
+![Adobe Illustrator Fläche offen Pfadansicht](assets/images/ai-flaeche-offen.png){#fig:offen}  
+
+\newpage 
+
+Grundsätzlich sollte ein AI Dokument so angelegt werden, dass
+
+- keine Überreste von Pfadpunkten in ihm liegen.
+- keine Ebenen ausgeblendet werden.
+- keine Daten außerhalb der Arbeitsfläche liegen.  
+
+In +@fig:reste-gpu und +@fig:rest sind in der Pfadansicht Reste zu sehen die optisch in der GPU-Vorschau nicht zu erkennen wären. Die Maschine würde diese Pfadpunkte und Pfade dennoch in Betracht ziehen.  
+
+![Adobe Illustrator versteckte Reste GPU-Vorschau](assets/images/ai-reste-gpu.png){#fig:reste-gpu}  
+
+![Adobe Illustrator versteckte Reste Pfadansicht](assets/images/ai-reste.png){#fig:reste}  
+
+\newpage
+
+#### Unterstützte Vektor Formate
+
+Die Software RDworks unterstützt viele Formate. Die besten Ergebnisse wurden bisher mit folgenden Formaten erzielt.[^formate]  
+
+- .ai (Version 3)
+- .dxf (R14)
+
+Bei allen Formaten ist zu beachten, dass die voreingestellte Einheit mm sein sollte. 
+
+#### AI DXF Export
+
+![Adobe Illustrator Datei Export Dialog](assets/images/ai-datei-dialog.png){#fig:ai-datei-dialog}  
+
+DXF Dateien können aus AI unter `Datei>Exportieren>Exportieren als…` ausgegeben werden. Dazu muss am unteren Rand des Datei Dialogs die Option AutoCAD-Interchange-Format (DXF) gewählt werden. Siehe +@fig:ai-datei-dialog.  
+Dies öffnet einen weiteren Dialog für die Einstellungen der DXF Datei. Hier ist drauf zu achten, dass
+
+- die AutoCAD Version `R14/LT98/LT97` ist.
+- im Abschnitt `Bildmaterialskalierung` die Einheiten richtig von 1 mm in 1 Einheit skaliert werden.
+
+Alle weiteren Einstellungen können so bleiben wie sie sind. Siehe +@fig:dxf-ex
+
+![Adobe Illustrator DXF Export Dialog](./assets/images/ai-dxf-export-dialog.png){#fig:dxf-ex}  
+
+Wenn in einer Datei mehrere Arten von Schnitt, Perforation oder Gravur angelegt werden sollen können die einzelnen Objekte getrennt werden indem ihnen eine eigene Farbe zugeordnet wird. Ebenen werden beim Export nicht berücksichtigt.   
+
+\newpage
+
+### Pixelbilder  
+
+Es können ebenfalls Pixelbilder genutzt werden um Gravuren zu erzeugen. Hierbei besteht die Möglichkeit die Graustufen des Bildes zu verwenden um die Intensität des Lasers zu steuern. Die Bilder können maximal einen Auflösung von 1000 "dots per inch" (dpi) haben. Ab 300dpi können bereits sehr gute Ergebnisse erzielt werden. Unterhalb von 300dpi wird die Auflösung der Gravur roh. Gerade bei Schriften sollte wenn möglich entweder eine hohe Auflösung genutzt werden oder auf Vektoren zurückgegriffen werden.  
+
+### Daten Import
+
+Vektor Dateien und Pixelbilder werden über den Befehl `Datei>Import` in die Software eingeladen.  
+
+### Schneiden  
+
+![RDworks Software Oberfläche](assets/images/rdworks-software.PNG){#fig:rdsoftware}
+
+Um einen Schnitt einzurichten kann mit einem Doppelklick auf die entsprechende Ebene in der Ebenenpalette rechts oben (siehe +@fig:rdsoftware) das Menü für die Einstellungen aufgerufen werden. Siehe +@fig:rdcut. Hier kann eingestellt werden wie schnell der Laserkopf gefahren werden soll und mit welcher Intensität der Schnitt stattfinden soll. Dazu muss:  
+
+1. Die `Ausgabe` auf `Ja` stehen.
+2. In `Geschw.(mm/s)` der gewünschte Wert eingetragen werden.
+3. Der `Lasermodus` auf `Schneiden` stehen
+4. Im Feld mit der 1 und der Checkbox in `Min Leist (%)` und `Max Leist. (%)` der gleiche Wert eingetragen werden.[^leistung]
+
+Alle weiteren Möglichkeiten sind zur Feineinstellung. Hierfür sollte das Handbuch der Software zu rate gezogen werden.  
+
+![RDWorks Ebeneneinstellungen Schneiden](assets/images/rdworks-schneiden.PNG){#fig:rdcut}
+
+### Gravieren  
+
+Um eine Gravur einzurichten kann mit einem Doppelklick auf die entsprechende Ebene in der Ebenenpalette rechts oben (siehe +@fig:rdsoftware) das Menü für die Einstellungen aufgerufen werden. Siehe +@fig:rdgrav1. Hier kann eingestellt werden wie schnell der Laserkopf gefahren werden soll und mit welcher Intensität die einzelnen Punkte des Bildes gepulsed werden sollen.
+
+![RDWorks Ebeneneinstellung Gravur Vektorform](assets/images/rdworks-gravieren1.PNG){#fig:rdgrav1}  
+
 
 ### Perforieren
 
+
+### Material Bibliothek
 ### Lüftung  
 
 **Achtung: Das aktivieren der Lüftung darf nicht vergessen werden.**
@@ -189,11 +281,17 @@ Für die Gravur funktionieren nur geschlossene Pfade.
 
 ### Generieren
 
-Das Dokument ist überwiegend in Pandoc Markdown [M↓] geschrieben. Dort wo [M↓] nciht mehr weiter kommt wurde \LaTeX genutzt
+Das Dokument ist überwiegend in Pandoc Markdown [M↓] geschrieben. Dort wo [M↓] nicht mehr weiter kommt wurde \LaTeX genutzt. Um das finale PDF zu generieren muss Pandoc mit dem dem fignos Filter installiert sein. Um die Ausführung zu vereinfachen wurde das entsprechende Shell Befehl in ein npm script gespeichert.  
+
+    brew install pandoc
+    pip install pandoc-fignos
+    git clone git@github.com:FH-Potsdam/the-ultimate-laser-guide.git
+    cd ./the-ultimate-laser-guide
+    npm install
+    npm run pandoc
+  
+
 - [Pandoc - About pandoc](https://pandoc.org/)  
-
-### Fignos
-
 - [tomduck/pandoc-fignos: A pandoc filter for numbering figures and figure references.](https://github.com/tomduck/pandoc-fignos)   
 
 <!-- Fussnoten -->
@@ -204,3 +302,7 @@ Das Dokument ist überwiegend in Pandoc Markdown [M↓] geschrieben. Dort wo [M�
 [^hackfokus]: Bei starken Materialien kann es nützlich sein den Fokus nicht auf der Oberfläche, sondern im Material zu haben. Um bei einem 10mm starken Material dies zu bewerkstelligen, bedarf es eines 5mm starken Materials. Auf dieses wird der Fokus gesetzt. Dann wird es durch das 10mm starke Material ausgetauscht. Hierbei ist jedoch drauf zu achten, dass der Taster nicht gegen das Material stoßen darf. Diese Methode ist nur ratsam für bereits erfahrene Benutzer. 
 [^tasterfrei]: Es kann passieren, dass der Taster verrußt und dadurch nicht mehr reagiert.
 [^origin]: Die Taste bestätigt, dass sie gedrückt wurde mit einem Piep. Mehr nicht. Es empfiehlt sich vor einem Job mehrfach zu überprüfen ob der Origin auch gesetzt ist. 
+[^keys]: Im weiteren Verlauf dieses Handbuchs wird nur die macOS Variante ⌘ dargestellt. Für Windows muss dies durch `Strg` ersetzt werden. Falls Abweichungen existieren wird darauf hingewiesen.  
+[^formate]: Weiter Informationen zu Formaten sind im Handbuch der Software zu finden. 
+[^distanz]: Die Distanz beträgt 21,2mm.
+[^leistung]: Die Software nutzt den Max Wert. Um Verwirrung zu vermeiden sollte jedoch in beide Felder der gleiche Wert eingetragen werden.  

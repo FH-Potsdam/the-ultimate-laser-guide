@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "pandoc": "pandoc README.mdown --template=template.tex -V lang=ngerman --latex-engine=xelatex --filter pandoc-fignos -V toc-title=\"Inhalt\" -V linkcolor=\"MidnightBlue\"  -o The-Ultimate-Laser-Guide.pdf",
+    "postpandoc": "node ./.bin/notify.js pandoc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Fabian Morón Zirfas <fabian.moron.zirfas@gmail.com> (http://fabianmoronzirfas.me)",
@@ -16,5 +17,8 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "dependencies": {
+    "node-notifier": "^5.1.2"
   }
 }
