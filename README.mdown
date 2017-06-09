@@ -1,6 +1,7 @@
 ---
-title: The Ultimate Laser Guide
+title: Das Ultimative Laser Handbuch
 subtitle: Wie man es nicht falsch macht
+thanks: Foobah
 author:
     - name: Fabian Morón Zirfas
       affiliation: University of Applied Sciences Potsdam (Germany)
@@ -11,7 +12,12 @@ author:
       affiliation: University of Applied Sciences Potsdam (Germany)
 abstract: Dies ist ein Step by Step Guide zur Bedienung des 100W C02 Lasers der Fachhochschule Potsdam.  
 keywords: Laser,
+# this is no standard pandoc
+toc-title: Inhaltsverzeichnis
 toc: True
+lof: True
+lot: True
+toc-depth: 5
 papersize: "A4"
 fignos-cleveref: On
 fignos-plus-name: Abbildung
