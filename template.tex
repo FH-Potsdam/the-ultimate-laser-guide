@@ -197,8 +197,10 @@ $if(dir)$
 $endif$
 
 % set default figure placement to htbp
+% https://tex.stackexchange.com/a/2282/133290
+% added the !
 \makeatletter
-\def\fps@figure{htbp}
+\def\fps@figure{!htbp}
 \makeatother
 
 $for(header-includes)$
