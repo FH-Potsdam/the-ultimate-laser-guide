@@ -25,7 +25,6 @@ fignos-caption-name: Abbildung
 fignos-star-name: Abbildung
 ---
 
-
 # Einleitung
 
 tbd 
