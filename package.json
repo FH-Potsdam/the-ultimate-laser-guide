@@ -4,7 +4,7 @@
   "description": "a step by step guide for using the co2 laser @ University of Applied Sciences Potsdam (Germany)",
   "main": "index.js",
   "scripts": {
-    "pandoc": "pandoc README.mdown --smart --template=template.tex -V lang=de-DE  --latex-engine=xelatex --filter pandoc-fignos -V linkcolor=\"MidnightBlue\"  -o The-Ultimate-Laser-Guide.pdf",
+    "pandoc": "pandoc README.mdown --smart --template=template.tex --latex-engine=xelatex --filter pandoc-fignos -o The-Ultimate-Laser-Guide.pdf",
     "postpandoc": "node ./.bin/notify.js pandoc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

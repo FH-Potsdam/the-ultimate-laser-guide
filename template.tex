@@ -1,5 +1,9 @@
 % !TEX encoding = UTF-8 Unicode
 \documentclass[$if(fontsize)$$fontsize$,$endif$$if(lang)$$babel-lang$,$endif$$if(papersize)$$papersize$paper,$endif$$for(classoption)$$classoption$$sep$,$endfor$]{$documentclass$}
+
+% we want a left aligned text not centered
+\usepackage{ragged2e}
+
 % This takes care of quotes and all that
 \usepackage[autostyle=true,german=quotes]{csquotes}
 % actually not needed
@@ -265,6 +269,7 @@ $if(toc-title)$
 \renewcommand{\contentsname}{$toc-title$}
 $endif$
 \begin{document}
+\RaggedRight
 $if(title)$
 \maketitle
 $endif$

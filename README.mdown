@@ -6,10 +6,6 @@ author:
     - name: Fabian Morón Zirfas
       affiliation: University of Applied Sciences Potsdam (Germany)
       email: moron-zirfas@fh-potsdam.de
-    - name: Anne Boenisch
-      affiliation: University of Applied Sciences Potsdam (Germany)
-    - name: Andreas Schulz
-      affiliation: University of Applied Sciences Potsdam (Germany)
 abstract: Dies ist ein Step by Step Guide zur Bedienung des 100W C02 Lasers der Fachhochschule Potsdam.  
 keywords: Laser,
 # this is no standard pandoc
@@ -23,8 +19,28 @@ fignos-cleveref: On
 fignos-plus-name: Abbildung
 fignos-caption-name: Abbildung
 fignos-star-name: Abbildung
+fontsize: 13pt
+documentclass: extarticle
+geometry: top=3cm
+geometry: left=2.25cm
+geometry: right=2.25cm
+geometry: bottom=3cm
+linkcolor: TealBlue
+lang: de-DE
+mainfont: OpenSans-Regular.ttf
+mainfontoptions: 
+- BoldFont=OpenSans-Bold.ttf
+- ItalicFont=OpenSans-Italic.ttf
+- BoldItalicFont=OpenSans-BoldItalic.ttf
+monofont: CamingoCode Regular
+monofontoptions: 
+- BoldFont=CamingoCode Bold
+- ItalicFont=CamingoCode Italic
+- BoldItalicFont=CamingoCode Bold Italic
+
 ---
 
+\newpage
 # Einleitung
 
 tbd 
@@ -46,7 +62,9 @@ Die folgenden Punkte **müssen** in der angegebenen Reihenfolge ausgeführt werd
 
 ### Oberlicht Öffnen
 
-Damit eine arbeitsgerechte Abluft stattfinden kann, muss das Oberlicht an das die Lüftung angeschlossen ist, geöffnet werden.  
+![Das Oberlicht des Lüfters](assets/images/oberlicht.jpg){#fig:oberlicht}  
+
+Damit eine arbeitsgerechte Abluft stattfinden kann, muss das Oberlicht an das die Lüftung angeschlossen ist, geöffnet werden. Siehe +@fig:oberlicht  
 
 ### Lüftung Einschalten
 
@@ -61,7 +79,7 @@ An der Lüftung gibt es den 4 Steuerungsbereiche. Siehe +@fig:luefter
 
 Über den Hauptschalter in Bereich 1 wird die Lüftung aktiviert. Wenn im Bereich 2 die Status-LED OK (grün) anzeigt kann die Maschine in Betrieb genommen werden. Steht sie auf Prüfen oder Wechseln müssen zuallererst die zuständigen Personen kontaktiert werden. Die Anlage wird bis dahin **nicht** in Betrieb genommen.  
 
-Über den Start/Stop Knopf in Bereich 3 kann die Lüftung pausiert werden.  
+Über den `Start/Stop` Knopf in Bereich 3 kann die Lüftung pausiert werden.  
 
 Um die Ohren zu schonen kann der Motor der Lüftung in Bereich 4 runter gedreht werden solange kein Job läuft. *Dies darf jedoch nicht vergessen werden wieder zu aktivieren.*  
 
@@ -76,11 +94,16 @@ Das Gitter, dass in der Maschine liegt ist frei beweglich. Es muss vor der Inbet
 
 ### Hauptstrom  
 
-Auf der Rückseite des Lasers ist ein großer rot gelber Hauptschalter. Dieser muss aktiviert werden um der Maschine Strom zu geben  
+![Hauptstrom](assets/images/hauptschalter.jpg){#fig:hauptschalter}  
+
+
+Auf der Rückseite des Lasers ist ein großer rot gelber Hauptschalter (siehe +@fig:hauptschalter). Dieser muss aktiviert werden um der Maschine Strom zu geben.  
 
 ### Distanztaster Überprüfung
 
-Am Laserkopf ist links der Distanztaster.[^taster] Dieser dient dazu die Distanz des Lasers zur Oberfläche des Materials einzustellen.[^distanz] Vor dem einschalten der Lasersteuerung muss überprüft werden:  
+![Laserkopf mit Distanztaster](assets/images/laserkopf-01.jpg){#fig:laserkopf}  
+
+Am Laserkopf ist links der Distanztaster (siehe +@fig:laserkopf).[^taster] Dieser dient dazu die Distanz des Lasers zur Oberfläche des Materials einzustellen.[^distanz] Vor dem einschalten der Lasersteuerung muss überprüft werden:  
 
 1. Ob der Taster sich bewegt.[^tasterfrei]
 2. Ob der Taster über dem Gitter beziehungsweise den Lamellen steht und nirgendwo anstoßen kann bei einer Referenzfahrt.
@@ -89,7 +112,9 @@ Am Laserkopf ist links der Distanztaster.[^taster] Dieser dient dazu die Distanz
 
 ### Einschalten  
 
-Wenn alle entsprechenden Überprüfungen stattgefunden haben, kann die Maschine über den An/Aus Drehschalter mit dem Schlüssel aktiviert werden. **Hierbei ist die eine Hand über dem Notaus**, für den Fall dass etwas unvorhergesehenes passiert.^[Die Referenzfahrt stoppt nicht, es wurde vergessen Material aus der Arbeitsfläche zu nehmen o.ä.]  
+![Steuerung des Lasers](assets/images/laser-control-panel.png){#fig:steuerung}  
+
+Wenn alle entsprechenden Überprüfungen stattgefunden haben, kann die Maschine über den `Aus/Ein` Drehschalter mit dem Schlüssel aktiviert werden (siehe +@fig:steuerung unten). **Hierbei ist die eine Hand über dem Notaus**, für den Fall dass etwas unvorhergesehenes passiert.[^reffahrt]  
 
 #### Referenzfahrt  
 
@@ -110,14 +135,21 @@ Das bedeutet: Je stärker das Material desto kleiner wird der Bereich in dem ein
 
 ### Fokus Setzen  
 
-Um den Laserkopf in seiner Distanz zur Oberfläche des Materials einzustellen, hat die Maschine eine Autofokus Funktion. Dazu wird der Distanztaster[^taster] mit dem Steuerkreuz in die Mitte des Materials gefahren. **Achtung: Ein üblicher Fehler den es jedoch zu vermeiden gilt, ist dass nicht der Taster über das Material gesetzt wird sondern der Laserpunkt. Das könnte zur Folge haben, dass der Distanztaster im Gitter versenkt wird.[^fuckuptaster]** Gegebenenfalls muss die Z-Achse noch runter gefahren werden, wenn dies nicht schon beim einlegen des Materials passiert ist (siehe Abschnitt "Z-Achse").  
-Wenn das Material unter dem Taster liegt kann das Menü über die Z/U Taste aktiviert werden. Mit dem Punkt "Autofocus" wird die Distanz automatisch auf 21,2mm eingestellt. Über die  ↑ ↓ Tasten kann der Punkt Autofocus ausgewählt werden. Mit Enter wird er aktiviert. **Achtung: Beim einstellen des Autofokus sollte immer ein Finger auf dem ESC Knopf liegen, für den Fall, dass etwas unvorhergesehenes passiert (Der Taster bohrt sich durch das Material, der Taster reagiert nicht, der Taster ist doch nicht über dem Material).** Nach dem Autofokus Prozess liegt der Brennpunkt des Lasers auf der Oberfläche des Materials.[^hackfokus] 
+Um den Laserkopf in seiner Distanz zur Oberfläche des Materials einzustellen, hat die Maschine eine Autofokus Funktion. Dazu wird der Distanztaster[^taster] mit dem Steuerkreuz in die Mitte des Materials gefahren.  
+
+**Achtung:** Ein üblicher Fehler den es jedoch zu vermeiden gilt, ist dass nicht der Taster über das Material gesetzt wird sondern der Laserpunkt. Das könnte zur Folge haben, dass der Distanztaster im Gitter versenkt wird.[^fuckuptaster] 
+Gegebenenfalls muss die Z-Achse noch runter gefahren werden, wenn dies nicht schon beim einlegen des Materials passiert ist (siehe Abschnitt "Z-Achse").  
+Wenn das Material unter dem Taster liegt kann das Menü über die Z/U Taste aktiviert werden. Mit dem Punkt "Autofocus" wird die Distanz automatisch auf 21,2mm eingestellt. Über die  `↑ ↓` Tasten kann der Punkt Autofocus ausgewählt werden. Mit Enter wird er aktiviert.  
+
+**Achtung:** Beim einstellen des Autofokus sollte immer ein Finger auf dem ESC Knopf liegen, für den Fall, dass etwas unvorhergesehenes passiert (Der Taster bohrt sich durch das Material, der Taster reagiert nicht, der Taster ist doch nicht über dem Material).  
+
+Nach dem Autofokus Prozess liegt der Brennpunkt des Lasers auf der Oberfläche des Materials.[^hackfokus] 
 
 ### Null Null (Origin)
 
-Um die Maschine für den Laser Job bereits zu haben, kann nun der Laserkopf mit den ← ↑ ↓ → Tasten an die gewünschte Position gefahren werden. Um diese Position als Ausgangspunkt für einen Schnitt, eine Gravur oder eine Perforation zu setzten muss dies mit der Taste "Origin" bestätigt werden.[^origin] Falls Unsicherheit besteht ob der Origin auch der aktuellen Position des Laserkopfes entspricht, kann über einen Druck auf die Taste ESC (Escape) der Kopf auf seinen letzten Origin zurückgesetzt werden.  
+Um die Maschine für den Laser Job bereits zu haben, kann nun der Laserkopf mit den `← ↑ ↓ →` Tasten an die gewünschte Position gefahren werden. Um diese Position als Ausgangspunkt für einen Schnitt, eine Gravur oder eine Perforation zu setzten muss dies mit der Taste "Origin" bestätigt werden.[^origin] Falls Unsicherheit besteht ob der Origin auch der aktuellen Position des Laserkopfes entspricht, kann über einen Druck auf die Taste ESC (Escape) der Kopf auf seinen letzten Origin zurückgesetzt werden.  
 
-**Achtung: Vor dem Starten eines Jobs sollte nochmals sichergestellt werden, dass der Origin stimmt. Der Laser beginnt einen Job von dieser Position aus. Falls die Position vom Origin abweicht könnte das Material an einer anderen Stelle bearbeitet werden.**  
+**Achtung:** Vor dem Starten eines Jobs sollte nochmals sichergestellt werden, dass der Origin stimmt. Der Laser beginnt einen Job von dieser Position aus. Falls die Position vom Origin abweicht könnte das Material an einer anderen Stelle bearbeitet werden.  
 
 
 \newpage
@@ -214,35 +246,86 @@ Es können ebenfalls Pixelbilder genutzt werden um Gravuren zu erzeugen. Hierbei
 
 Vektor Dateien und Pixelbilder werden über den Befehl `Datei>Import` in die Software eingeladen.  
 
-### Schneiden  
+### Art des Jobs
 
-![RDworks Software Oberfläche](assets/images/rdworks-software.PNG){#fig:rdsoftware}
+Die Art des Laserjobs bestimmt auch mit welche Möglichkeiten zur Verfügung stehen.  
+
+- Schneiden
+- Gravieren
+- Perforieren
+
+![RDworks Software Oberfläche](assets/images/rdworks-software.PNG){#fig:rdsoftware}  
+
+#### Schneiden  
 
 Um einen Schnitt einzurichten kann mit einem Doppelklick auf die entsprechende Ebene in der Ebenenpalette rechts oben (siehe +@fig:rdsoftware) das Menü für die Einstellungen aufgerufen werden. Siehe +@fig:rdcut. Hier kann eingestellt werden wie schnell der Laserkopf gefahren werden soll und mit welcher Intensität der Schnitt stattfinden soll. Dazu muss:  
 
 1. Die `Ausgabe` auf `Ja` stehen.
 2. In `Geschw.(mm/s)` der gewünschte Wert eingetragen werden.
-3. Der `Lasermodus` auf `Schneiden` stehen
+3. Der `Lasermodus` auf `Schneiden` stehen.
 4. Im Feld mit der 1 und der Checkbox in `Min Leist (%)` und `Max Leist. (%)` der gleiche Wert eingetragen werden.[^leistung]
 
-Alle weiteren Möglichkeiten sind zur Feineinstellung. Hierfür sollte das Handbuch der Software zu rate gezogen werden.  
+Alle weiteren Möglichkeiten sind zur Feineinstellung. Hierfür sollte das Handbuch der Software zu Rate gezogen werden.  
 
 ![RDWorks Ebeneneinstellungen Schneiden](assets/images/rdworks-schneiden.PNG){#fig:rdcut}
 
-### Gravieren  
+\newpage
 
-Um eine Gravur einzurichten kann mit einem Doppelklick auf die entsprechende Ebene in der Ebenenpalette rechts oben (siehe +@fig:rdsoftware) das Menü für die Einstellungen aufgerufen werden. Siehe +@fig:rdgrav1. Hier kann eingestellt werden wie schnell der Laserkopf gefahren werden soll und mit welcher Intensität die einzelnen Punkte des Bildes gepulsed werden sollen.
+#### Gravieren  
+
+Um eine Gravur einzurichten kann mit einem Doppelklick auf die entsprechende Ebene in der Ebenenpalette rechts oben (siehe +@fig:rdsoftware) das Menü für die Einstellungen aufgerufen werden. Siehe +@fig:rdgrav1. Hier können verschieden Paramter der Gravur definiert werden. Dazu muss:  
+
+1. Die `Ausgabe` auf `Ja` stehen.
+2. In `Geschw.(mm/s)` der gewünschte Wert eingetragen werden.
+3. Der `Lasermodus` auf `Gravur/Scan` stehen.
+4. Das Feld `Graustufen ausgeb` gewählt sein oder nicht.[^graustufen]
+5. Die Leistung eingestellt werden
+    1. Wenn einheitlich graviert werden soll, muss im Feld mit der 1 und der Checkbox in `Min Leist (%)` und `Max Leist. (%)` der gleiche Wert eingetragen werden.[^leistung]. In diesem Fall sollte Graustufen ausgeben nicht gewählt sein.
+    2. Wenn abhängig von den Graustufen des Bildes graviert werden soll. muss im Feld mit der 1 und der Checkbox in `Min Leist (%)` die Leistung für das schwächste Grau eingetragen werden und im Feld `Max Leist. (%)` die Leistung für das tiefste Schwarz eingetragen werden.[^minleistung]
+6. Für den `Gravurmodus` gewählt werden ob[^gravurmodus]
+    1. X nur in eine Richtung graviert werden soll.
+    2. X in beide Richtungen graviert werden soll.
+    3. Y nur in eine Richtung graviert werden soll.
+    4. Y in beide Richtungen graviert werden soll.
+7. In `Zeilenabst. (mm)` der Abstand zwischen den einzelnen Gravurzeilen eingegeben werden. Der Standard ist 0,1mm. Dies kann aber noch weiter reduziert werden.  
+
+Alle weiteren Möglichkeiten sind zur Feineinstellung. Hierfür sollte das Handbuch der Software zu Rate gezogen werden.  
 
 ![RDWorks Ebeneneinstellung Gravur Vektorform](assets/images/rdworks-gravieren1.PNG){#fig:rdgrav1}  
 
+\newpage
 
-### Perforieren
+#### Perforieren
+
+Um eine Perforation einzurichten kann mit einem Doppelklick auf die entsprechende Ebene in der Ebenenpalette rechts oben (siehe +@fig:rdsoftware) das Menü für die Einstellungen aufgerufen werden. Siehe +@fig:rdperf. Hier kann eingestellt werden wie schnell der Laserkopf gefahren werden soll, mit welcher Intensität die Perforiation stattfinden soll und wie das Verhältnis zwischen Schnitt – Lücke – Schnitt – Lücke – etc. sein soll. Dazu muss:  
 
 
-### Material Bibliothek
+1. Die `Ausgabe` auf `Ja` stehen.
+2. In `Geschw.(mm/s)` der gewünschte Wert eingetragen werden.
+3. Der `Lasermodus` auf `Schneiden` stehen.
+4. Im Feld mit der 1 und der Checkbox in `Min Leist (%)` und `Max Leist. (%)` der gleiche Wert eingetragen werden.[^leistung]
+5. Das `Interval` auf einen mm Wert definiert werden.
+6. Die `Punktlänge` auf einen mm Wert definiert werden.
+
+Alle weiteren Möglichkeiten sind zur Feineinstellung. Hierfür sollte das Handbuch der Software zu Rate gezogen werden.  
+
+![RDWorks Ebeneneinstellungen Perforieren](assets/images/rdworks-perforieren.PNG){#fig:rdperf}
+
+\newpage
+
+### Material Bibliothek  
+
+Bei allen drei Arten von Jobs ist die Einstellung von Leistung und Geschwindigkeit abhängig von dem Material. Glücklicherweise bietet die Software bietet die Möglichkeit Einstellungen zu speichern. Diese können in der Materialbibliothek abgelegt werden. Um diese zu offen muss mit einem Doppelklick erst die Einstellung der Ebenen geöffnet werden. Im oberen Bereich befindet sich ein Knopf (siehe zum Beispiel +@fig:rdperf) für die Materialbibliothek. +@fig:rdbib. Von dort aus können Einstellungen geladen oder die aktuellen unter einem neuen Namen gespeichert werden.[^bibsave] Hierbei ist es ratsam einen aussagekräftigen Namen zu wählen. Als Standard sollte folgendes Muster gelten.  
+
+    Material Stärke Jobtyp
+
+Dies würde bei einer Gravur auf einer 3mm Hochdichte Faserplatte (HDF) zu `HDF 3mm Gravur` werden.   
+
+![RDworks Materialbibliothek](assets/images/rdworks-materialbib.PNG){#fig:rdbib}  
+
 ### Lüftung  
 
-**Achtung: Das aktivieren der Lüftung darf nicht vergessen werden.**
+**Achtung:** Das aktivieren der Lüftung darf nicht vergessen werden.
 
 ### Den Job Starten  
 
@@ -284,6 +367,15 @@ Um eine Gravur einzurichten kann mit einem Doppelklick auf die entsprechende Ebe
 
 ## Über dieses Dokument
 
+### MacTex  
+
+    brew cask install mactex
+
+### Schriften
+
+Es werden die Schriften [Camingo Code von Jan Fromm](http://www.janfromm.de/typefaces/camingomono/camingocode/) und [Open Sans von Steve Matteson](http://www.opensans.com/) verwendet. Diese müssen installiert und aktiviert sein. Es reicht nicht die Schrift Dateien im benutzer Ordner `/Users/you/Library/Fonts/` zu haben. Auf dem System auf dem dieses PDF generiert wurde mussten diese unter `/Library/Fonts/` installiert sein.  
+
+
 ### Generieren
 
 Das Dokument ist überwiegend in Pandoc Markdown [M↓] geschrieben. Dort wo [M↓] nicht mehr weiter kommt wurde \LaTeX genutzt. Um das finale PDF zu generieren muss Pandoc mit dem dem fignos Filter installiert sein. Um die Ausführung zu vereinfachen wurde das entsprechende Shell Befehl in ein npm script gespeichert.  
@@ -299,6 +391,8 @@ Das Dokument ist überwiegend in Pandoc Markdown [M↓] geschrieben. Dort wo [M�
 - [Pandoc - About pandoc](https://pandoc.org/)  
 - [tomduck/pandoc-fignos: A pandoc filter for numbering figures and figure references.](https://github.com/tomduck/pandoc-fignos)   
 
+
+
 <!-- Fussnoten -->
 
 
@@ -307,7 +401,12 @@ Das Dokument ist überwiegend in Pandoc Markdown [M↓] geschrieben. Dort wo [M�
 [^hackfokus]: Bei starken Materialien kann es nützlich sein den Fokus nicht auf der Oberfläche, sondern im Material zu haben. Um bei einem 10mm starken Material dies zu bewerkstelligen, bedarf es eines 5mm starken Materials. Auf dieses wird der Fokus gesetzt. Dann wird es durch das 10mm starke Material ausgetauscht. Hierbei ist jedoch drauf zu achten, dass der Taster nicht gegen das Material stoßen darf. Diese Methode ist nur ratsam für bereits erfahrene Benutzer. 
 [^tasterfrei]: Es kann passieren, dass der Taster verrußt und dadurch nicht mehr reagiert.
 [^origin]: Die Taste bestätigt, dass sie gedrückt wurde mit einem Piep. Mehr nicht. Es empfiehlt sich vor einem Job mehrfach zu überprüfen ob der Origin auch gesetzt ist. 
-[^keys]: Im weiteren Verlauf dieses Handbuchs wird nur die macOS Variante ⌘ dargestellt. Für Windows muss dies durch `Strg` ersetzt werden. Falls Abweichungen existieren wird darauf hingewiesen.  
+[^keys]: Im weiteren Verlauf dieses Handbuchs wird nur die macOS Variante `⌘` dargestellt. Für Windows muss dies durch `Strg` ersetzt werden. Falls Abweichungen existieren wird darauf hingewiesen.  
 [^formate]: Weiter Informationen zu Formaten sind im Handbuch der Software zu finden. 
 [^distanz]: Die Distanz beträgt 21,2mm.
 [^leistung]: Die Software nutzt den Max Wert. Um Verwirrung zu vermeiden sollte jedoch in beide Felder der gleiche Wert eingetragen werden.  
+[^minleistung]: Aus Erfahrung hat sich ergeben, dass Werte unterhalb von 10% Leistung kaum Ergebnis haben.  
+[^graustufen]: Im Fall von Vektoren als Vorlage kann nur ein einheitlicher Wert gewählt werden. Das Feld ist dann nicht anwählbar.
+[^gravurmodus]: Die Gravurmodi bestimmen wie der Laser die Punkte abfährt. Zum Beispiel würde bei X beide Richtungen der Laser von Links anfahren, gravieren, auslaufen. Von Rechts wieder anfahren, gravieren, auslaufen und so weiter. Bei kleinen Schriften kann dieser Modus Treppen erzeugen. Es empfiehlt sich, wenn kleine Formen graviert werden sollen, den Laser nur aus einer Richtung gravieren zu lassen. Dadurch verdoppelt sich die Laufzeit für die Gravur.
+[^bibsave]: Wenn der Name bereits existiert wird die alte Variante überschrieben. 
+[^reffahrt]: Die Referenzfahrt stoppt nicht, es wurde vergessen Material aus der Arbeitsfläche zu nehmen o.ä.
