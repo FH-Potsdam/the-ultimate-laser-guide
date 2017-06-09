@@ -1,10 +1,18 @@
+% !TEX encoding = UTF-8 Unicode
 \documentclass[$if(fontsize)$$fontsize$,$endif$$if(lang)$$babel-lang$,$endif$$if(papersize)$$papersize$paper,$endif$$for(classoption)$$classoption$$sep$,$endfor$]{$documentclass$}
-$if(beamerarticle)$
-\usepackage{beamerarticle} % needs to be loaded first
-$endif$
+% This takes care of quotes and all that
+\usepackage[autostyle=true,german=quotes]{csquotes}
+% actually not needed
+% also I found the beamer stuff pretty ugly
+% $if(beamerarticle)$
+% \usepackage{beamerarticle} % needs to be loaded first
+% $endif$
+% the next one I need to explore more
+% how to set the fonts right
 $if(fontfamily)$
 \usepackage[$for(fontfamilyoptions)$$fontfamilyoptions$$sep$,$endfor$]{$fontfamily$}
 $else$
+% lots of packages that I don't know
 \usepackage{lmodern}
 $endif$
 $if(linestretch)$
@@ -30,9 +38,14 @@ $endif$
 $for(fontfamilies)$
   \newfontfamily{$fontfamilies.name$}[$fontfamilies.options$]{$fontfamilies.font$}
 $endfor$
+% yes it is on euro
+% does that mean I can use the \euro command to
+% get an €? How inconvinient
 $if(euro)$
   \newcommand{\euro}{€}
 $endif$
+% more font options
+% the problem is I tried these but did not change the font
 $if(mainfont)$
     \setmainfont[$for(mainfontoptions)$$mainfontoptions$$sep$,$endfor$]{$mainfont$}
 $endif$
@@ -58,6 +71,9 @@ $endif$
 \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
 }{}
 \PassOptionsToPackage{hyphens}{url} % url is loaded by hyperref
+
+% another option to investigate
+%
 $if(verbatim-in-note)$
 \usepackage{fancyvrb}
 $endif$
@@ -65,6 +81,7 @@ $endif$
 $if(colorlinks)$
 \PassOptionsToPackage{usenames,dvipsnames}{color} % color is loaded by hyperref
 $endif$
+% so why is my subtitle and all that not set?
 \hypersetup{
 $if(title-meta)$
             pdftitle={$title-meta$},
@@ -88,12 +105,18 @@ $endif$
 $if(verbatim-in-note)$
 \VerbatimFootnotes % allows verbatim text in footnotes
 $endif$
+
+% change the margins of the page
+% I might do that later
 $if(geometry)$
 \usepackage[$for(geometry)$$geometry$$sep$,$endfor$]{geometry}
 $endif$
+% language support
+% you need to use language codes de-DE or de-AT
 $if(lang)$
 \ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
   \usepackage[shorthands=off,$for(babel-otherlangs)$$babel-otherlangs$,$endfor$main=$babel-lang$]{babel}
+% ???
 $if(babel-newcommands)$
   $babel-newcommands$
 $endif$
@@ -140,6 +163,8 @@ $if(graphics)$
 % using explicit options in \includegraphics[width, height, ...]{}
 \setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
 $endif$
+% so we can push the links into footnotes?
+% nice
 $if(links-as-notes)$
 % Make links footnotes instead of hotlinks:
 \renewcommand{\href}[2]{#2\footnote{\url{#1}}}
@@ -236,7 +261,9 @@ $if(institute)$
 \institute{$for(institute)$$institute$$sep$ \and $endfor$}
 $endif$
 \date{$date$}
-
+$if(toc-title)$
+\renewcommand{\contentsname}{$toc-title$}
+$endif$
 \begin{document}
 $if(title)$
 \maketitle
@@ -259,6 +286,7 @@ $endif$
 \setcounter{tocdepth}{$toc-depth$}
 \tableofcontents
 }
+\newpage
 $endif$
 $if(lot)$
 \listoftables
