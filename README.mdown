@@ -62,6 +62,7 @@ Die folgenden Punkte **müssen** in der angegebenen Reihenfolge ausgeführt werd
 
 ### Oberlicht Öffnen
 
+
 ![Das Oberlicht des Lüfters](assets/images/oberlicht.jpg){#fig:oberlicht}  
 
 Damit eine arbeitsgerechte Abluft stattfinden kann, muss das Oberlicht an das die Lüftung angeschlossen ist, geöffnet werden. Siehe +@fig:oberlicht  
@@ -122,7 +123,7 @@ Bei jedem Einschalten (oder nach einem Notaus) führt die Maschine eine Referenz
 
 ### Z-Achse  
 
-tbd
+**Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.**
 
 ### Material Einlegen  
 
@@ -203,11 +204,11 @@ Grundsätzlich sollte ein AI Dokument so angelegt werden, dass
 - keine Ebenen ausgeblendet werden.
 - keine Daten außerhalb der Arbeitsfläche liegen.  
 
-In +@fig:reste-gpu und +@fig:rest sind in der Pfadansicht Reste zu sehen die optisch in der GPU-Vorschau nicht zu erkennen wären. Die Maschine würde diese Pfadpunkte und Pfade dennoch in Betracht ziehen.  
-
 ![Adobe Illustrator versteckte Reste GPU-Vorschau](assets/images/ai-reste-gpu.png){#fig:reste-gpu}  
 
 ![Adobe Illustrator versteckte Reste Pfadansicht](assets/images/ai-reste.png){#fig:reste}  
+
+In +@fig:reste-gpu und +@fig:reste sind in der Pfadansicht Reste zu sehen die optisch in der GPU-Vorschau nicht zu erkennen wären. Die Maschine würde diese Pfadpunkte und Pfade dennoch in Betracht ziehen.  
 
 \newpage
 
@@ -224,7 +225,7 @@ Bei allen Formaten ist zu beachten, dass die voreingestellte Einheit mm sein sol
 
 ![Adobe Illustrator Datei Export Dialog](assets/images/ai-datei-dialog.png){#fig:ai-datei-dialog}  
 
-DXF Dateien können aus AI unter `Datei>Exportieren>Exportieren als…` ausgegeben werden. Dazu muss am unteren Rand des Datei Dialogs die Option AutoCAD-Interchange-Format (DXF) gewählt werden. Siehe +@fig:ai-datei-dialog.  
+DXF Dateien können aus AI unter `Datei>Exportieren>Exportieren als…` ausgegeben werden. Dazu muss am unteren Rand des Datei Dialogs die Option `AutoCAD-Interchange-Format (DXF)` gewählt werden. Siehe +@fig:ai-datei-dialog.  
 Dies öffnet einen weiteren Dialog für die Einstellungen der DXF Datei. Hier ist drauf zu achten, dass
 
 - die AutoCAD Version `R14/LT98/LT97` ist.
@@ -233,6 +234,8 @@ Dies öffnet einen weiteren Dialog für die Einstellungen der DXF Datei. Hier is
 Alle weiteren Einstellungen können so bleiben wie sie sind. Siehe +@fig:dxf-ex
 
 ![Adobe Illustrator DXF Export Dialog](./assets/images/ai-dxf-export-dialog.png){#fig:dxf-ex}  
+
+##### Daten Trennen
 
 Wenn in einer Datei mehrere Arten von Schnitt, Perforation oder Gravur angelegt werden sollen können die einzelnen Objekte getrennt werden indem ihnen eine eigene Farbe zugeordnet wird. Ebenen werden beim Export nicht berücksichtigt.   
 
@@ -329,6 +332,38 @@ Dies würde bei einer Gravur auf einer 3mm Hochdichte Faserplatte (HDF) zu `HDF 
 
 ### Den Job Starten  
 
+Wenn der Job in RDWorks soweit eingerichtet ist wird es Zeit ihn zu starten. Vorher sollte noch folgende Punkte ein letztes mal überprüft werden.  
+
+1. Ist der Fokus richtig gsetzt?
+2. Steht der Laserkopf auf dem Origin (Null/Null) und ist der Origin richtig?
+3. Ist die Lüftung aktiviert?
+4. Ist die Abdeckung des Lasers geschlossen?
+5. Passen die Daten auf das eingelegte Material?
+6. Wurde die Zustimmungstaste gedrückt?
+
+**Zu 1):**  
+
+Es sollte ein letztes mal überlegt werden ob der Fokus richtig gesetzt wurde. Im Zweifelsfall sollte dieser Arbeitsschritt nochmal ausgeführt werden.  
+
+**Zu 2):**  
+
+Der Laserkopf muss an seinem 0/0 Punkt stehen. Über einen Druck auf die Taste `ESC` wird der Kopf auf seinen letzten Origin zurückgesetzt.  
+
+**Zu 3):**  
+
+Die Lüftung muss aktiviert sein. Gerade bei Holz Materialien kann es zu einer starken Rauchentwicklung kommen.  
+
+**Zu 4):**  
+
+Die Abdeckung des Lasers muss geschlossen sein damit der Job gestartet werden kann.  
+
+**Zu 5):**  
+
+Ob die Daten auf das Material passen, kann aus der Software heraus überprüft werden. Rechts unten in RDWorks  
+**Zu 6):**  
+
+
+
 \newpage
 
 ## Abschaltung
@@ -361,8 +396,6 @@ Dies würde bei einer Gravur auf einer 3mm Hochdichte Faserplatte (HDF) zu `HDF 
 \newpage
 
 ## Checklist
-
-
 
 
 ## Über dieses Dokument
