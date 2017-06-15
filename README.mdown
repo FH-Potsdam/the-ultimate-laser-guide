@@ -123,7 +123,7 @@ Bei jedem Einschalten (oder nach einem Notaus) führt die Maschine eine Referenz
 
 ### Z-Achse  
 
-**Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.**
+Die Z-Achse des Tisches kann manuell herauf oder hinunter gefahren werden. Wenn zum Beispiel ein dickes Material eingelegt werden soll. Dazu muss an der Steuerung (siehe +@fig:steuerung) das Menu mit dem `Z/U` Knopf in der Mitte des Steuerkreuzes aktiviert werden. Dann können die `←` und `→` Tasten genutzt werden um mit `←` die Z-Achse rauf zu fahren und mit `→` runter zu fahren.  
 
 ### Material Einlegen  
 
@@ -334,7 +334,7 @@ Dies würde bei einer Gravur auf einer 3mm Hochdichte Faserplatte (HDF) zu `HDF 
 
 Wenn der Job in RDWorks soweit eingerichtet ist wird es Zeit ihn zu starten. Vorher sollte noch folgende Punkte ein letztes mal überprüft werden.  
 
-1. Ist der Fokus richtig gsetzt?
+1. Ist der Fokus richtig gesetzt?
 2. Steht der Laserkopf auf dem Origin (Null/Null) und ist der Origin richtig?
 3. Ist die Lüftung aktiviert?
 4. Ist die Abdeckung des Lasers geschlossen?
@@ -359,33 +359,138 @@ Die Abdeckung des Lasers muss geschlossen sein damit der Job gestartet werden ka
 
 **Zu 5):**  
 
-Ob die Daten auf das Material passen, kann aus der Software heraus überprüft werden. Rechts unten in RDWorks  
+Ob die Daten auf das Material passen, kann aus der Software heraus überprüft werden. Rechts unten in RDWorks (siehe +@fig:rdsoftware) gibt es die Möglichkeit den Laserkopf die äußeren Kanten der Vorlage abfahren zu lassen.  
+
 **Zu 6):**  
 
+Die Lasersteuerung weiß nicht ob der Laser aktiviert ist oder nicht. Daher kann ein Job gestartet werden ohne das ein Schnitt, eine Gravur oder eine Perforation zu Stande kommt. Um den Laser zu aktivieren muss:
+
+1. Die Abdeckung geschlossen sein.
+2. Die Zustimmungstaste gedrückt werden(siehe +@fig:steuerung).
+
+Wenn all diese Maßnahmen getroffen wurden kann über die Schaltfläche `Start` in der Software der Job an den Laser gesendet werden.  
+
+### Der Job Läuft
+
+Während ein Laser Job läuft darf die Anlage nicht unbeaufsichtigt bleiben. Ebenfalls sollte die Abdeckung nicht geöffnet werden. Falls es nötig ist die Abdeckung zu öffnen wird der Job pausiert. Fall ab dem aktuellen Punkt weitergelasert werden soll, kann dies über die Start/Pause Taste veranlasst werden. Dabei ist drauf zu achten, dass nochmals die Zustimmungstaste gedrückt werden muss. Sonst fährt der Laserkopf weiter aber der Laser wird nicht wieder aktiviert.  
 
 
 \newpage
 
 ## Abschaltung
 
+Der Prozess der Abschaltung ist grundsätzlich die umgekehrte Variante der Inbetriebnahme bis auf einige Ausnahmen.  
+
 ### Laserkopf in Ausgangspostion
+
+Da der Laser nach dem Anschalten sofort eine Referenzfahrt macht, sollte vor dem Abschalten der Laserkopf in die rechte obere Ecke der Arbeitsfläche gefahren werden und dort seinen letzten Origin erhalten. Damit kann verhindert werden, dass die/der nächste Nutzer/in den Laserkopf beschädigt weil Material auf der Arbeitsfläche vergessen wurde oder das Gitter dem Distanztaster im weg ist.  
+
 
 ### Z-Achse Runter Fahren
 
-### Hauptstrom
+Um die Inbetriebnahme weiter zu vereinfachen sollte die Z-Achse ein Stück runter gefahren werden. Nicht so weit, dass das Gitter unter den Absatz rutschen kann. Jedoch so weit, dass optisch direkt sichtbar ist, dass der Taster nicht gegen das Gitter stoßen kann.  
+
+### Abschaltung Steuerung und Laser 
+
+Ist der Laserkopf in der Ausgangsposition und der Origin wurde gesetzt kann mit der Laser auf `Aus` gestellt werden und die Steuerung ebenfalls (siehe +@fig:steuerung).
+
+### Abschaltung Hauptstrom
+
+Nach dem letzten setzten der Ausgangsposition, der Anpassung der Z-Achse und dem Abschalten der Anlage, kann der Hauptstrom abgeschaltet werden (siehe +@fig:hauptschalter).  
 
 ### Lüftung
 
+Jetzt kann die Lüftung in Bereich 1 (siehe +@fig:luefter) ausgeschaltet werden.
+
 ### Oberlicht Schließen
 
+Zuletzt wird das Oberlicht an dem die Lüftung hängt geschlossen.   
 
-## Weiter Steuermethoden
-
+<!--
+## Steuerung
 ### Speed
+ -->
 
 ## Materialen  
 
+**In dem Laser dürfen keine PVC-haltigen Materialien geschnitten werden!** PVC-haltige Material erzeugen Chlorwasserstoffgase die höchst giftig sind und auch die Maschine angreifen.  
+
+Das FabLab München hat in seinem Wiki eine [umfassende Liste][fablabmuenchen] von möglichen und unmöglichen Materialien.  
+
+
+---
+
+> **Schneidbare Materialien:**
+> 
+> *   Holz (bis ca. 6mm Dicke)
+> *   Papier
+> *   Karton/Pappe
+> *   Acryl/Plexiglas (bis ca. 6mm Dicke) bzw. PMMA [(Polymethylmethacrylat)](https://de.wikipedia.org/wiki/Polymethylmethacrylat)
+> *   Stoffe
+> *   Leder
+> *   Linoleum
+> *   Pertinax
+> *   Schleifpapier (von der Rückseite her)
+> *   Elfenbein / Horn
+> *   Seide
+> *   Delrin (POM, acetal)
+> *   Mylar (polyester)
+> *   PETG (polyethylene terephthalate glycol)
+> 
+> Gravierbar sind dieselben Materialien plus:
+> 
+> *   lackierte Metalle
+> *   Edelstahl (mit speziellem Sprüh-Lack)
+> *   eloxiertes Alu
+> *   Glas
+> *   Stein (beschränkt)
+> *   Marmor (beschränkt)
+> *   Gips
+> *   Fleece
+> 
+> **Auf keinen Fall dürfen geschnitten werden:**
+> 
+> *   PVC/Vinyl, Neopren und sämtliche andere chlorhaltigen Stoffe! Entwickelt giftige Dämpfe! Außerdem geht die Maschine kaputt.
+> *   hoch entzündliche/explosive Materialien (versteht sich von selbst)
+> *   ABS (acrylonitrile butadiene styrene) - stinkt gewaltig und erzeugt giftige Gase
+> *   halogenierten Monomeren bestehende Kunststoffe wie , Vinyl, Polydibromstyrol,  (Teflon)
+> *   Bakelit - Bitte nicht lasern - [siehe Link](http://www.baubegriffe.com/Bausachverstandiger_Holzmann-Bauberatung/Blog/Eintrage/2011/10/11_122_Schadstoffe_die_unser_Leben_beeinflussen.html) 
+> 
+> Funktioniert nicht gut, besser nicht verwenden:
+> 
+> *   Polykarbonat (PC, Lexan) – schlechter Schnitt, verfärbt sich, fängt Feuer
+> *   High density polyethylene (HDPE) – schmilzt
+> *   Polypropylene (PP) – schmilzt (dünne Folien bis 1mm OK)
+> *   Polystyrol (PS) – schmilzt (dünne Platten OK)
+> *   Polyethylene (PE) – schmilzt
+> *   Styrodur – schmilzt
+> *   Nylon – schmilzt
+> *   Moosgummi – Würde ich nicht empfehlen wenn Benzol zum Aufschäumen verwendet wurde  - [siehe Link](http://www.baubegriffe.com/Bausachverstandiger_Holzmann-Bauberatung/Blog/Eintrage/2011/10/11_122_Schadstoffe_die_unser_Leben_beeinflussen.html)>
+> *   Schellack –  auch hier ist die Beschaffenheit der Politur bzw der Beschichtung zu wissen, im Zweifel eher nicht.
+> *   Kapton tape (Polyamide) - muss nachgefragt werden - [siehe Link](http://www.potomac-laser.com/services/applications/laser-micromachining-of-dupont-kapton-polyimide/)
+> 
+>
+> 
+> **Materialien die unser Laser nicht schneiden kann:**
+> 
+> *   Metalle aller Art
+> *   Kohlefaser
+> *   Glas
+> *   Fiberglas
+> *   Platinen
+> 
+> Weitere Infos zu Materialien: [http://atxhackerspace.org/wiki/Laser_Cutter_Materials](http://atxhackerspace.org/wiki/Laser_Cutter_Materials)
+> 
+(…)  
+
+
+[source: wiki.fablab-muenchen.de](http://wiki.fablab-muenchen.de/pages/viewpage.action?pageId=1179992)
+
+
+
 ## Der Computer
+
+## Terminvergabe
 
 ## Feuer?  
 
@@ -397,6 +502,7 @@ Ob die Daten auf das Material passen, kann aus der Software heraus überprüft w
 
 ## Checklist
 
+\newpage
 
 ## Über dieses Dokument
 
@@ -406,12 +512,12 @@ Ob die Daten auf das Material passen, kann aus der Software heraus überprüft w
 
 ### Schriften
 
-Es werden die Schriften [Camingo Code von Jan Fromm](http://www.janfromm.de/typefaces/camingomono/camingocode/) und [Open Sans von Steve Matteson](http://www.opensans.com/) verwendet. Diese müssen installiert und aktiviert sein. Es reicht nicht die Schrift Dateien im benutzer Ordner `/Users/you/Library/Fonts/` zu haben. Auf dem System auf dem dieses PDF generiert wurde mussten diese unter `/Library/Fonts/` installiert sein.  
+Es werden die Schriften [Camingo Code von Jan Fromm](http://www.janfromm.de/typefaces/camingomono/camingocode/) und [Open Sans von Steve Matteson](http://www.opensans.com/) verwendet. Diese müssen installiert und aktiviert sein. Es reicht nicht die Schrift Dateien im Benutzer Ordner `/Users/you/Library/Fonts/` zu haben. Auf dem System auf dem dieses PDF generiert wurde mussten diese unter `/Library/Fonts/` installiert sein.  
 
 
-### Generieren
+### Dokument Generieren
 
-Das Dokument ist überwiegend in Pandoc Markdown [M↓] geschrieben. Dort wo [M↓] nicht mehr weiter kommt wurde \LaTeX genutzt. Um das finale PDF zu generieren muss Pandoc mit dem dem fignos Filter installiert sein. Um die Ausführung zu vereinfachen wurde das entsprechende Shell Befehl in ein npm script gespeichert.  
+Das Dokument ist überwiegend in Pandoc Markdown [M↓] geschrieben.[^pandocmd] Dort wo [M↓] nicht mehr weiter kommt wurde \LaTeX genutzt. Um das finale PDF zu generieren muss Pandoc mit dem dem fignos Filter installiert sein. Um die Ausführung zu vereinfachen wurde das entsprechende Shell Befehl in ein npm script gespeichert.  
 
     brew install pandoc
     pip install pandoc-fignos
@@ -428,7 +534,7 @@ Das Dokument ist überwiegend in Pandoc Markdown [M↓] geschrieben. Dort wo [M�
 
 <!-- Fussnoten -->
 
-
+[^pandocmd]: Es wurden wenige \LaTeX  Befehle verwendet für ein besseres Layout.
 [^taster]: Der Taster ähnelt einem Kugelschreiber.
 [^fuckuptaster]: Wenn der Distanztaster im Gitter steckt bleibt die Maschine Abgeschaltet und muss erst wird erst wieder durch die zuständigen Personen freigegeben werden.  
 [^hackfokus]: Bei starken Materialien kann es nützlich sein den Fokus nicht auf der Oberfläche, sondern im Material zu haben. Um bei einem 10mm starken Material dies zu bewerkstelligen, bedarf es eines 5mm starken Materials. Auf dieses wird der Fokus gesetzt. Dann wird es durch das 10mm starke Material ausgetauscht. Hierbei ist jedoch drauf zu achten, dass der Taster nicht gegen das Material stoßen darf. Diese Methode ist nur ratsam für bereits erfahrene Benutzer. 
@@ -443,3 +549,8 @@ Das Dokument ist überwiegend in Pandoc Markdown [M↓] geschrieben. Dort wo [M�
 [^gravurmodus]: Die Gravurmodi bestimmen wie der Laser die Punkte abfährt. Zum Beispiel würde bei X beide Richtungen der Laser von Links anfahren, gravieren, auslaufen. Von Rechts wieder anfahren, gravieren, auslaufen und so weiter. Bei kleinen Schriften kann dieser Modus Treppen erzeugen. Es empfiehlt sich, wenn kleine Formen graviert werden sollen, den Laser nur aus einer Richtung gravieren zu lassen. Dadurch verdoppelt sich die Laufzeit für die Gravur.
 [^bibsave]: Wenn der Name bereits existiert wird die alte Variante überschrieben. 
 [^reffahrt]: Die Referenzfahrt stoppt nicht, es wurde vergessen Material aus der Arbeitsfläche zu nehmen o.ä.
+
+
+<!-- links -->
+
+[fablabmuenchen]: http://wiki.fablab-muenchen.de/pages/viewpage.action?pageId=1179992
