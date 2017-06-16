@@ -1,7 +1,7 @@
 ---
 title: Das Ultimative Laser Handbuch
 subtitle: Wie man es nicht falsch macht
-thanks: Foobah
+thanks: foo and bah
 author:
     - name: Fabian Morón Zirfas
       affiliation: University of Applied Sciences Potsdam (Germany)
@@ -41,20 +41,76 @@ monofontoptions:
 ---
 
 \newpage
+
 # Einleitung
 
-tbd 
+Dieses Dokument ist der Versuch den gesamten Prozess der Bedienung der Laser Anlage an der Fachhochschule Potsdam zu dokumentieren. Es sollte aufmerksam gelesen werden bevor die Anlage durch Studierende in betrieb genommen wird. Am Ende des Dokuments befindet sich eine [Checkliste](#checklist) die ausgedruckt und als Spickzettel beim Betrieb verwendet werden kann. In einigen Bereichen wie der Aufbereitung von Daten und der Bedienung der Software geht es nicht in die Tiefe. Wir hoffen das dies als ein "lebendes" Dokument genutzt wird und zukünftig um nützliche Bereiche erweitert wird. Anregungen, Fragen, Fehler können auf [GitHub als Issue](https://github.com/FH-Potsdam/the-ultimate-laser-guide/issues) vorgebracht werden. Das Dokument selber kann als PDF hier runtergeladen werden.  
 
-## Grundlegende Vorraussetzungen sind… 
+Viel Spaß mit dem "Ultimativen Laser Handbuch"[^ulg]!
+
+## Grundlegende Voraussetzungen sind... 
 
 - Die Unterzeichnung und Anerkennung der Werkstattordnung.
 - Die Teilnahme an der Sicherheitseinweisung durch Anne Boenisch und oder eine Freigabe durch sie.
 - Der Laser wird immer in Gruppen von 2 oder mehr Personen betrieben.  
 - Der Laser wird nicht alleine gelassen während er Läuft.  
 - Die Werkstatt wird nach Nutzung wieder aufgeräumt.  
-- Es dürfen **KEINE** PVC haltigen oder leicht entflammbare Materialen geschnitten werden.  
+- Es dürfen **KEINE** PVC haltigen oder leicht entflammbare Materialien geschnitten werden (siehe Abschnitt [Materialien](#materialien)).  
 
 \newpage
+
+## Sicherheit  
+
+Die Anlage darf nicht alleine Betrieben werden. Es müssen immer mindestens 2 Personen vor Ort sein.  
+
+### Feuer?  
+
+Im Falle eines Feuers in der Anlage gilt es Ruhe zu bewahren. Folgende Schritte sind auszuführen.
+
+1. Laservorgang stoppen! (Notaus oder `Start/Stop` Knopf)
+2. Lüftung abschalten!
+3. CO2 Feuerlöscher benutzen! (Falls es immer noch brennen sollte)
+4. Die Feuerwehr rufen wenn der Brand nicht zu löschen ist!
+
+**Hinweise:**  
+
+- Es sollte bis zum Einsatz des Feuerlöscher die Abdeckung nicht geöffnet werden.  
+- Es sollten niemals Flüssigkeiten verwendet werden um den Brand zu löschen. 
+
+### Notaus?  
+
+Der Notaus (siehe +@fig:steuerung) ist für den Notfall. Wenn dieser gedrückt würde. Sollte genau überlegt werden ob die Anlage wieder in Betrieb genommen werden kann ohne sie zu beschädigen. Im Zweifelsfalle sind die Administratoren zu kontaktieren. Wenn der nutaus gedrückt wurde und wieder rausgezogen wird, startet die gesamte Anlage neu. Der Laserkopf führt eine Referenzfahrt aus. Es gilt daruaf zu achten das der Kopf bei dieser Fahrt nicht beschädigt wird.  
+
+\newpage
+
+## Pflege der Analge
+
+Damit der Laser lange betreiben werden kann, muss er regelmäßig gereinigt werden. Dies passiert durch die Studierenden. Sie sind selber dazu angehalten dies zu organisieren.  
+
+In der Metalwerkstatt stehen hinter der Tür zwei Kisten. In der einen gibt es saubere Tücher. Diese dürfen verwendet werden um den Laser sauber zu machen.  
+
+
+
+### Reinigung der Spiegel
+
+Zur Reinigung der Spiegel darf nur Isopropanol und Q-Tip verwendet werden.  
+
+### Reinigung der Sichtscheiben
+
+Zur Reinigung der Sichtscheiben darf kein alkoholhaltiges Mittel benutzen werden. Normale Lappen oder Papiertücher zerkratzen die Scheibe schnell und stark. Die Scheibe ist aus PolyCarbonat und kann somit auch nicht so leicht wieder aufpoliert werden wie zum Beispiel Acrylglas.  
+
+### Befreiung von Ruß
+
+Das "Festo CTM 48 E Saugmobil" der Modellbauwerkstatt kann genutzt werden im die Anlage auszusaugen.  
+
+### Reinigung des Gitters
+
+Um das Gitter zu reinigen sollte die Wanne der Siebdruckwerkstatt und deren Kärscher genutzt werden.[^sdw]  
+
+
+### Entsorgung der Schnittreste
+
+tbd
 
 ## Inbetriebnahme
 
@@ -71,7 +127,7 @@ Damit eine arbeitsgerechte Abluft stattfinden kann, muss das Oberlicht an das di
 
 ![Lüfter Steuerung](./assets/images/lueftung-steuerung.jpg){#fig:luefter width=50%}  
 
-An der Lüftung gibt es den 4 Steuerungsbereiche. Siehe +@fig:luefter
+An der Lüftung gibt es den 4 Steuerungsbereiche(Siehe +@fig:luefter).
 
 1. Netz/Power
 2. Filter
@@ -119,7 +175,7 @@ Wenn alle entsprechenden Überprüfungen stattgefunden haben, kann die Maschine 
 
 #### Referenzfahrt  
 
-Bei jedem Einschalten (oder nach einem Notaus) führt die Maschine eine Referenzfahrt in die rechte obere Ecke aus. Dies lässt sich nicht unterbinden. Aus diesem Grund ist es besonders wichtig beim Einschalten die Maschine im Falle eines Problems schnell wieder abschalten zu können. Um Probleme zu vermeiden ist es "Best Practice" den Laserkopf vor dem Abschalten in die rechte obere Ecke zu fahren und dort den "Origin" zu setzten. Dadurch können Probleme beim nächsten Anschalten des Anlage vermieden werden. Ebenfalls empfiehlt es sich die Z-Achse ein Stück abzusenken. Siehe Abschnitt "Gitter Überprüfen".  
+Bei jedem Einschalten (oder nach einem [Notaus](#notaus)) führt die Maschine eine Referenzfahrt in die rechte obere Ecke aus. Dies lässt sich nicht unterbinden. Aus diesem Grund ist es besonders wichtig beim Einschalten die Maschine im Falle eines Problems schnell wieder abschalten zu können. Um Probleme zu vermeiden ist es "Best Practice" den Laserkopf vor dem Abschalten in die rechte obere Ecke zu fahren und dort den "`Origin`" zu setzten. Dadurch können Probleme beim nächsten Anschalten des Anlage vermieden werden. Ebenfalls empfiehlt es sich die Z-Achse ein Stück abzusenken. Siehe Abschnitt "Gitter Überprüfen".  
 
 ### Z-Achse  
 
@@ -146,11 +202,11 @@ Wenn das Material unter dem Taster liegt kann das Menü über die Z/U Taste akti
 
 Nach dem Autofokus Prozess liegt der Brennpunkt des Lasers auf der Oberfläche des Materials.[^hackfokus] 
 
-### Null Null (Origin)
+### Null Null (`Origin`)
 
-Um die Maschine für den Laser Job bereits zu haben, kann nun der Laserkopf mit den `← ↑ ↓ →` Tasten an die gewünschte Position gefahren werden. Um diese Position als Ausgangspunkt für einen Schnitt, eine Gravur oder eine Perforation zu setzten muss dies mit der Taste "Origin" bestätigt werden.[^origin] Falls Unsicherheit besteht ob der Origin auch der aktuellen Position des Laserkopfes entspricht, kann über einen Druck auf die Taste ESC (Escape) der Kopf auf seinen letzten Origin zurückgesetzt werden.  
+Um die Maschine für den Laser Job bereits zu haben, kann nun der Laserkopf mit den `← ↑ ↓ →` Tasten an die gewünschte Position gefahren werden. Um diese Position als Ausgangspunkt für einen Schnitt, eine Gravur oder eine Perforation zu setzten muss dies mit der Taste "`Origin`" bestätigt werden.[^`origin`] Falls Unsicherheit besteht ob der `Origin` auch der aktuellen Position des Laserkopfes entspricht, kann über einen Druck auf die Taste ESC (Escape) der Kopf auf seinen letzten `Origin` zurückgesetzt werden.  
 
-**Achtung:** Vor dem Starten eines Jobs sollte nochmals sichergestellt werden, dass der Origin stimmt. Der Laser beginnt einen Job von dieser Position aus. Falls die Position vom Origin abweicht könnte das Material an einer anderen Stelle bearbeitet werden.  
+**Achtung:** Vor dem Starten eines Jobs sollte nochmals sichergestellt werden, dass der `Origin` stimmt. Der Laser beginnt einen Job von dieser Position aus. Falls die Position vom `Origin` abweicht könnte das Material an einer anderen Stelle bearbeitet werden.  
 
 
 \newpage
@@ -180,7 +236,7 @@ Die Steuerungssoftware RDWorks kann mit zwei unterschiedlichen Dateitypen umgehe
 
 ### Vektor Daten  
 
-Vektor Daten können für das Schneiden, Perforieren und Gravieren genutzt werden. Es existieren einige Applikationen zum erstellen von Vektordaten. Adobe Illustrator (AI), Inkscape, Affinity Designer, Sketch. Hier werden Beispiele aus AI gezeigt.  
+Vektor Daten können für das Schneiden, Perforieren und Gravieren genutzt werden. Es existieren einige Applikationen zum erstellen von Vektordaten. Adobe Illustrator (AI), [Inkscape](https://inkscape.org/en/), Affinity Designer, Sketch. Hier werden Beispiele aus AI gezeigt.  
 
 Für Schnitt und Perforation können Pfade angelegt werden die offen sind. Diese werden von dem Laserkopf nachgefahren. Hierbei ist zu beachten, dass die Software jeden Pfad erkennt der im Dokument liegt. Es werden nur Pfade erkannt, keine Konturen. In +@fig:ai-kontur ist die GPU-Vorschau von AI zu sehen. Dies ist jedoch nicht was der Laser erkennt.
 
@@ -335,7 +391,7 @@ Dies würde bei einer Gravur auf einer 3mm Hochdichte Faserplatte (HDF) zu `HDF 
 Wenn der Job in RDWorks soweit eingerichtet ist wird es Zeit ihn zu starten. Vorher sollte noch folgende Punkte ein letztes mal überprüft werden.  
 
 1. Ist der Fokus richtig gesetzt?
-2. Steht der Laserkopf auf dem Origin (Null/Null) und ist der Origin richtig?
+2. Steht der Laserkopf auf dem `Origin` (Null/Null) und ist der `Origin` richtig?
 3. Ist die Lüftung aktiviert?
 4. Ist die Abdeckung des Lasers geschlossen?
 5. Passen die Daten auf das eingelegte Material?
@@ -347,7 +403,7 @@ Es sollte ein letztes mal überlegt werden ob der Fokus richtig gesetzt wurde. I
 
 **Zu 2):**  
 
-Der Laserkopf muss an seinem 0/0 Punkt stehen. Über einen Druck auf die Taste `ESC` wird der Kopf auf seinen letzten Origin zurückgesetzt.  
+Der Laserkopf muss an seinem 0/0 Punkt stehen. Über einen Druck auf die Taste `ESC` wird der Kopf auf seinen letzten `Origin` zurückgesetzt.  
 
 **Zu 3):**  
 
@@ -383,7 +439,7 @@ Der Prozess der Abschaltung ist grundsätzlich die umgekehrte Variante der Inbet
 
 ### Laserkopf in Ausgangspostion
 
-Da der Laser nach dem Anschalten sofort eine Referenzfahrt macht, sollte vor dem Abschalten der Laserkopf in die rechte obere Ecke der Arbeitsfläche gefahren werden und dort seinen letzten Origin erhalten. Damit kann verhindert werden, dass die/der nächste Nutzer/in den Laserkopf beschädigt weil Material auf der Arbeitsfläche vergessen wurde oder das Gitter dem Distanztaster im weg ist.  
+Da der Laser nach dem Anschalten sofort eine Referenzfahrt macht, sollte vor dem Abschalten der Laserkopf in die rechte obere Ecke der Arbeitsfläche gefahren werden und dort seinen letzten `Origin` erhalten. Damit kann verhindert werden, dass die/der nächste Nutzer/in den Laserkopf beschädigt weil Material auf der Arbeitsfläche vergessen wurde oder das Gitter dem Distanztaster im weg ist.  
 
 
 ### Z-Achse Runter Fahren
@@ -392,7 +448,7 @@ Um die Inbetriebnahme weiter zu vereinfachen sollte die Z-Achse ein Stück runte
 
 ### Abschaltung Steuerung und Laser 
 
-Ist der Laserkopf in der Ausgangsposition und der Origin wurde gesetzt kann mit der Laser auf `Aus` gestellt werden und die Steuerung ebenfalls (siehe +@fig:steuerung).
+Ist der Laserkopf in der Ausgangsposition und der `Origin` wurde gesetzt kann mit der Laser auf `Aus` gestellt werden und die Steuerung ebenfalls (siehe +@fig:steuerung).
 
 ### Abschaltung Hauptstrom
 
@@ -411,14 +467,15 @@ Zuletzt wird das Oberlicht an dem die Lüftung hängt geschlossen.
 ### Speed
  -->
 
-## Materialen  
+\newpage
 
-**In dem Laser dürfen keine PVC-haltigen Materialien geschnitten werden!** PVC-haltige Material erzeugen Chlorwasserstoffgase die höchst giftig sind und auch die Maschine angreifen.  
+## Materialien  
 
-Das FabLab München hat in seinem Wiki eine [umfassende Liste][fablabmuenchen] von möglichen und unmöglichen Materialien.  
+**In dem Laser dürfen keine PVC-haltigen Materialien geschnitten werden!** PVC-haltige Material erzeugen Chlorwasserstoffgase die höchst giftig sind und auch die Maschine angreifen. Wenn es nötig ist Polymere zu identifizieren, kann [dieses Paper](http://www.chymist.com/Polymer%20Identification.pdf) ("Identification Of Polymers") von David A. Katz ebenfalls zu Rate gezogen werden.  
+
+Das FabLab München hat in seinem Wiki eine [umfassende Liste][fablabmuenchen] von möglichen und unmöglichen Materialien und das Wiki des [ATX Hackerspace](http://atxhackerspace.org/wiki/Laser_Cutter_Materials) ist ebenfalls eine gute Quelle.  
 
 
----
 
 > **Schneidbare Materialien:**
 > 
@@ -477,32 +534,121 @@ Das FabLab München hat in seinem Wiki eine [umfassende Liste][fablabmuenchen] v
 > *   Kohlefaser
 > *   Glas
 > *   Fiberglas
-> *   Platinen
+> *   Platinen  
 > 
-> Weitere Infos zu Materialien: [http://atxhackerspace.org/wiki/Laser_Cutter_Materials](http://atxhackerspace.org/wiki/Laser_Cutter_Materials)
-> 
-(…)  
+> [Quelle][fablabmuenchen]
 
 
-[source: wiki.fablab-muenchen.de](http://wiki.fablab-muenchen.de/pages/viewpage.action?pageId=1179992)
+## Zugang zu Anlage, Schlüssel und Computer
+
+Der Zugang zur Anlage wird über [dieses Google Doc][liste] geregelt.[^gdoc] Dort sind alle Personen eingetragen die sich am Informationsstand im Hauptgebäude gegen Unterschrift den Schlüsselbund abholen dürfen. An diesem Bund ist:  
+
+- ein Schlüssel für die Steuerung
+- ein Schlüssel für den Laser
+- ein Schlüssel für Spind Nummer 19
+- ein Dongel für LW 022 
+
+Um die Zugangsberechtigung zu erwerben muss:  
+
+- eine Einweisung an der Anlage stattgefunden haben.
+- eine Abnahme durch die Administratoren stattgefunden haben.
+- die jährliche Sicherheitseinweisung der Modellbauwerkstätten besucht worden sein.
+- die Werkstattordnung gelesen und gegengezeichnet worden sein.  
 
 
+### Der Computer  
 
-## Der Computer
+Die FHP stellt seinen Studierenden einen Computer zur Verfügung. Auf diesem Computer ist nur die Software RDWorks und [Inkscape](https://inkscape.org/en/) installiert. Da das Betriebssystem veraltet ist, sollte davon abgesehen werden diesen Rechner an das Internet anzuschließen. Daten müssen per USB Stick übertragen werden. Die FHP führt keine Backups dieses Rechners aus und behält sich vor alle dort abgelegten Daten zu löschen, falls es notwendig sein sollte. Es existiert eine Partition `E (Daten)` auf der eigene Ordner angelegt werden dürfen.  
 
 ## Terminvergabe
 
-## Feuer?  
+Die Terminvergabe läuft über die Terminfunktion des Incom.org Workspaces [Laser KNLG Base · FHP](https://fhp.incom.community/workspace/6508) und nach dem „First Come First Serverd“ Prinzip. Termine sind bindend und müssen dort vorab eingestellt werden. Wenn Termine nicht wahrgenommen werden können, müssen sie dort auch wieder gelöscht werden. Mehr als 2 Termine an einem Tag ist aus Erfahrungswerten kaum zu handhaben.   
 
-## Notaus?  
-
-## F.A.Q.
 
 \newpage
+
+\newgeometry{top=2cm,bottom=2cm}
 
 ## Checklist
 
+Dies ist eine kurze Checkliste für den gesamten Betriebsprozess. Sie sollte ausgedruckt und als Referenz griffbereit sein.  
+
+**Inbetriebnahme**
+
+- [ ] Oberlicht öffnen  
+- [ ] Lüftung anschalten  
+- [ ] Abdeckung öffnen  
+- [ ] Hauptstrom anschalten  
+- [ ] Arbeitsfläche leeren  
+- [ ] Laserkopf höher als das Gitter?   
+- [ ] Gitter nicht unter dem Absatz?      
+- [ ] Distanztaster ist nicht verrußt?    
+- [ ] Distanztaster bewegt sich leicht und verkantet nicht?    
+- [ ] Hand über den Notaus!    
+- [ ] Steuerung mit Schlüssel anschalten      
+- [ ] Laserkopf beobachten bis die Referenzfahrt vorbei ist    
+
+**Laser Job**  
+
+- [ ] Daten einrichten  
+- [ ] Autofokus setzten. Der Distanztaster ist relevant nicht der Laserpunkt!    
+- [ ] Material final positionieren  
+- [ ] Origin setzten  
+- [ ] Laser mit dem Schlüssel anschalten  
+- [ ] Passt die Vorlage auf das Material? Umrisse zeigen.  
+- [ ] Ist die Lüftung an?    
+- [ ] Abdeckung schließen    
+- [ ] Zustimmungstaste drücken  
+- [ ] In der Software `Start` drücken  
+- [ ] Laser beobachten (im Falle eines Feuers Ruhe bewahren)  
+
+**Feuer**  
+
+- [ ] Abdeckung NICHT öffnen  
+- [ ] Laserjob stoppen  
+- [ ] Lüftung abschalten  
+- [ ] Feuerlöscher verwenden  
+- [ ] Feuerwehr rufen  
+
+**Abschaltung**
+
+- [ ] Arbeitsfläche frei räumen  
+- [ ] Kleiner Materialreste entfernen  
+- [ ] Laserkopf in die rechte obere Ecke fahren  
+- [ ] Origin dort setzten  
+- [ ] Z-Achse runter fahren  
+- [ ] Z-Achse nicht tiefer als den Absatz fahren  
+- [ ] Maschine reinigen  
+- [ ] Laser abschalten  
+- [ ] Steuerung abschalten  
+- [ ] Hauptstrom abschalten  
+- [ ] Abdeckung schließen  
+- [ ] Lüftung abschalten  
+- [ ] Oberlicht schließen  
+- [ ] Computer und Kiste zurück in Spind Nummer 19  
+- [ ] Werkstatt verriegeln  
+- [ ] Schlüssel beim Pförtner abgeben  
+
+\restoregeometry
+
 \newpage
+
+## Hersteller Sabko  
+
+Sabko-GmbH  
+AG Wittlich -HRB 42278  
+UST-IdNr. DE286904964  
+vertreten durch die Geschäftsführer:  
+Sabine Lunkes, Kauffrau  
+Konrad Kraus, Mechatronikmeister  
+ 
+Kiemstrasse 10  
+54311 Trierweiler - Industriegebiet  
+Tel. 0049 (0) 651-88094  
+E-Mail: <info@sabko-gmbh.com>  
+
+
+
 
 ## Über dieses Dokument
 
@@ -532,14 +678,52 @@ Das Dokument ist überwiegend in Pandoc Markdown [M↓] geschrieben.[^pandocmd] 
 
 
 
+## Lizenz
+
+
+
+Dieses Dokument und alle Bilder, soweit nicht anders gekennzeichnet, sind unter MIT Lizenz. 
+
+Copyright (c) 2017 Fabian Morón Zirfas & Fachhochschule Potsdam
+
+DE:  
+
+Hiermit wird unentgeltlich jeder Person, die eine Kopie der Software und der zugehörigen Dokumentationen (die "Software") erhält, die Erlaubnis erteilt, sie uneingeschränkt zu nutzen, inklusive und ohne Ausnahme mit dem Recht, sie zu verwenden, zu kopieren, zu verändern, zusammenzufügen, zu veröffentlichen, zu verbreiten, zu unterlizenzieren und/oder zu verkaufen, und Personen, denen diese Software überlassen wird, diese Rechte zu verschaffen, unter den folgenden Bedingungen:  
+
+Der obige Urheberrechtsvermerk und dieser Erlaubnisvermerk sind in allen Kopien oder Teilkopien der Software beizulegen.  
+
+DIE SOFTWARE WIRD OHNE JEDE AUSDRÜCKLICHE ODER IMPLIZIERTE GARANTIE BEREITGESTELLT, EINSCHLIESSLICH DER GARANTIE ZUR BENUTZUNG FÜR DEN VORGESEHENEN ODER EINEM BESTIMMTEN ZWECK SOWIE JEGLICHER RECHTSVERLETZUNG, JEDOCH NICHT DARAUF BESCHRÄNKT. IN KEINEM FALL SIND DIE AUTOREN ODER COPYRIGHTINHABER FÜR JEGLICHEN SCHADEN ODER SONSTIGE ANSPRÜCHE HAFTBAR ZU MACHEN, OB INFOLGE DER ERFÜLLUNG EINES VERTRAGES, EINES DELIKTES ODER ANDERS IM ZUSAMMENHANG MIT DER SOFTWARE ODER SONSTIGER VERWENDUNG DER SOFTWARE ENTSTANDEN.  
+
+EN:  
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:  
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.  
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.  
+
 <!-- Fussnoten -->
 
+[^sdw]: Die Erlaubnis der Siebdruckwerkstatt muss vorher eingeholt werden.
+[^ulg]: Ultimative ist vielleicht ein wenig übertrieben. 
 [^pandocmd]: Es wurden wenige \LaTeX  Befehle verwendet für ein besseres Layout.
 [^taster]: Der Taster ähnelt einem Kugelschreiber.
 [^fuckuptaster]: Wenn der Distanztaster im Gitter steckt bleibt die Maschine Abgeschaltet und muss erst wird erst wieder durch die zuständigen Personen freigegeben werden.  
 [^hackfokus]: Bei starken Materialien kann es nützlich sein den Fokus nicht auf der Oberfläche, sondern im Material zu haben. Um bei einem 10mm starken Material dies zu bewerkstelligen, bedarf es eines 5mm starken Materials. Auf dieses wird der Fokus gesetzt. Dann wird es durch das 10mm starke Material ausgetauscht. Hierbei ist jedoch drauf zu achten, dass der Taster nicht gegen das Material stoßen darf. Diese Methode ist nur ratsam für bereits erfahrene Benutzer. 
 [^tasterfrei]: Es kann passieren, dass der Taster verrußt und dadurch nicht mehr reagiert.
-[^origin]: Die Taste bestätigt, dass sie gedrückt wurde mit einem Piep. Mehr nicht. Es empfiehlt sich vor einem Job mehrfach zu überprüfen ob der Origin auch gesetzt ist. 
+[^`origin`]: Die Taste bestätigt, dass sie gedrückt wurde mit einem Piep. Mehr nicht. Es empfiehlt sich vor einem Job mehrfach zu überprüfen ob der `Origin` auch gesetzt ist. 
 [^keys]: Im weiteren Verlauf dieses Handbuchs wird nur die macOS Variante `⌘` dargestellt. Für Windows muss dies durch `Strg` ersetzt werden. Falls Abweichungen existieren wird darauf hingewiesen.  
 [^formate]: Weiter Informationen zu Formaten sind im Handbuch der Software zu finden. 
 [^distanz]: Die Distanz beträgt 21,2mm.
@@ -549,8 +733,14 @@ Das Dokument ist überwiegend in Pandoc Markdown [M↓] geschrieben.[^pandocmd] 
 [^gravurmodus]: Die Gravurmodi bestimmen wie der Laser die Punkte abfährt. Zum Beispiel würde bei X beide Richtungen der Laser von Links anfahren, gravieren, auslaufen. Von Rechts wieder anfahren, gravieren, auslaufen und so weiter. Bei kleinen Schriften kann dieser Modus Treppen erzeugen. Es empfiehlt sich, wenn kleine Formen graviert werden sollen, den Laser nur aus einer Richtung gravieren zu lassen. Dadurch verdoppelt sich die Laufzeit für die Gravur.
 [^bibsave]: Wenn der Name bereits existiert wird die alte Variante überschrieben. 
 [^reffahrt]: Die Referenzfahrt stoppt nicht, es wurde vergessen Material aus der Arbeitsfläche zu nehmen o.ä.
+[^gdoc]: Achtung die Adresse des Google Docs könnte sich ändern.  
 
 
 <!-- links -->
 
 [fablabmuenchen]: http://wiki.fablab-muenchen.de/pages/viewpage.action?pageId=1179992
+[liste]: https://docs.google.com/spreadsheets/d/1I4rYd23biIntc6wfrVsdPKd0qprd70GNY0aXA4jAOJA/edit#gid=0
+
+<!-- box -->
+
+[b]: assets/images/box.png
