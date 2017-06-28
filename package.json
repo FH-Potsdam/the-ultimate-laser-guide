@@ -11,14 +11,6 @@
   },
   "author": "Fabian Morón Zirfas <fabian.moron.zirfas@gmail.com> (http://fabianmoronzirfas.me)",
   "license": "MIT",
-  "devDependencies": {
-    "cz-conventional-changelog": "^2.0.0"
-  },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    }
-  },
   "dependencies": {
     "node-notifier": "^5.1.2"
   }
