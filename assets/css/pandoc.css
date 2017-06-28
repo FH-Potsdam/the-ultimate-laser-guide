@@ -63,3 +63,7 @@ pre {
 img{
   max-width: 100%;
 }
+
+h2.author{
+  visibility: hidden;
+}

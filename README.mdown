@@ -1,7 +1,7 @@
 ---
 title: Das Ultimative Laser Handbuch
 subtitle: Wie man es nicht falsch macht
-thanks: foo and bah
+thanks: Dank geht an Anne Boenisch für ihren Review.
 author:
     - name: Fabian Morón Zirfas
       affiliation: University of Applied Sciences Potsdam (Germany)
@@ -10,9 +10,8 @@ abstract: Dies ist ein Step by Step Guide zur Bedienung des 100W C02 Lasers der 
 keywords: Laser,
 # this is no standard pandoc
 toc-title: Inhaltsverzeichnis
-toc: True
 lof: True
-lot: True
+lot: False
 toc-depth: 5
 papersize: "A4"
 fignos-cleveref: On
@@ -25,8 +24,12 @@ geometry: top=3cm
 geometry: left=2.25cm
 geometry: right=2.25cm
 geometry: bottom=3cm
-linkcolor: TealBlue
+linkcolor: RubineRed
+toccolor: RubineRed
+urlcolor: RubineRed
+citecolor: Gray
 lang: de-DE
+quotefont: OpenSans-Italic.ttf
 mainfont: OpenSans-Regular.ttf
 mainfontoptions: 
 - BoldFont=OpenSans-Bold.ttf
@@ -44,7 +47,7 @@ monofontoptions:
 
 # Einleitung
 
-Dieses Dokument ist der Versuch den gesamten Prozess der Bedienung der Laser Anlage an der Fachhochschule Potsdam zu dokumentieren. Es sollte aufmerksam gelesen werden bevor die Anlage durch Studierende in betrieb genommen wird. Am Ende des Dokuments befindet sich eine [Checkliste](#checklist) die ausgedruckt und als Spickzettel beim Betrieb verwendet werden kann. In einigen Bereichen wie der Aufbereitung von Daten und der Bedienung der Software geht es nicht in die Tiefe. Wir hoffen das dies als ein "lebendes" Dokument genutzt wird und zukünftig um nützliche Bereiche erweitert wird. Anregungen, Fragen, Fehler können auf [GitHub als Issue](https://github.com/FH-Potsdam/the-ultimate-laser-guide/issues) vorgebracht werden. Das Dokument selber kann als PDF [hier](https://github.com/FH-Potsdam/the-ultimate-laser-guide/raw/master/The-Ultimate-Laser-Guide.pdf) runtergeladen werden. Eine HTML-Version ist [hier](https://fh-potsdam.github.io/the-ultimate-laser-guide/) zu finden.  
+Dieses Dokument ist der Versuch den gesamten Prozess der Bedienung der Laser Anlage an der Fachhochschule Potsdam zu dokumentieren. Es sollte aufmerksam gelesen werden bevor die Anlage durch Studierende in betrieb genommen wird. Am Ende des Dokuments befindet sich eine [Checkliste](#checklist) die ausgedruckt und als Spickzettel beim Betrieb verwendet werden kann. In einigen Bereichen wie der Aufbereitung von Daten und der Bedienung der Software geht es nicht in die Tiefe. Wir hoffen das dies als ein "lebendes" Dokument genutzt wird und zukünftig um nützliche Bereiche erweitert wird. Anregungen, Fragen, Fehler können auf [GitHub als Issue](https://github.com/FH-Potsdam/the-ultimate-laser-guide/issues) vorgebracht werden oder per Mail an die Autoren gesendet werden. Das Dokument selber kann als PDF [hier](https://github.com/FH-Potsdam/the-ultimate-laser-guide/raw/master/The-Ultimate-Laser-Guide.pdf) runtergeladen werden. Eine HTML-Version ist [hier](https://fh-potsdam.github.io/the-ultimate-laser-guide/) zu finden. Wir freuen uns über jede Art von Beitrag. Gerne nehmen wir auch weitere Kapitel an (siehe Abschnitt [Über dieses Dokument](#über-dieses-dokument))
 
 Viel Spaß mit dem "Ultimativen Laser Handbuch"[^ulg]!
 
@@ -55,7 +58,8 @@ Viel Spaß mit dem "Ultimativen Laser Handbuch"[^ulg]!
 - Der Laser wird immer in Gruppen von 2 oder mehr Personen betrieben.  
 - Der Laser wird nicht alleine gelassen während er Läuft.  
 - Die Werkstatt wird nach Nutzung wieder aufgeräumt.  
-- Es dürfen **KEINE** PVC haltigen oder leicht entflammbare Materialien geschnitten werden (siehe Abschnitt [Materialien](#materialien)).  
+- Der Laser wird nach Gebrauch gereinigt.  
+- Es dürfen **KEINE** PVC-haltigen oder leicht entflammbare Materialien geschnitten werden (siehe Abschnitt [Materialien](#materialien)).  
 
 \newpage
 
@@ -79,55 +83,73 @@ Im Falle eines Feuers in der Anlage gilt es Ruhe zu bewahren. Folgende Schritte 
 
 ### Notaus?  
 
-Der Notaus (siehe +@fig:steuerung) ist für den Notfall. Wenn dieser gedrückt würde. Sollte genau überlegt werden ob die Anlage wieder in Betrieb genommen werden kann ohne sie zu beschädigen. Im Zweifelsfalle sind die Administratoren zu kontaktieren. Wenn der nutaus gedrückt wurde und wieder rausgezogen wird, startet die gesamte Anlage neu. Der Laserkopf führt eine Referenzfahrt aus. Es gilt daruaf zu achten das der Kopf bei dieser Fahrt nicht beschädigt wird.  
+Der Notaus (siehe +@fig:steuerung) ist für den Notfall. Wenn dieser gedrückt wurde, sollte genau überlegt werden ob die Anlage wieder in Betrieb genommen werden kann ohne sie zu beschädigen. Im Zweifelsfalle sind die Administratoren zu kontaktieren. Wenn der Notaus gedrückt wurde und wieder raus gezogen wird, startet die gesamte Anlage neu.[^notauseinaus] Der Laserkopf führt eine Referenzfahrt aus. Es gilt darauf zu achten das der Kopf bei dieser Fahrt nicht beschädigt wird.  
 
 \newpage
 
-## Pflege der Analge
+## Pflege der Anlage
 
-Damit der Laser lange betreiben werden kann, muss er regelmäßig gereinigt werden. Dies passiert durch die Studierenden. Sie sind selber dazu angehalten dies zu organisieren.  
+> Eine verschmutzte Maschine ist bald eine defekte Maschine.  
+> – Fabian Morón Zirfas
 
-In der Metalwerkstatt stehen hinter der Tür zwei Kisten. In der einen gibt es saubere Tücher. Diese dürfen verwendet werden um den Laser sauber zu machen.  
+Damit der Laser lange betrieben werden kann, muss er regelmäßig gereinigt werden. Dies passiert durch die Studierenden. Sie sind selber dazu angehalten dies zu organisieren. Die Reinigung wird nur bei ausgeschalteter Analge durchgeführt
 
+In der Metallwerkstatt stehen hinter der Tür zwei Kisten. In der einen gibt es saubere Tücher. Diese dürfen verwendet werden um den Laser sauber zu machen.  
 
+### Wechseln der Filter
+
+to be defined…
 
 ### Reinigung der Spiegel
 
-Zur Reinigung der Spiegel darf nur Isopropanol und Q-Tip verwendet werden.  
+![Die Spiegel](assets/images/laser-spiegel.png){#fig:spiegel}  
+
+Zur Reinigung der Spiegel (siehe +@fig:spiegel) darf nur Isopropanol und Q-Tip verwendet werden. Dies sollte mindestens einmal im Monat durchgeführt werden um eine konstante Leistung des Lasers zu garantieren.  
 
 ### Reinigung der Sichtscheiben
 
 Zur Reinigung der Sichtscheiben darf kein alkoholhaltiges Mittel benutzen werden. Normale Lappen oder Papiertücher zerkratzen die Scheibe schnell und stark. Die Scheibe ist aus PolyCarbonat und kann somit auch nicht so leicht wieder aufpoliert werden wie zum Beispiel Acrylglas.  
 
-### Befreiung von Ruß
+### Reinigung des Arbeitsraums
 
-Das "Festo CTM 48 E Saugmobil" der Modellbauwerkstatt kann genutzt werden im die Anlage auszusaugen.  
+![Das Festo CTM 48 E Saugmobil](assets/images/festo-saugmobil.jpg){#fig:saugmobil}
+
+Der Arbeitsraum und auch die unteren Bereiche der Anlage müssen regelmäßig gereinigt werden. Für eine oberflächliche Reinigung kann das "Festo CTM 48 E Saugmobil" der Modellbauwerkstatt genutzt werden im die Anlage auszusaugen (siehe +@fig:saugmobil). Es sollte jedoch auch regelmäßig mit einem Lappen eine tiefer gehende Reinigung vorgenommen werden. Auch unterhalb des Gitters und der Lamellen sowie im unteren Raum des Lasers.[^dreikant]
+
+### Reinigung des Distanztasters
+
+Vor jedem Gebrach muss überprüft werden ob der Taster sich bewegen lässt. Nach jedem Gebrauch sollte der Taster mit einem Papiertuch von Ruß befreit werden.  
 
 ### Reinigung des Gitters
+
+Das Gitter, dass im Arbeitsraum der Anlage liegt sollte regelmäßig gereinigt werden. Wenn es zu sehr verschmutzt ist werden Rußreste, die auf dem Gitter sind, durch den Laser nochmals entzündet. Diese schmauchen auf die Unterseite des Materials und hinterlassen unschöne Spuren. Daher ist es auch Sinne der Studierenden die Reinigung regelmäßig durchzuführen um bestmögliche Ergebnisse zu erzielen.  
 
 Um das Gitter zu reinigen sollte die Wanne der Siebdruckwerkstatt und deren Kärscher genutzt werden.[^sdw]  
 
 
 ### Entsorgung der Schnittreste
 
-tbd
+![Der Rollkorb für Schnittreste](assets/images/laser-schnittreste.JPG){#fig:schnitt-reste}  
+
+Für Schnittreste existiert ein eigener Abfallbehälter (siehe +@fig:schnitt-reste). Dieser muss selbständig und regelmäßig entleert werden.  
+
+\newpage
 
 ## Inbetriebnahme
 
-Die folgenden Punkte **müssen** in der angegebenen Reihenfolge ausgeführt werden.  
+Die folgenden Punkte **müssen** in der angegebenen Reihenfolge ausgeführt werden. *Die [Checkliste](#checklist) sollte von ungeübten Nutzer/innen zu Rate gezogen werden.*  
 
 ### Oberlicht Öffnen
 
-
 ![Das Oberlicht des Lüfters](assets/images/oberlicht.jpg){#fig:oberlicht}  
 
-Damit eine arbeitsgerechte Abluft stattfinden kann, muss das Oberlicht an das die Lüftung angeschlossen ist, geöffnet werden. Siehe +@fig:oberlicht  
+Damit eine arbeitsgerechte Abluft stattfinden kann, muss das Oberlicht an das die Lüftung angeschlossen ist, geöffnet werden (siehe +@fig:oberlicht).  
 
 ### Lüftung Einschalten
 
 ![Lüfter Steuerung](./assets/images/lueftung-steuerung.jpg){#fig:luefter width=50%}  
 
-An der Lüftung gibt es den 4 Steuerungsbereiche(Siehe +@fig:luefter).
+An der Lüftung gibt es den 4 Steuerungsbereiche (siehe +@fig:luefter).
 
 1. Netz/Power
 2. Filter
@@ -138,7 +160,9 @@ An der Lüftung gibt es den 4 Steuerungsbereiche(Siehe +@fig:luefter).
 
 Über den `Start/Stop` Knopf in Bereich 3 kann die Lüftung pausiert werden.  
 
-Um die Ohren zu schonen kann der Motor der Lüftung in Bereich 4 runter gedreht werden solange kein Job läuft. *Dies darf jedoch nicht vergessen werden wieder zu aktivieren.*  
+In Bereich 4 kann die Stärke der Lüftung angepasst werden. Bei stark rußenden Materialien sollte die Lüftung auch stark belüften.  
+
+Um die Ohren zu schonen kann der Motor der Lüftung in Bereich 4 runter gedreht  oder in Bereich 3 pausiert werden solange kein Job läuft. *Dies darf jedoch nicht vergessen werden wieder zu aktivieren.*  
 
 
 ### Arbeitsfläche leeren
@@ -147,7 +171,7 @@ Damit der Laserkopf bei der ersten Referenzfahrt in die rechte Obere Ecke nicht 
 
 ### Gitter Überprüfen  
 
-Das Gitter, dass in der Maschine liegt ist frei beweglich. Es muss vor der Inbetriebnahme sichergestellt werden, dass es nicht unter die Absätze links und rechts rutschen kann. Bei einem Autofokus könnte sonst die Ausrichtung der Z-Achse beschädigt werden.  
+Das Gitter, dass in der Maschine liegt ist frei beweglich. Es muss vor der Inbetriebnahme sichergestellt werden, dass es nicht unter die Absätze links und rechts rutschen kann. Bei einem Autofokus oder fahren der Z-Achse könnte sonst die Ausrichtung der Plattform beschädigt werden. Diese muss dann manuell wieder in Waage gebracht werden.  
 
 ### Hauptstrom  
 
@@ -179,7 +203,11 @@ Bei jedem Einschalten (oder nach einem [Notaus](#notaus)) führt die Maschine ei
 
 ### Z-Achse  
 
-Die Z-Achse des Tisches kann manuell herauf oder hinunter gefahren werden. Wenn zum Beispiel ein dickes Material eingelegt werden soll. Dazu muss an der Steuerung (siehe +@fig:steuerung) das Menu mit dem `Z/U` Knopf in der Mitte des Steuerkreuzes aktiviert werden. Dann können die `←` und `→` Tasten genutzt werden um mit `←` die Z-Achse rauf zu fahren und mit `→` runter zu fahren.  
+![Das Menü aktiv](assets/images/laser-menue.png){#fig:menu}  
+
+![Die Steuerung der Z-Achse](assets/images/laser-z-achse.png){#fig:zachse}  
+
+Die Z-Achse des Tisches kann manuell herauf oder hinunter gefahren werden. Wenn zum Beispiel ein dickes Material eingelegt werden soll. Dazu muss an der Steuerung (siehe +@fig:zachse) das Menü mit dem `Z/U` (siehe +@fig:menu) Knopf in der Mitte des Steuerkreuzes aktiviert werden. Dann können die `←` und `→` Tasten genutzt werden um mit `←` die Z-Achse rauf zu fahren und mit `→` runter zu fahren.  
 
 ### Material Einlegen  
 
@@ -192,21 +220,25 @@ Das bedeutet: Je stärker das Material desto kleiner wird der Bereich in dem ein
 
 ### Fokus Setzen  
 
-Um den Laserkopf in seiner Distanz zur Oberfläche des Materials einzustellen, hat die Maschine eine Autofokus Funktion. Dazu wird der Distanztaster[^taster] mit dem Steuerkreuz in die Mitte des Materials gefahren.  
+![Der Menüeintrag für den Autofokus](assets/images/laser-autofokus.png){#fig:autofokus}  
+
+Um den Laserkopf in seiner Distanz zur Oberfläche des Materials einzustellen, hat die Maschine eine Autofokus Funktion. Dazu wird der Distanztaster[^taster] \(siehe +@fig:laserkopf\) mit dem Steuerkreuz in die Mitte des Materials gefahren.  
 
 **Achtung:** Ein üblicher Fehler den es jedoch zu vermeiden gilt, ist dass nicht der Taster über das Material gesetzt wird sondern der Laserpunkt. Das könnte zur Folge haben, dass der Distanztaster im Gitter versenkt wird.[^fuckuptaster] 
-Gegebenenfalls muss die Z-Achse noch runter gefahren werden, wenn dies nicht schon beim einlegen des Materials passiert ist (siehe Abschnitt "Z-Achse").  
-Wenn das Material unter dem Taster liegt kann das Menü über die Z/U Taste aktiviert werden. Mit dem Punkt "Autofocus" wird die Distanz automatisch auf 21,2mm eingestellt. Über die  `↑ ↓` Tasten kann der Punkt Autofocus ausgewählt werden. Mit Enter wird er aktiviert.  
+Gegebenenfalls muss die Z-Achse noch runter gefahren werden, wenn dies nicht schon beim einlegen des Materials passiert ist (siehe Abschnitt [Z-Achse](#z-achse)).  
+Wenn das Material unter dem Taster liegt kann das Menü über die Z/U Taste aktiviert werden (siehe +@fig:menu). Mit dem Punkt `Autofocus` (siehe +@fig:autofokus) wird die Distanz automatisch auf 21,2mm eingestellt. Über die  `↑ ↓` Tasten kann der Punkt Autofocus ausgewählt werden. Mit `Enter` wird er aktiviert.  
 
-**Achtung:** Beim einstellen des Autofokus sollte immer ein Finger auf dem ESC Knopf liegen, für den Fall, dass etwas unvorhergesehenes passiert (Der Taster bohrt sich durch das Material, der Taster reagiert nicht, der Taster ist doch nicht über dem Material).  
+**Achtung:** Beim einstellen des Autofokus sollte immer ein Finger auf dem `Esc` (Escape) Knopf liegen, für den Fall, dass etwas unvorhergesehenes passiert (Der Taster bohrt sich durch das Material, der Taster reagiert nicht, der Taster ist doch nicht über dem Material).  
 
 Nach dem Autofokus Prozess liegt der Brennpunkt des Lasers auf der Oberfläche des Materials.[^hackfokus] 
 
 ### Null Null (`Origin`)
 
-Um die Maschine für den Laser Job bereits zu haben, kann nun der Laserkopf mit den `← ↑ ↓ →` Tasten an die gewünschte Position gefahren werden. Um diese Position als Ausgangspunkt für einen Schnitt, eine Gravur oder eine Perforation zu setzten muss dies mit der Taste "`Origin`" bestätigt werden.[^`origin`] Falls Unsicherheit besteht ob der `Origin` auch der aktuellen Position des Laserkopfes entspricht, kann über einen Druck auf die Taste ESC (Escape) der Kopf auf seinen letzten `Origin` zurückgesetzt werden.  
+![Setzten des Origins ](assets/images/laser-origin.png){#fig:origin}  
 
-**Achtung:** Vor dem Starten eines Jobs sollte nochmals sichergestellt werden, dass der `Origin` stimmt. Der Laser beginnt einen Job von dieser Position aus. Falls die Position vom `Origin` abweicht könnte das Material an einer anderen Stelle bearbeitet werden.  
+Um die Maschine für den Laser Job bereits zu haben, kann nun der Laserkopf mit den `← ↑ ↓ →` Tasten an die gewünschte Position gefahren werden. Um diese Position als Ausgangspunkt für einen Schnitt, eine Gravur oder eine Perforation zu setzten muss dies mit der Taste "`Origin`" (siehe +@fig:origin) bestätigt werden.[^`origin`] Falls Unsicherheit besteht ob der `Origin` auch der aktuellen Position des Laserkopfes entspricht, kann über einen Druck auf die Taste `Esc` der Kopf auf seinen letzten `Origin` zurückgesetzt werden.  
+
+**Achtung:** Vor dem Starten eines Jobs sollte nochmals sichergestellt werden, dass der `Origin` stimmt. Der Laser beginnt einen Job von dieser Position aus (siehe Abschnitt [Positionierung](#positionierung)). Falls die Position vom `Origin` abweicht könnte das Material an einer anderen Stelle bearbeitet werden.  
 
 
 \newpage
@@ -214,18 +246,22 @@ Um die Maschine für den Laser Job bereits zu haben, kann nun der Laserkopf mit 
 
 ## Laser Job  
 
-Die einfachste Methode einen Job zu starten ist über die USB Verbindung aus der RDWorks Software heraus mit der Start Taste. Es existiert auch die Möglichkeit Job Dateien aus RDWorks heraus auf ein USB Stick zu speichern und diesen direkt in die Maschine zu stecken. Dafür muss der Stick FAT formatiert sein und die Dateien müssen auf der untersten Ebene des Dateisystems liegen. Unterordner werden nicht erkannt. Im weiteren Verlauf dieses Handbuches wird diese Möglichkeit nicht berücksichtigt. Ebenfalls werden hier nur die minimalen Schritte beschrieben um einen Job mit RDWorks einzurichten und      auszuführen. Ein komplette Übersicht würde den Rahmen diese Dokuments sprengen. Hierfür existiert ein Benutzerhandbuch das vom Hersteller der Software zusammen mit dieser ausgeliefert wird.
+Die einfachste Methode einen Job zu starten ist über die USB Verbindung aus der RDWorks Software heraus mit der Start Taste. Es existiert auch die Möglichkeit Job Dateien aus RDWorks heraus auf ein USB Stick zu speichern und diesen direkt in die Maschine zu stecken. Dafür muss der Stick FAT formatiert sein und die Dateien müssen auf der untersten Ebene des Dateisystems liegen. Unterordner werden nicht erkannt. Im weiteren Verlauf dieses Handbuches wird diese Möglichkeit nicht berücksichtigt. Ebenfalls werden hier nur die minimalen Schritte beschrieben um einen Job mit RDWorks einzurichten und      auszuführen. Ein komplette Übersicht würde den Rahmen diese Dokuments sprengen. Hierfür existiert ein Benutzerhandbuch das vom Hersteller der Software zusammen mit dieser ausgeliefert wird.  
+
+### Positionierung  
+
+Der [Origin](#null-null-origin) des Laserkopfes korrespondiert mit der Linken oberen Ecke der Daten in der Software (siehe +@fig:rdsoftware). Dies sollte nicht verändert werden, da die Leistung des Lasers von Links oben nach rechts unten abnimmt.[^schnittleistung] Wenn die Daten die mögliche zu fahrende Fläche überschreitet, wird dies im Menü angezeigt. Es ist möglich den Job dennoch durchführen zu lassen. Alles was über die Arbeitsfläche hinaus geht wird nicht gelasert.  
 
 ### Die Parameter Verstehen
 
 Die Parameter die zur Verfügung stehen sind 
 
-1. Die Geschwindigkeit des Laserkopfes gemessen in Millimieter pro Sekunde (mm/s).
+1. Die Geschwindigkeit des Laserkopfes gemessen in Millimeter pro Sekunde (mm/s).
 2. Die Intensität des Laserstahls gemessen in Prozent (%).  
 
 Ausgehend von diesen beiden Parametern muss der Job eingerichtet werden. Ein 3mm Acrylplatte würde zum Beispiel bei 10mm/s und 90% Leistung geschnitten werden. Eine Gravur auf dieser Platte kann schon bei 80mm/s und 15% Leistung gut aussehen.  
 
-Stärkere Materialien bedürfen mehr Leistung und eine langsamere Bewegung. Dünne Materialien können bei einer schnellen Fahrt auch schon mit geringer Leistung geschnitten werden. Wobei eine zu hohe Geschwindigkeit sich auch auf die Qualität von Kurven und Ecken auswirkt. Es gilt hier eigenen Erfahrungswerte zu sammeln. Ebenfalls können die Außentemperatur, die Feuchtigkeit des Materials oder auch die Reinigung der Umwerfspiegel die Werte beeinflussen.  
+Stärkere Materialien bedürfen mehr Leistung und eine langsamere Bewegung. Dünne Materialien können bei einer schnellen Fahrt auch schon mit geringer Leistung geschnitten werden. Wobei eine zu hohe Geschwindigkeit sich auch auf die Qualität von Kurven und Ecken auswirkt. Es gilt hier eigenen Erfahrungswerte zu sammeln. Ebenfalls können die Außentemperatur, die Feuchtigkeit des Materials oder auch die Reinigung der Umwerf-Spiegel die Werte beeinflussen.  
 
 ### Daten Vorbereiten  
 
@@ -242,7 +278,7 @@ Für Schnitt und Perforation können Pfade angelegt werden die offen sind. Diese
 
 ![Adobe Illustrator GPU-Vorschau](assets/images/ai-kontur.png){#fig:ai-kontur}
 
-Was in +@fig:ai-pfad zu sehen ist, entspricht dem was von dem Laserkopf nach fahren würde. Die Abbildung zeigt die Pfadansicht. Um zwischen GPU-Vorschau und Pfadansicht zu wechseln kann die Tastenkombination `⌘ Y` (macOS) oder `Strg Y` (Win) genutzt werden.[^keys]  
+Was in +@fig:ai-pfad zu sehen ist, entspricht dem was von dem Laserkopf nach fahren würde. Die Abbildung zeigt die Pfadansicht. Um zwischen GPU-Vorschau und Pfadansicht zu wechseln kann die Tastenkombination `Command Y` (macOS) oder `Strg Y` (Win) genutzt werden.[^keys]  
 
 ![Adobe Illustrator Pfad Ansicht](assets/images/ai-pfad.png){#fig:ai-pfad}  
 
@@ -315,6 +351,8 @@ Die Art des Laserjobs bestimmt auch mit welche Möglichkeiten zur Verfügung ste
 
 ![RDworks Software Oberfläche](assets/images/rdworks-software.PNG){#fig:rdsoftware}  
 
+\newpage 
+
 #### Schneiden  
 
 Um einen Schnitt einzurichten kann mit einem Doppelklick auf die entsprechende Ebene in der Ebenenpalette rechts oben (siehe +@fig:rdsoftware) das Menü für die Einstellungen aufgerufen werden. Siehe +@fig:rdcut. Hier kann eingestellt werden wie schnell der Laserkopf gefahren werden soll und mit welcher Intensität der Schnitt stattfinden soll. Dazu muss:  
@@ -332,12 +370,12 @@ Alle weiteren Möglichkeiten sind zur Feineinstellung. Hierfür sollte das Handb
 
 #### Gravieren  
 
-Um eine Gravur einzurichten kann mit einem Doppelklick auf die entsprechende Ebene in der Ebenenpalette rechts oben (siehe +@fig:rdsoftware) das Menü für die Einstellungen aufgerufen werden. Siehe +@fig:rdgrav1. Hier können verschieden Paramter der Gravur definiert werden. Dazu muss:  
+Um eine Gravur einzurichten kann mit einem Doppelklick auf die entsprechende Ebene in der Ebenenpalette rechts oben (siehe +@fig:rdsoftware) das Menü für die Einstellungen aufgerufen werden. Siehe +@fig:rdgrav1. Hier können verschieden Parameter der Gravur definiert werden. Dazu muss:  
 
 1. Die `Ausgabe` auf `Ja` stehen.
 2. In `Geschw.(mm/s)` der gewünschte Wert eingetragen werden.
 3. Der `Lasermodus` auf `Gravur/Scan` stehen.
-4. Das Feld `Graustufen ausgeb` gewählt sein oder nicht.[^graustufen]
+4. Das Feld `Graustufen ausgeb` gewählt sein oder nicht (siehe +@fig:rdgrav2).[^graustufen]
 5. Die Leistung eingestellt werden
     1. Wenn einheitlich graviert werden soll, muss im Feld mit der 1 und der Checkbox in `Min Leist (%)` und `Max Leist. (%)` der gleiche Wert eingetragen werden.[^leistung]. In diesem Fall sollte Graustufen ausgeben nicht gewählt sein.
     2. Wenn abhängig von den Graustufen des Bildes graviert werden soll. muss im Feld mit der 1 und der Checkbox in `Min Leist (%)` die Leistung für das schwächste Grau eingetragen werden und im Feld `Max Leist. (%)` die Leistung für das tiefste Schwarz eingetragen werden.[^minleistung]
@@ -352,11 +390,13 @@ Alle weiteren Möglichkeiten sind zur Feineinstellung. Hierfür sollte das Handb
 
 ![RDWorks Ebeneneinstellung Gravur Vektorform](assets/images/rdworks-gravieren1.PNG){#fig:rdgrav1}  
 
+![RDWorks Ebeneneinstellung Gravur Vektorform](assets/images/rdworks-gravur2.PNG){#fig:rdgrav2}  
+
 \newpage
 
 #### Perforieren
 
-Um eine Perforation einzurichten kann mit einem Doppelklick auf die entsprechende Ebene in der Ebenenpalette rechts oben (siehe +@fig:rdsoftware) das Menü für die Einstellungen aufgerufen werden. Siehe +@fig:rdperf. Hier kann eingestellt werden wie schnell der Laserkopf gefahren werden soll, mit welcher Intensität die Perforiation stattfinden soll und wie das Verhältnis zwischen Schnitt – Lücke – Schnitt – Lücke – etc. sein soll. Dazu muss:  
+Um eine Perforation einzurichten kann mit einem Doppelklick auf die entsprechende Ebene in der Ebenenpalette rechts oben (siehe +@fig:rdsoftware) das Menü für die Einstellungen aufgerufen werden. Siehe +@fig:rdperf. Hier kann eingestellt werden wie schnell der Laserkopf gefahren werden soll, mit welcher Intensität die Perforation stattfinden soll und wie das Verhältnis zwischen Schnitt – Lücke – Schnitt – Lücke – etc. sein soll. Dazu muss:  
 
 
 1. Die `Ausgabe` auf `Ja` stehen.
@@ -364,7 +404,7 @@ Um eine Perforation einzurichten kann mit einem Doppelklick auf die entsprechend
 3. Der `Lasermodus` auf `Schneiden` stehen.
 4. Im Feld mit der 1 und der Checkbox in `Min Leist (%)` und `Max Leist. (%)` der gleiche Wert eingetragen werden.[^leistung]
 5. Das `Interval` auf einen mm Wert definiert werden.
-6. Die `Punktlänge` auf einen mm Wert definiert werden.
+6. Die `Punktlänge` auf einen mm Wert definiert werden.
 
 Alle weiteren Möglichkeiten sind zur Feineinstellung. Hierfür sollte das Handbuch der Software zu Rate gezogen werden.  
 
@@ -374,7 +414,7 @@ Alle weiteren Möglichkeiten sind zur Feineinstellung. Hierfür sollte das Handb
 
 ### Material Bibliothek  
 
-Bei allen drei Arten von Jobs ist die Einstellung von Leistung und Geschwindigkeit abhängig von dem Material. Glücklicherweise bietet die Software bietet die Möglichkeit Einstellungen zu speichern. Diese können in der Materialbibliothek abgelegt werden. Um diese zu offen muss mit einem Doppelklick erst die Einstellung der Ebenen geöffnet werden. Im oberen Bereich befindet sich ein Knopf (siehe zum Beispiel +@fig:rdperf) für die Materialbibliothek. +@fig:rdbib. Von dort aus können Einstellungen geladen oder die aktuellen unter einem neuen Namen gespeichert werden.[^bibsave] Hierbei ist es ratsam einen aussagekräftigen Namen zu wählen. Als Standard sollte folgendes Muster gelten.  
+Bei allen drei Arten von Jobs ist die Einstellung von Leistung und Geschwindigkeit abhängig von dem Material. Glücklicherweise bietet die Software bietet die Möglichkeit Einstellungen zu speichern. Diese können in der Materialbibliothek abgelegt werden. Um diese zu offen muss mit einem Doppelklick erst die Einstellung der Ebenen geöffnet werden. Im oberen Bereich befindet sich ein Knopf (siehe zum Beispiel +@fig:rdperf) für die Materialbibliothek (siehe +@fig:rdbib). Von dort aus können Einstellungen geladen oder die aktuellen unter einem neuen Namen gespeichert werden.[^bibsave] Hierbei ist es ratsam einen aussagekräftigen Namen zu wählen. Als Standard sollte folgendes Muster gelten.  
 
     Material Stärke Jobtyp
 
@@ -403,7 +443,7 @@ Es sollte ein letztes mal überlegt werden ob der Fokus richtig gesetzt wurde. I
 
 **Zu 2):**  
 
-Der Laserkopf muss an seinem 0/0 Punkt stehen. Über einen Druck auf die Taste `ESC` wird der Kopf auf seinen letzten `Origin` zurückgesetzt.  
+Der Laserkopf muss an seinem 0/0 Punkt stehen. Über einen Druck auf die Taste `Esc` wird der Kopf auf seinen letzten `Origin` zurückgesetzt.  
 
 **Zu 3):**  
 
@@ -415,20 +455,22 @@ Die Abdeckung des Lasers muss geschlossen sein damit der Job gestartet werden ka
 
 **Zu 5):**  
 
-Ob die Daten auf das Material passen, kann aus der Software heraus überprüft werden. Rechts unten in RDWorks (siehe +@fig:rdsoftware) gibt es die Möglichkeit den Laserkopf die äußeren Kanten der Vorlage abfahren zu lassen.  
+Ob die Daten auf das Material passen, kann aus der Software heraus überprüft werden. Rechts unten in RDWorks (siehe +@fig:rdsoftware) gibt es die Möglichkeit mit dem Knopf `Umriss zeigen` den Laserkopf die äußeren Kanten der Vorlage abfahren zu lassen.  
 
 **Zu 6):**  
 
 Die Lasersteuerung weiß nicht ob der Laser aktiviert ist oder nicht. Daher kann ein Job gestartet werden ohne das ein Schnitt, eine Gravur oder eine Perforation zu Stande kommt. Um den Laser zu aktivieren muss:
 
 1. Die Abdeckung geschlossen sein.
-2. Die Zustimmungstaste gedrückt werden(siehe +@fig:steuerung).
+2. Die Zustimmungstaste gedrückt werden (siehe +@fig:steuerung).
 
-Wenn all diese Maßnahmen getroffen wurden kann über die Schaltfläche `Start` in der Software der Job an den Laser gesendet werden.  
+Wenn all diese Maßnahmen getroffen wurden, kann über die Schaltfläche `Start` (siehe +@fig:rdsoftware) in der Software der Job an den Laser gesendet werden.  
+
+\newpage
 
 ### Der Job Läuft
 
-Während ein Laser Job läuft darf die Anlage nicht unbeaufsichtigt bleiben. Ebenfalls sollte die Abdeckung nicht geöffnet werden. Falls es nötig ist die Abdeckung zu öffnen wird der Job pausiert. Fall ab dem aktuellen Punkt weitergelasert werden soll, kann dies über die Start/Pause Taste veranlasst werden. Dabei ist drauf zu achten, dass nochmals die Zustimmungstaste gedrückt werden muss. Sonst fährt der Laserkopf weiter aber der Laser wird nicht wieder aktiviert.  
+Während ein Laser Job läuft darf die Anlage nicht unbeaufsichtigt bleiben. Ebenfalls sollte die Abdeckung nicht geöffnet werden. Falls es nötig ist die Abdeckung zu öffnen wird der Job pausiert. Falls ab dem aktuellen Punkt weiter gelasert werden soll, kann dies über die `Start/Pause` (siehe +@fig:steuerung) Taste veranlasst werden. Dabei ist drauf zu achten, dass nochmals die `Zustimmungstaste` gedrückt werden muss. Sonst fährt der Laserkopf weiter aber der Laser wird nicht wieder aktiviert.  
 
 
 \newpage
@@ -652,9 +694,11 @@ E-Mail: <info@sabko-gmbh.com>
 
 ## Über dieses Dokument
 
-### MacTex  
+Die aktuellste Version dieses Dokuments kann immer auf [GitHub runter geladen](https://github.com/FH-Potsdam/the-ultimate-laser-guide/raw/master/The-Ultimate-Laser-Guide.pdf) werden. Anregungen, Erweiterungen und Fehlerkorrekturen sind sehr gerne gesehen.  
 
-    brew cask install mactex
+- Korrekturen als Kommentare im PDF oder als [Issue](https://github.com/FH-Potsdam/the-ultimate-laser-guide/issues) auf GitHub 
+- Ganze Kapitel bitte als reinen Text ohne Formatierungen
+- Das alles natürlich auch gerne als Pull Request auf GitHub  
 
 ### Schriften
 
@@ -663,8 +707,10 @@ Es werden die Schriften [Camingo Code von Jan Fromm](http://www.janfromm.de/type
 
 ### Dokument Generieren
 
-Das Dokument ist überwiegend in Pandoc Markdown [M↓] geschrieben.[^pandocmd] Dort wo [M↓] nicht mehr weiter kommt wurde \LaTeX genutzt. Um das finale PDF zu generieren muss Pandoc mit dem dem fignos Filter installiert sein. Um die Ausführung zu vereinfachen wurde das entsprechende Shell Befehl in ein npm script gespeichert.  
+Das Dokument ist überwiegend in Pandoc Markdown `[M↓]` geschrieben.[^pandocmd] Dort wo `[M↓]` nicht mehr weiter kommt wurde \LaTeX genutzt. Um das finale PDF zu generieren muss Pandoc mit dem dem fignos Filter installiert sein. Um die Ausführung zu vereinfachen wurde das entsprechende Shell Befehl in ein npm script gespeichert.  
 
+    brew cask install mactex
+    brew install node
     brew install pandoc
     pip install pandoc-fignos
     git clone git@github.com:FH-Potsdam/the-ultimate-laser-guide.git
@@ -677,10 +723,9 @@ Das Dokument ist überwiegend in Pandoc Markdown [M↓] geschrieben.[^pandocmd] 
 - [tomduck/pandoc-fignos: A pandoc filter for numbering figures and figure references.](https://github.com/tomduck/pandoc-fignos)   
 
 
+\newpage
 
 ## Lizenz
-
-
 
 Dieses Dokument und alle Bilder, soweit nicht anders gekennzeichnet, sind unter MIT Lizenz. 
 
@@ -715,7 +760,9 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.  
 
 <!-- Fussnoten -->
-
+[^dreikant]: Zum öffnen der äußeren Verkleidung gibt es in der Werkzeugkiste Dreikantschlüssel. 
+[^notauseinaus]: Um die sofortige Referenzfahrt zu verhindern sollte der Schlüssel im `An/Aus` Schlüsselloch auf Aus gedreht werden (siehe +@fig:steuerung).
+[^schnittleistung]: Versuche mit einer 3mm starken 700mm × 1000mm MDF Platte haben gezeigt, dass bei einer Leistung von 95% und einer Geschwindigkeit von 5mm/s die Platte mit einem diagonalen Schnitt nur bis zur Hälft geschnitten werden kann.
 [^sdw]: Die Erlaubnis der Siebdruckwerkstatt muss vorher eingeholt werden.
 [^ulg]: Ultimative ist vielleicht ein wenig übertrieben. 
 [^pandocmd]: Es wurden wenige \LaTeX  Befehle verwendet für ein besseres Layout.
@@ -724,7 +771,7 @@ SOFTWARE.
 [^hackfokus]: Bei starken Materialien kann es nützlich sein den Fokus nicht auf der Oberfläche, sondern im Material zu haben. Um bei einem 10mm starken Material dies zu bewerkstelligen, bedarf es eines 5mm starken Materials. Auf dieses wird der Fokus gesetzt. Dann wird es durch das 10mm starke Material ausgetauscht. Hierbei ist jedoch drauf zu achten, dass der Taster nicht gegen das Material stoßen darf. Diese Methode ist nur ratsam für bereits erfahrene Benutzer. 
 [^tasterfrei]: Es kann passieren, dass der Taster verrußt und dadurch nicht mehr reagiert.
 [^`origin`]: Die Taste bestätigt, dass sie gedrückt wurde mit einem Piep. Mehr nicht. Es empfiehlt sich vor einem Job mehrfach zu überprüfen ob der `Origin` auch gesetzt ist. 
-[^keys]: Im weiteren Verlauf dieses Handbuchs wird nur die macOS Variante `⌘` dargestellt. Für Windows muss dies durch `Strg` ersetzt werden. Falls Abweichungen existieren wird darauf hingewiesen.  
+[^keys]: Im weiteren Verlauf dieses Handbuchs wird nur die macOS Variante `Command` dargestellt. Für Windows muss dies durch `Strg` ersetzt werden. Falls Abweichungen existieren wird darauf hingewiesen.  
 [^formate]: Weiter Informationen zu Formaten sind im Handbuch der Software zu finden. 
 [^distanz]: Die Distanz beträgt 21,2mm.
 [^leistung]: Die Software nutzt den Max Wert. Um Verwirrung zu vermeiden sollte jedoch in beide Felder der gleiche Wert eingetragen werden.  
