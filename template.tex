@@ -20,10 +20,13 @@ $else$
 % lots of packages that I don't know
 \usepackage{lmodern}
 $endif$
-$if(linestretch)$
+
 \usepackage{setspace}
+$if(linestretch)$
 \setstretch{$linestretch$}
 $endif$
+
+
 \usepackage{amssymb,amsmath}
 \usepackage{ifxetex,ifluatex}
 \usepackage{fixltx2e} % provides \textsubscript

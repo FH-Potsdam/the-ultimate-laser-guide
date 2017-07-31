@@ -10,7 +10,7 @@ author:
 abstract: Dies ist ein Step by Step Guide zur Bedienung des 100W C02 Lasers der Fachhochschule Potsdam.  
 keywords: Laser,
 # this is no standard pandoc
-docversion: 0.1.2
+docversion: 0.1.3
 toc-title: Inhaltsverzeichnis
 lof: True
 lot: False
@@ -98,7 +98,7 @@ Der Notaus (siehe +@fig:steuerung) ist für den Notfall. Wenn dieser gedrückt w
 > Eine verschmutzte Maschine ist bald eine defekte Maschine.  
 > – Fabian Morón Zirfas
 
-Damit der Laser lange betrieben werden kann, muss er regelmäßig gereinigt werden. Dies passiert durch die Studierenden. Sie sind selber dazu angehalten dies zu organisieren. Die Reinigung wird nur bei ausgeschalteter Anlage durchgeführt.
+Damit der Laser lange betrieben werden kann, muss er regelmäßig gereinigt werden. Dies passiert durch die Studierenden. Sie sind selber dazu angehalten dies zu organisieren. Nach jedem Gebrauch muss der Innenraum der Anlage ausgesaugt werden und etwaige Reste müssen entfernt werden. Ebenfalls muss der Taster gereinigt werden. Die Reinigung wird nur bei ausgeschalteter Anlage durchgeführt.
 
 In der Metallwerkstatt stehen hinter der Tür zwei Kisten. In der einen gibt es saubere Tücher. Diese dürfen verwendet werden, um den Laser sauber zu machen.  
 
@@ -616,14 +616,15 @@ Die FHP stellt seinen Studierenden einen Computer zur Verfügung. Auf diesem Com
 
 Die Terminvergabe läuft über die Terminfunktion des Incom.org Workspaces [Laser KNLG Base · FHP](https://fhp.incom.community/workspace/6508) und nach dem „First Come First Serverd“ Prinzip. Termine sind bindend und müssen dort vorab eingestellt werden. Wenn Termine nicht wahrgenommen werden können, müssen sie dort auch wieder gelöscht werden. Mehr als 2 Termine an einem Tag ist aus Erfahrungswerten kaum zu handhaben.   
 
-
 \newpage
-
-\newgeometry{top=2cm,bottom=2cm}
 
 ## Checklist
 
-Dies ist eine kurze Checkliste für den gesamten Betriebsprozess. Sie sollte ausgedruckt und als Referenz griffbereit sein.  
+Es folgt eine Checkliste für den gesamten Betriebsprozess. Sie sollte ausgedruckt und als Referenz griffbereit sein.  
+
+\newpage
+
+\newgeometry{top=1cm,bottom=2cm}
 
 **Inbetriebnahme**
 
@@ -681,6 +682,12 @@ Dies ist eine kurze Checkliste für den gesamten Betriebsprozess. Sie sollte aus
 - [ ] Werkstatt verriegeln  
 - [ ] Schlüssel beim Pförtner abgeben  
 
+**Reinignug**
+
+- [ ] Reste entfernen
+- [ ] Taster reinigen
+- [ ] Innenraum aussaugen
+
 \restoregeometry
 
 \newpage
@@ -717,7 +724,7 @@ Es werden die Schriften [Camingo Code von Jan Fromm](http://www.janfromm.de/type
 
 ### Dokument Generieren
 
-Das Dokument ist überwiegend in Pandoc Markdown `[M↓]` geschrieben.[^pandocmd] Dort wo `[M↓]` nicht mehr weiter kommt wurde \LaTeX genutzt. Um das finale PDF zu generieren muss Pandoc mit dem dem fignos Filter installiert sein. Um die Ausführung zu vereinfachen wurde das entsprechende Shell Befehl in ein npm script gespeichert.  
+Das Dokument ist überwiegend in Pandoc Markdown `[M↓]` geschrieben.[^pandocmd] Dort wo `[M↓]` nicht mehr weiter kommt wurde \LaTeX genutzt. Um das finale PDF zu generieren muss [Pandoc][pandoc] mit dem dem [fignos][fignos] Filter installiert sein. Um die Ausführung zu vereinfachen wurde das entsprechende Shell Befehl in ein npm script gespeichert.  
 
     brew cask install mactex
     brew install node
@@ -727,10 +734,6 @@ Das Dokument ist überwiegend in Pandoc Markdown `[M↓]` geschrieben.[^pandocmd
     cd ./the-ultimate-laser-guide
     npm install
     npm run pandoc
-  
-
-- [Pandoc - About pandoc](https://pandoc.org/)  
-- [tomduck/pandoc-fignos: A pandoc filter for numbering figures and figure references.](https://github.com/tomduck/pandoc-fignos)   
 
 
 \newpage
@@ -797,6 +800,8 @@ SOFTWARE.
 
 [fablabmuenchen]: http://wiki.fablab-muenchen.de/pages/viewpage.action?pageId=1179992
 [liste]: https://docs.google.com/spreadsheets/d/1I4rYd23biIntc6wfrVsdPKd0qprd70GNY0aXA4jAOJA/edit#gid=0
+[pandoc]: https://pandoc.org/  
+[fignos]: https://github.com/tomduck/pandoc-fignos 
 
 <!-- box -->
 
