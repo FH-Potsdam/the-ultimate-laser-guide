@@ -1,6 +1,6 @@
 {
   "name": "the-ultimate-laser-guide",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "a step by step guide for using the co2 laser @ University of Applied Sciences Potsdam (Germany)",
   "main": "index.js",
   "scripts": {
