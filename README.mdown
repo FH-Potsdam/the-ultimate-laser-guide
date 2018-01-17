@@ -595,7 +595,7 @@ Der Zugang zur Anlage wird über [dieses Google Doc][liste] geregelt.[^gdoc] Dor
 
 - ein Schlüssel für die Steuerung
 - ein Schlüssel für den Laser
-- ein Schlüssel für Spind Nummer 19
+- ein Schlüssel für Spind Nummer 01
 - ein Dongel für LW 022 
 
 Um die Zugangsberechtigung zu erwerben muss:  
@@ -678,7 +678,7 @@ Es folgt eine Checkliste für den gesamten Betriebsprozess. Sie sollte ausgedruc
 - [ ] Abdeckung schließen  
 - [ ] Lüftung abschalten  
 - [ ] Oberlicht schließen  
-- [ ] Computer und Kiste zurück in Spind Nummer 19  
+- [ ] Computer und Kiste zurück in Spind Nummer 01  
 - [ ] Werkstatt verriegeln  
 - [ ] Schlüssel beim Pförtner abgeben  
 
