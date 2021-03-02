@@ -12,6 +12,6 @@
   "author": "Fabian Morón Zirfas <fabian.moron.zirfas@gmail.com> (http://fabianmoronzirfas.me)",
   "license": "MIT",
   "dependencies": {
-    "node-notifier": "^5.1.2"
+    "node-notifier": "^8.0.1"
   }
 }
