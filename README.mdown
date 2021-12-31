@@ -628,10 +628,8 @@ Es folgt eine Checkliste für den gesamten Betriebsprozess. Sie sollte ausgedruc
 
 **Inbetriebnahme**
 
-- [ ] Oberlicht öffnen  
-- [ ] Lüftung anschalten  
+- [ ] Hauptstrom anschalten
 - [ ] Abdeckung öffnen  
-- [ ] Hauptstrom anschalten  
 - [ ] Arbeitsfläche leeren  
 - [ ] Laserkopf höher als das Gitter?   
 - [ ] Gitter nicht unter dem Absatz?      
@@ -640,6 +638,7 @@ Es folgt eine Checkliste für den gesamten Betriebsprozess. Sie sollte ausgedruc
 - [ ] Hand über den Notaus!    
 - [ ] Steuerung mit Schlüssel anschalten      
 - [ ] Laserkopf beobachten bis die Referenzfahrt vorbei ist    
+- [ ] Laser mit dem Schlüssel anschalten  
 
 **Laser Job**  
 
@@ -647,9 +646,9 @@ Es folgt eine Checkliste für den gesamten Betriebsprozess. Sie sollte ausgedruc
 - [ ] Autofokus setzten. Der Distanztaster ist relevant nicht der Laserpunkt!    
 - [ ] Material final positionieren  
 - [ ] Origin setzten  
-- [ ] Laser mit dem Schlüssel anschalten  
-- [ ] Passt die Vorlage auf das Material? Umrisse zeigen.  
-- [ ] Ist die Lüftung an?    
+- [ ] Passt die Vorlage auf das Material? Umrisse zeigen. 
+- [ ] Oberlicht öffnen  
+- [ ] Lüftung anschalten 
 - [ ] Abdeckung schließen    
 - [ ] Zustimmungstaste drücken  
 - [ ] In der Software `Start` drücken  
