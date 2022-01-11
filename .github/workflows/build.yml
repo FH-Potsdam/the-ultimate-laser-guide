@@ -12,24 +12,11 @@ jobs:
     if: "!contains(github.event.head_commit.message, 'skip ci')"
     steps:
       - uses: actions/checkout@v2
-      - name: install pandoc
-        run: wget https://github.com/jgm/pandoc/releases/download/2.13/pandoc-2.13-1-amd64.deb && sudo dpkg -i pandoc-2.13-1-amd64.deb
-      - name: build the docs
-        run: make
-      - uses: EndBug/add-and-commit@v7
-        with:
-          add: "docs"
-          author_name: sebastian-meierBot
-          author_email: dev@sebastian-meier.email
-  pdf:
-    runs-on: ubuntu-latest
-    needs: build
-    if: "!contains(github.event.head_commit.message, 'skip ci')"
-    steps:
-      - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
         with:
           node-version: "14"
+      - name: install pandoc
+        run: wget https://github.com/jgm/pandoc/releases/download/2.13/pandoc-2.13-1-amd64.deb && sudo dpkg -i pandoc-2.13-1-amd64.deb
       - name: install dependencies
         run: npm ci
       - name: build pdf
