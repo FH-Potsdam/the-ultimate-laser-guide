@@ -9,6 +9,21 @@ author:
       email: moron-zirfas@fh-potsdam.de
 abstract: Dies ist ein Step by Step Guide zur Bedienung des 100W C02 Lasers der Fachhochschule Potsdam.  
 keywords: Laser
+quotefont: assets/fonts/IBMPlexSans-Italic.ttf
+mainfont: IBMPlexSans-Regular.ttf
+mainfontoptions:
+    - Path=assets/fonts/
+    - Scale=1
+    - BoldFont=IBMPlexSans-Bold.ttf
+    - ItalicFont=IBMPlexSans-Italic.ttf
+    - BoldItalicFont=IBMPlexSans-BoldItalic.ttf
+monofont: IBMPlexMono-Regular.ttf
+monofontoptions: 
+    - Path=assets/fonts/
+    - Scale=1
+    - BoldFont=IBMPlexMono-Bold.ttf
+    - ItalicFont=IBMPlexMono-Italic.ttf
+    - BoldItalicFont=IBMPlexMono-BoldItalic.ttf
 ---
 
 
