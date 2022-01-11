@@ -32,7 +32,7 @@ urlcolor: RubineRed
 citecolor: Gray
 lang: de-DE
 quotefont: assets/fonts/IBMPlexSans-Italic.ttf
-mainfont: assets/fonts/IBMPlexSans-Regular.ttf
+mainfont: IBMPlexSans-Regular.ttf
 mainfontoptions:
     - Path=assets/fonts/
     - Scale=1
