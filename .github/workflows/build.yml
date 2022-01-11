@@ -17,6 +17,8 @@ jobs:
           node-version: "14"
       - name: install pandoc
         run: wget https://github.com/jgm/pandoc/releases/download/2.13/pandoc-2.13-1-amd64.deb && sudo dpkg -i pandoc-2.13-1-amd64.deb
+      - name: install pandoc-fignos
+        run: pip install pandoc-fignos --user
       - name: install dependencies
         run: npm ci
       - name: build pdf
