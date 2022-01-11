@@ -25,10 +25,10 @@ jobs:
         run: pip install pandoc-fignos --user
       - name: install dependencies
         run: npm ci
-      - name: build pdf
-        run: npm run pandoc
       - name: build html
         run: npm run html
+      - name: build pdf
+        run: npm run pandoc
       - uses: EndBug/add-and-commit@v7
         with:
           add: "docs"
