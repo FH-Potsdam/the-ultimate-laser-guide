@@ -25,6 +25,10 @@ geometry: top=3cm
 geometry: left=2.25cm
 geometry: right=2.25cm
 geometry: bottom=3cm
+linkcolor: RubineRed
+toccolor: RubineRed
+urlcolor: RubineRed
+citecolor: Gray
 quotefont: assets/fonts/IBMPlexSans-Italic.ttf
 mainfont: IBMPlexSans-Regular.ttf
 mainfontoptions:
