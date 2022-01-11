@@ -31,17 +31,17 @@ toccolor: RubineRed
 urlcolor: RubineRed
 citecolor: Gray
 lang: de-DE
-quotefont: OpenSans-Italic.ttf
-mainfont: OpenSans-Regular.ttf
+quotefont: assets/fonts/IBMPlexSans-Italic.ttf
+mainfont: assets/fonts/IBMPlexSans-Regular.ttf
 mainfontoptions: 
-- BoldFont=OpenSans-Bold.ttf
-- ItalicFont=OpenSans-Italic.ttf
-- BoldItalicFont=OpenSans-BoldItalic.ttf
-monofont: CamingoCode Regular
+- BoldFont=assets/fonts/IBMPlexSans-Bold.ttf
+- ItalicFont=assets/fonts/IBMPlexSans-Italic.ttf
+- BoldItalicFont=assets/fonts/IBMPlexSans-BoldItalic.ttf
+monofont: assets/fonts/IBMPlexMono-Regular.ttf
 monofontoptions: 
-- BoldFont=CamingoCode Bold
-- ItalicFont=CamingoCode Italic
-- BoldItalicFont=CamingoCode Bold Italic
+- BoldFont=assets/fonts/IBMPlexMono-Bold.ttf
+- ItalicFont=assets/fonts/IBMPlexMono-Italic.ttf
+- BoldItalicFont=assets/fonts/IBMPlexMono-BoldItalic.ttf
 ---
 
 \newpage
