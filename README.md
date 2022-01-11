@@ -39,7 +39,7 @@ mainfontoptions:
     - BoldFont=IBMPlexSans-Bold.ttf
     - ItalicFont=IBMPlexSans-Italic.ttf
     - BoldItalicFont=IBMPlexSans-BoldItalic.ttf
-monofont: assets/fonts/IBMPlexMono-Regular.ttf
+monofont: IBMPlexMono-Regular.ttf
 monofontoptions: 
     - Path=assets/fonts/
     - Scale=1
