@@ -31,6 +31,6 @@ jobs:
         run: npm run pandoc
       - uses: EndBug/add-and-commit@v7
         with:
-          add: "docs"
+          add: "docs The-Ultimate-Laser-Guide.pdf"
           author_name: sebastian-meierBot
           author_email: dev@sebastian-meier.email
