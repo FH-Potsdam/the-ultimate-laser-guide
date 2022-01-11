@@ -4,7 +4,7 @@
 % we want a left aligned text not centered
 \usepackage{ragged2e}
 % needed for pandoc table generation
-\usepackage{longtable, booktabs, array}
+\usepackage{longtable, booktabs, array, calc}
 % This takes care of quotes and all that
 \usepackage[autostyle=true,german=quotes]{csquotes}
 \usepackage{floatrow}
@@ -305,10 +305,10 @@ $endif$
 \newpage
 $endif$
 $if(lot)$
-\listoftables
+% \listoftables
 $endif$
 $if(lof)$
-\listoffigures
+% \listoffigures
 $endif$
 $body$
 
