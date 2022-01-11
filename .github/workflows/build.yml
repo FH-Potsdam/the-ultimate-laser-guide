@@ -20,7 +20,7 @@ jobs:
       - name: install xetex
         run: sudo apt-get install texlive-xetex
       - name: install pandoc
-        run: wget https://github.com/jgm/pandoc/releases/download/2.13/pandoc-2.13-1-amd64.deb && sudo dpkg -i pandoc-2.13-1-amd64.deb
+        run: wget https://github.com/jgm/pandoc/releases/download/2.16.2/pandoc-2.16.2-1-amd64.deb && sudo dpkg -i pandoc-2.16.2-1-amd64.deb
       - name: install pandoc-fignos
         run: pip install pandoc-fignos --user
       - name: install dependencies
