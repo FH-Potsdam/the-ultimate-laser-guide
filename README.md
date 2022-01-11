@@ -3,6 +3,12 @@ title: Das Ultimative Laser Handbuch
 subtitle: Wie man es nicht falsch macht
 date: 11.01.2022
 thanks: Dank geht an Anne Boenisch und Andreas Schultz für ihre Reviews.
+author:
+    - name: Fabian Morón Zirfas
+      affiliation: University of Applied Sciences Potsdam (Germany)
+      email: moron-zirfas@fh-potsdam.de
+abstract: Dies ist ein Step by Step Guide zur Bedienung des 100W C02 Lasers der Fachhochschule Potsdam.  
+keywords: Laser
 ---
 
 
