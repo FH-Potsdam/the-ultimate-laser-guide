@@ -708,7 +708,7 @@ Die aktuellste Version dieses Dokuments kann immer auf [GitHub runter geladen](h
 
 ### Schriften
 
-Es werden die Schriften [Camingo Code von Jan Fromm](http://www.janfromm.de/typefaces/camingomono/camingocode/) und [Open Sans von Steve Matteson](http://www.opensans.com/) verwendet. Diese müssen installiert und aktiviert sein. Es reicht nicht die Schrift Dateien im Benutzer Ordner `/Users/you/Library/Fonts/` zu haben. Auf dem System auf dem dieses PDF generiert wurde mussten diese unter `/Library/Fonts/` installiert sein.  
+Es werden die Schriften [IBM Plex](https://github.com/IBM/plex) Sans und Mono genutzt. Sollte Pandoc diese nicht erkennen, müssen diese installiert und aktiviert sein. Es reicht dann nicht die Schrift Dateien im Benutzer Ordner `/Users/you/Library/Fonts/` zu haben. Auf dem System auf dem dieses PDF generiert wurde mussten diese unter `/Library/Fonts/` installiert sein.  
 
 
 ### Dokument Generieren
