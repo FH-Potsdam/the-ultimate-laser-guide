@@ -4,10 +4,10 @@
   "description": "a step by step guide for using the co2 laser @ University of Applied Sciences Potsdam (Germany)",
   "main": "index.js",
   "scripts": {
-    "pandoc": "pandoc README.mdown --from=markdown+yaml_metadata_block -s --toc --template=template.tex --pdf-engine=xelatex -o The-Ultimate-Laser-Guide.pdf",
+    "pandoc": "pandoc README.mdown metadata.yaml -s --toc --template=template.tex --pdf-engine=xelatex -o The-Ultimate-Laser-Guide.pdf",
     "postpandoc": "npm run html",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "html": "pandoc README.mdown -s --metadata title=\"Das Ultimative Laser Handbuch\" --toc --self-contained --css assets/css/pandoc.css -o docs/index.html"
+    "html": "pandoc README.mdown metadata.yaml -s --metadata title=\"Das Ultimative Laser Handbuch\" --toc --self-contained --css assets/css/pandoc.css -o docs/index.html"
   },
   "author": "Fabian Morón Zirfas <fabian.moron.zirfas@gmail.com> (http://fabianmoronzirfas.me)",
   "license": "MIT",

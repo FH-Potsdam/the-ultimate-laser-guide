@@ -1,0 +1,43 @@
+title: Das Ultimative Laser Handbuch
+subtitle: Wie man es nicht falsch macht
+date: 11.01.2022
+thanks: Dank geht an Anne Boenisch und Andreas Schultz für ihre Reviews.
+author:
+    - name: Fabian Morón Zirfas
+      affiliation: University of Applied Sciences Potsdam (Germany)
+      email: moron-zirfas@fh-potsdam.de
+abstract: Dies ist ein Step by Step Guide zur Bedienung des 100W C02 Lasers der Fachhochschule Potsdam.  
+keywords: Laser,
+# this is no standard pandoc
+docversion: 0.2.0
+toc-title: Inhaltsverzeichnis
+lof: True
+lot: False
+toc-depth: 5
+papersize: "A4"
+fignos-cleveref: On
+fignos-plus-name: Abbildung
+fignos-caption-name: Abbildung
+fignos-star-name: Abbildung
+fontsize: 13pt
+documentclass: extarticle
+geometry: top=3cm
+geometry: left=2.25cm
+geometry: right=2.25cm
+geometry: bottom=3cm
+linkcolor: RubineRed
+toccolor: RubineRed
+urlcolor: RubineRed
+citecolor: Gray
+lang: de-DE
+quotefont: OpenSans-Italic.ttf
+mainfont: OpenSans-Regular.ttf
+mainfontoptions: 
+- BoldFont=OpenSans-Bold.ttf
+- ItalicFont=OpenSans-Italic.ttf
+- BoldItalicFont=OpenSans-BoldItalic.ttf
+monofont: CamingoCode Regular
+monofontoptions: 
+- BoldFont=CamingoCode Bold
+- ItalicFont=CamingoCode Italic
+- BoldItalicFont=CamingoCode Bold Italic
