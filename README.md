@@ -30,7 +30,7 @@ linkcolor: RubineRed
 toccolor: RubineRed
 urlcolor: RubineRed
 citecolor: Gray
-lang: de-DE
+lang: de
 quotefont: assets/fonts/IBMPlexSans-Italic.ttf
 mainfont: IBMPlexSans-Regular.ttf
 mainfontoptions:
