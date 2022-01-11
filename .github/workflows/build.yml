@@ -16,9 +16,9 @@ jobs:
         with:
           node-version: "14"
       - name: install texlive
-        run: apt-get install texlive
+        run: sudo apt-get install texlive
       - name: install xetex
-        run: apt-get install texlive-xetex
+        run: sudo apt-get install texlive-xetex
       - name: install pandoc
         run: wget https://github.com/jgm/pandoc/releases/download/2.13/pandoc-2.13-1-amd64.deb && sudo dpkg -i pandoc-2.13-1-amd64.deb
       - name: install pandoc-fignos
