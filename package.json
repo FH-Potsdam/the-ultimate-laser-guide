@@ -7,7 +7,7 @@
     "pandoc": "pandoc README.mdown -s --toc --template=template.tex --pdf-engine=xelatex -o The-Ultimate-Laser-Guide.pdf",
     "postpandoc": "npm run html",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "html": "pandoc README.mdown -s --toc --self-contained --css assets/css/pandoc.css -o docs/index.html"
+    "html": "pandoc README.mdown -s --metadata title=\"Das Ultimative Laser Handbuch\" --toc --self-contained --css assets/css/pandoc.css -o docs/index.html"
   },
   "author": "Fabian Morón Zirfas <fabian.moron.zirfas@gmail.com> (http://fabianmoronzirfas.me)",
   "license": "MIT",
