@@ -1,5 +1,8 @@
 ---
 title: Das Ultimative Laser Handbuch
+subtitle: Wie man es nicht falsch macht
+date: 11.01.2022
+thanks: Dank geht an Anne Boenisch und Andreas Schultz für ihre Reviews.
 ---
 
 
