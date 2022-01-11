@@ -319,6 +319,10 @@ Die Software RDworks unterstützt viele Formate. Die besten Ergebnisse wurden bi
 
 Bei allen Formaten ist zu beachten, dass die voreingestellte Einheit mm sein sollte. 
 
+#### Limitierungen von Vektorformaten
+
+Wenn man die Pfade durch Code generiert ([Processing](https://processing.org/), [p5js](https://p5js.org/), etc.), muss man auf die Länge der Pfade (Anzahl Punkte) achten. Sowohl Programme wie Illustrator als auch RD_Works selber haben hier Limits. Bei beiden Programmen ist nicht wirklich dokumentiert, was diese Limits sind. Hier muss man darauf achten entweder die Anzahl Punkte reduzieren, oder die Pfade in mehrere Unterpfade aufbrechen.
+
 \newpage
 
 #### AI DXF Export
@@ -343,7 +347,15 @@ Wenn in einer Datei mehrere Arten von Schnitt, Perforation oder Gravur angelegt 
 
 ### Pixelbilder  
 
-Es können ebenfalls Pixelbilder genutzt werden, um Gravuren zu erzeugen. Hierbei besteht die Möglichkeit die Graustufen des Bildes zu verwenden, um die Intensität des Lasers zu steuern. Die Bilder können maximal einen Auflösung von 1000 "dots per inch" (dpi) haben. Ab 300dpi können bereits sehr gute Ergebnisse erzielt werden. Unterhalb von 300dpi wird die Auflösung der Gravur roh. Gerade bei Schriften sollte wenn möglich entweder eine hohe Auflösung genutzt werden oder auf Vektoren zurückgegriffen werden.  
+Es können ebenfalls Pixelbilder genutzt werden, um Gravuren zu erzeugen. Hierbei besteht die Möglichkeit die Graustufen des Bildes zu verwenden, um die Intensität des Lasers zu steuern. Die Bilder können maximal einen Auflösung von 1000 "dots per inch" (dpi) haben. Ab 300dpi können bereits sehr gute Ergebnisse erzielt werden. Unterhalb von 300dpi wird die Auflösung der Gravur roh. Gerade bei Schriften sollte wenn möglich entweder eine hohe Auflösung genutzt werden oder auf Vektoren zurückgegriffen werden.
+
+#### Limitierungen bei Pixelbildern
+
+Auch wenn eine Auflösung von 1000 dpi möglich ist, gibt es ein Limit bei der Größe der Bilder, welche bei ca. 7500x7500 Pixeln liegt.
+
+![Moire Beispiel](./assets/images/moire.jpg){#fig:moire} 
+
+Wenn die Rasterbilde sehr viele Linien oder Punkte enthalten, also abwechseln dunkle und helle Pixel, kann es zu einem [Moiré-Effekt](https://de.wikipedia.org/wiki/Moir%C3%A9-Effekt) kommen (siehe +@fig:moire). Zumindest nach aktuellem Erfahrungsstand lässt sich dies nicht umgehen. Bei feinen Details die auch über Laserschnitt erstellt werden können, gibt es aber eine Lösung: Im Menü über *Handling > Bitmap Handling* das Fenster für Bitmap-Bearbeitung aufrufen. Dort Pfade generieren (Get Outline) lassen und diese der Quelle und dem Display (Apply to view, Apply to source) zuweisen. Dies vektorisiert das Bitmap. Dabei ist zu beachten, das aus Linien Flächen werden. Wenn es sehr dünne Linien sind, ist das egal, ABER der Laser fährt dann zweimal über jede Linie, dies sollte entsprechend bei der Stärke beachtet werden.
 
 ### Daten Import
 
