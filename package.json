@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "pandoc": "pandoc README.md -f markdown+yaml_metadata_block-smart --toc --template=template.tex --pdf-engine=xelatex -o The-Ultimate-Laser-Guide.pdf",
-    "postpandoc": "npm run html",
     "test": "echo \"Error: no test specified\" && exit 1",
+    "latex": "pandox README.md -f markdown+yaml_metadata_block-smart --toc --template=template.tex -o temp.tex",
     "html": "pandoc README.md -f markdown+yaml_metadata_block-smart --toc --self-contained --css assets/css/pandoc.css -o docs/index.html"
   },
   "author": "Fabian Morón Zirfas <fabian.moron.zirfas@gmail.com> (http://fabianmoronzirfas.me)",

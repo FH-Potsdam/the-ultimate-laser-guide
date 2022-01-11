@@ -48,7 +48,6 @@ monofontoptions:
     - BoldItalicFont=IBMPlexMono-BoldItalic.ttf
 ---
 
-\newpage
 
 # Einleitung
 
@@ -58,7 +57,6 @@ Dieses Dokument ist der Versuch, den gesamten Prozess der Bedienung der Laser An
 
 Viel Spaß mit dem "Ultimativen Laser Handbuch"[^ulg]!
 
-\newpage
 
 ## Grundlegende Voraussetzungen sind... 
 
@@ -70,7 +68,6 @@ Viel Spaß mit dem "Ultimativen Laser Handbuch"[^ulg]!
 - Der Laser wird nach Gebrauch gereinigt.  
 - Es dürfen **KEINE** PVC-haltigen oder leicht entflammbare Materialien geschnitten werden (siehe Abschnitt [Materialien](#materialien)).  
 
-\newpage
 
 ## Sicherheit  
 
@@ -94,7 +91,6 @@ Im Falle eines Feuers in der Anlage gilt es Ruhe zu bewahren. Folgende Schritte 
 
 Der Notaus (siehe +@fig:steuerung) ist für den Notfall. Wenn dieser gedrückt wurde, sollte genau überlegt werden, ob die Anlage wieder in Betrieb genommen werden kann, ohne sie zu beschädigen. Im Zweifelsfalle sind die Administratoren zu kontaktieren. Wenn der Notaus gedrückt wurde und wieder raus gezogen wird, startet die gesamte Anlage neu.[^notauseinaus] Der Laserkopf führt eine Referenzfahrt aus. Es gilt vorab darauf zu achten, dass der Kopf bei dieser Fahrt nicht beschädigt wird.  
 
-\newpage
 
 ## Pflege der Anlage
 
@@ -142,7 +138,6 @@ Um das Gitter zu reinigen sollte, die Wanne der Siebdruckwerkstatt und deren Kä
 
 Für Schnittreste existiert ein eigener Abfallbehälter (siehe +@fig:schnitt-reste). Dieser muss selbständig und regelmäßig entleert werden.  
 
-\newpage
 
 ## Inbetriebnahme
 
@@ -198,7 +193,6 @@ Am Laserkopf ist links der Distanztaster (siehe +@fig:laserkopf).[^taster] Diese
 1. Ob der Taster sich bewegt.[^tasterfrei]
 2. Ob der Taster über dem Gitter beziehungsweise den Lamellen steht und nirgendwo anstoßen kann bei einer Referenzfahrt.
 
-\newpage
 
 ### Einschalten  
 
@@ -226,7 +220,6 @@ Ein Beispiel: Beim Lasern einer diagonale  über eine 5 × 1000 × 700mm (t × b
 
 Das bedeutet: Je stärker das Material desto kleiner wird der Bereich in dem ein Schnitt gewährleistet ist. Es empfiehlt sich bei starken Materialien kleinere Nutzen anzulegen und mehrere Jobs auszuführen.  
 
-\newpage
 
 ### Fokus Setzen  
 
@@ -251,7 +244,6 @@ Um die Maschine für den Laser Job bereits zu haben, kann nun der Laserkopf mit 
 **Achtung:** Vor dem Starten eines Jobs sollte nochmals sichergestellt werden, dass der `Origin` stimmt. Der Laser beginnt einen Job von dieser Position aus (siehe Abschnitt [Positionierung](#positionierung)). Falls die Position vom `Origin` abweicht, könnte das Material an einer anderen Stelle bearbeitet werden.  
 
 
-\newpage
 
 
 ## Laser Job  
@@ -326,7 +318,6 @@ Bei allen Formaten ist zu beachten, dass die voreingestellte Einheit mm sein sol
 
 Wenn man die Pfade durch Code generiert ([Processing](https://processing.org/), [p5js](https://p5js.org/), etc.), muss man auf die Länge der Pfade (Anzahl Punkte) achten. Sowohl Programme wie Illustrator als auch RD_Works selber haben hier Limits. Bei beiden Programmen ist nicht wirklich dokumentiert, was diese Limits sind. Hier muss man darauf achten entweder die Anzahl Punkte reduzieren, oder die Pfade in mehrere Unterpfade aufbrechen.
 
-\newpage
 
 #### AI DXF Export
 
@@ -346,7 +337,6 @@ Alle weiteren Einstellungen können so bleiben, wie sie sind. (Siehe +@fig:dxf-e
 
 Wenn in einer Datei mehrere Arten von Schnitt, Perforation oder Gravur angelegt werden sollen, können die einzelnen Objekte getrennt werden, indem ihnen eine eigene Farbe zugeordnet wird. Ebenen werden beim Export nicht berücksichtigt.   
 
-\newpage
 
 ### Pixelbilder  
 
@@ -389,7 +379,6 @@ Alle weiteren Möglichkeiten sind zur Feineinstellung. Hierfür sollte das Handb
 
 ![RDWorks Ebeneneinstellungen Schneiden](assets/images/rdworks-schneiden.PNG){#fig:rdcut}
 
-\newpage
 
 #### Gravieren  
 
@@ -415,7 +404,6 @@ Alle weiteren Möglichkeiten sind zur Feineinstellung. Hierfür sollte das Handb
 
 ![RDWorks Ebeneneinstellung Gravur Vektorform](assets/images/rdworks-gravur2.PNG){#fig:rdgrav2}  
 
-\newpage
 
 #### Perforieren
 
@@ -433,7 +421,6 @@ Alle weiteren Möglichkeiten sind zur Feineinstellung. Hierfür sollte das Handb
 
 ![RDWorks Ebeneneinstellungen Perforieren](assets/images/rdworks-perforieren.PNG){#fig:rdperf}
 
-\newpage
 
 ### Material Bibliothek  
 
@@ -489,14 +476,12 @@ Die Lasersteuerung weiß nicht, ob der Laser aktiviert ist oder nicht. Daher kan
 
 Wenn all diese Maßnahmen getroffen wurden, kann über die Schaltfläche `Start` (siehe +@fig:rdsoftware) in der Software der Job an den Laser gesendet werden.  
 
-\newpage
 
 ### Der Job Läuft
 
 Während ein Laser Job läuft darf die Anlage nicht unbeaufsichtigt bleiben. Ebenfalls sollte die Abdeckung nicht geöffnet werden. Falls es nötig ist die Abdeckung zu öffnen, wird der Job pausiert. Falls ab dem aktuellen Punkt weiter gelasert werden soll, kann dies über die `Start/Pause` (siehe +@fig:steuerung) Taste veranlasst werden. Dabei ist drauf zu achten, dass nochmals die `Zustimmungstaste` gedrückt werden muss. Sonst fährt der Laserkopf weiter, aber der Laser wird nicht wieder aktiviert.  
 
 
-\newpage
 
 ## Abschaltung
 
@@ -532,7 +517,6 @@ Zuletzt wird das Oberlicht, an dem die Lüftung hängt, geschlossen.
 ### Speed
  -->
 
-\newpage
 
 ## Materialien  
 
@@ -631,15 +615,11 @@ Die FHP stellt seinen Studierenden einen Computer zur Verfügung. Auf diesem Com
 
 Die Terminvergabe läuft über die Terminfunktion des Incom.org Workspaces [Laser KNLG Base · FHP](https://fhp.incom.community/workspace/6508) und nach dem „First Come First Serverd“ Prinzip. Termine sind bindend und müssen dort vorab eingestellt werden. Wenn Termine nicht wahrgenommen werden können, müssen sie dort auch wieder gelöscht werden. Mehr als 2 Termine an einem Tag ist aus Erfahrungswerten kaum zu handhaben.   
 
-\newpage
 
 ## Checklist
 
 Es folgt eine Checkliste für den gesamten Betriebsprozess. Sie sollte ausgedruckt und als Referenz griffbereit sein.  
 
-\newpage
-
-\newgeometry{top=1cm,bottom=2cm}
 
 **Inbetriebnahme**
 
@@ -702,9 +682,6 @@ Es folgt eine Checkliste für den gesamten Betriebsprozess. Sie sollte ausgedruc
 - [ ] Taster reinigen
 - [ ] Innenraum aussaugen
 
-\restoregeometry
-
-\newpage
 
 ## Hersteller Sabko  
 
@@ -750,7 +727,6 @@ Das Dokument ist überwiegend in Pandoc Markdown `[M↓]` geschrieben.[^pandocmd
     npm run pandoc
 
 
-\newpage
 
 ## Lizenz
 
