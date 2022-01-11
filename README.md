@@ -33,15 +33,19 @@ citecolor: Gray
 lang: de-DE
 quotefont: assets/fonts/IBMPlexSans-Italic.ttf
 mainfont: assets/fonts/IBMPlexSans-Regular.ttf
-mainfontoptions: 
-- BoldFont=assets/fonts/IBMPlexSans-Bold.ttf
-- ItalicFont=assets/fonts/IBMPlexSans-Italic.ttf
-- BoldItalicFont=assets/fonts/IBMPlexSans-BoldItalic.ttf
+mainfontoptions:
+    - Path=assets/fonts/
+    - Scale=1
+    - BoldFont=IBMPlexSans-Bold.ttf
+    - ItalicFont=IBMPlexSans-Italic.ttf
+    - BoldItalicFont=IBMPlexSans-BoldItalic.ttf
 monofont: assets/fonts/IBMPlexMono-Regular.ttf
 monofontoptions: 
-- BoldFont=assets/fonts/IBMPlexMono-Bold.ttf
-- ItalicFont=assets/fonts/IBMPlexMono-Italic.ttf
-- BoldItalicFont=assets/fonts/IBMPlexMono-BoldItalic.ttf
+    - Path=assets/fonts/
+    - Scale=1
+    - BoldFont=IBMPlexMono-Bold.ttf
+    - ItalicFont=IBMPlexMono-Italic.ttf
+    - BoldItalicFont=IBMPlexMono-BoldItalic.ttf
 ---
 
 \newpage
