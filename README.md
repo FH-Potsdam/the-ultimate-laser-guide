@@ -715,6 +715,9 @@ Es werden die Schriften [IBM Plex](https://github.com/IBM/plex) Sans und Mono ge
 
 Das Dokument ist überwiegend in Pandoc Markdown `[M↓]` geschrieben.[^pandocmd] Dort wo `[M↓]` nicht mehr weiter kommt wurde \LaTeX genutzt. Um das finale PDF zu generieren muss [Pandoc][pandoc] mit dem dem [fignos][fignos] Filter installiert sein. Um die Ausführung zu vereinfachen wurde das entsprechende Shell Befehl in ein npm script gespeichert.  
 
+#### Mac
+
+```
     brew cask install mactex
     brew install node
     brew install pandoc
@@ -723,7 +726,18 @@ Das Dokument ist überwiegend in Pandoc Markdown `[M↓]` geschrieben.[^pandocmd
     cd ./the-ultimate-laser-guide
     npm install
     npm run pandoc
+```
 
+#### Linux
+
+Requirements: NodeJS & Python
+
+```
+sudo apt-get update
+sudo apt-get install pandoc
+sudo apt-get isntall texlive
+pip[3] install pandoc-fignos
+```
 
 
 ## Lizenz
