@@ -623,8 +623,8 @@ Kosten sind innerhalb von zwei Wochen zu begleichen!
 
 Merkt euch die Zeit, wann ihr den Laser einschaltet.
 
-1. Nutzt euer Smartphone/Laptop/etc. und loggt euch in das WLAN "LASER" ein. (Nicht wundern, aus Sicherheits- und Datenschutzgründen ist "LASER" nicht mit dem Internet verbunden.) *Am einfachsten ist es mit dem Laptop, weil Smartphones manchmal rumjammern, weil der Hotspot kein Internet hat und sich dann einfach wieder abmelden.*
-2. Nachdem ihr euch eingeloggt habt gebt folgende URL in eurem Browser an: http://192.168.1.6 (QR-Code auf dem Laser)
+1. Nutzt euer Laptop/Smartphone/etc. und loggt euch in das WLAN "LASER" ein. (Nicht wundern, aus Sicherheits- und Datenschutzgründen ist "LASER" nicht mit dem Internet verbunden.) *Am einfachsten ist es mit dem Laptop, weil Smartphones manchmal rumjammern, weil der Hotspot kein Internet hat und sich dann einfach wieder abmelden.*
+2. Nachdem ihr euch eingeloggt habt gebt folgende URL in eurem Browser an: http://192.168.1.5 oder http://laser.local (funktioniert nicht auf allen Endgeräten) (QR-Code auf dem Laser)
 3. Füllt das Formular aus (siehe +@fig:lasercounter).
 4. Nach dem Abschicken des Formulars werden die Kosten berechnet und ihr erhaltet eine Referenznummer. Speichert euch die Referenznummer und überweist die Kosten am Kassenautomaten (siehe nächster Schritt).
 
