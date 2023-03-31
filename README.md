@@ -611,6 +611,53 @@ Die FHP stellt seinen Studierenden einen Computer zur Verfügung. Auf diesem Com
 
 Die Terminvergabe läuft über die Terminfunktion des Incom.org Workspaces [Laser KNLG Base · FHP](https://fhp.incom.community/workspace/6508) und nach dem „First Come First Serverd“ Prinzip. Termine sind bindend und müssen dort vorab eingestellt werden. Wenn Termine nicht wahrgenommen werden können, müssen sie dort auch wieder gelöscht werden. Mehr als 2 Termine an einem Tag ist aus Erfahrungswerten kaum zu handhaben.   
 
+## Abrechnung
+
+*Mit dem 01.04.2023 gilt das neue Abrechnungssystem.*
+
+Alle Laserarbeiten müssen über die Kostenabrechnung registriert werden. Arbeiten welche im Rahmen von Kursen durchgeführt werden, müssen nicht bezahlt werden, sondern werden bei den verantwortlichen Professor*innen registriert (siehe nächste Schritt). Arbeiten unabhängig von Kursen müssen bezahlt werden. Die Kosten betragen ca. 10€ pro 60 Minuten-Laserzeit. Es wird die tatsächliche Zeit berechnet, in welcher der Laser aktiv ist, nicht die Zeit in der der Laser eingeschaltet ist.
+
+Kosten sind innerhalb von zwei Wochen zu begleichen!
+
+### Kostenberechnung
+
+Merkt euch die Zeit, wann ihr den Laser einschaltet.
+
+1. Nutzt euer Smartphone/Laptop/etc. und loggt euch in das WLAN "LASER" ein. (Nicht wundern, aus Sicherheits- und Datenschutzgründen ist "LASER" nicht mit dem Internet verbunden.) *Am einfachsten ist es mit dem Laptop, weil Smartphones manchmal rumjammern, weil der Hotspot kein Internet hat und sich dann einfach wieder abmelden.*
+2. Nachdem ihr euch eingeloggt habt gebt folgende URL in eurem Browser an: http://192.168.1.6 (QR-Code auf dem Laser)
+3. Füllt das Formular aus (siehe +@fig:lasercounter).
+4. Nach dem Abschicken des Formulars werden die Kosten berechnet und ihr erhaltet eine Referenznummer. Speichert euch die Referenznummer und überweist die Kosten am Kassenautomaten (siehe nächster Schritt).
+
+![Interface für die Laserabrechnung](assets/images/payment-screenshot.png){#fig:lasercounter}  
+
+### Begleichen der Kosten
+
+Ihr findet einen Kassenautomaten neben dem Eingang der Bibliothek, gegenüber den Schließfächern.
+
+#### 1. Karte in den Automaten einführen und "Waren kaufen" auswählen
+![Kassenautomat 1](assets/images/payment-1.png){#fig:payment-1}
+
+#### 2. Bis auf die letzte Seite durchklicken 
+![Kassenautomat 2](assets/images/payment-2.png){#fig:payment-2}
+
+#### 3. Wählt "FB4 Lasercutter" aus
+![Kassenautomat 3](assets/images/payment-3.png){#fig:payment-3}
+
+#### 4. Klickt euch über die Beträge eure Kosten zusammen und klickt anschließend auf "Artikel bezahlen" unten rechts
+![Kassenautomat 4](assets/images/payment-4.png){#fig:payment-4}
+
+#### 5. Schließt den Bezahlvorgang ab
+![Kassenautomat 5](assets/images/payment-5.png){#fig:payment-5}
+
+#### 6. Schickt dann ein Photo von eurem Bon mit eurer Referenznummer an laser@fh-potsdam.de
+![Kassenautomat 6](assets/images/payment-6.png){#fig:payment-6}
+
+### Ich habe meine Referenznummer oder den Betrag den ich zahlen muss vergessen
+Kein Problem, geht einfach zurück zum Laser loggt euch nochmal in das WLAN ein und erfragt mit entsprechendem Datum und Zeitslot nochmal eure Kosten. Ihr bekommt dann eine neue Referenznummer.
+
+### Datenschutz
+Nur Prof. Meier und die Laser SHK können die Eingaben in das Formular sehen. Die Daten werden verschlüsselt abgespeichert. Alle Daten werden nach spätestens 6 Monaten gelöscht.
+
 
 ## Checklist
 
@@ -667,7 +714,8 @@ Es folgt eine Checkliste für den gesamten Betriebsprozess. Sie sollte ausgedruc
 - [ ] Hauptstrom abschalten  
 - [ ] Abdeckung schließen  
 - [ ] Lüftung abschalten  
-- [ ] Oberlicht schließen  
+- [ ] Oberlicht schließen
+- [ ] Abrechnung via Website
 - [ ] Computer und Kiste zurück in Spind Nummer 01  
 - [ ] Werkstatt verriegeln  
 - [ ] Schlüssel beim Pförtner abgeben  
