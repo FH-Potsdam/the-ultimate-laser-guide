@@ -162,9 +162,7 @@ An der Lüftung gibt es den 4 Steuerungsbereiche (siehe +@fig:luefter).
 
 Über den `Start/Stop` Knopf in Bereich 3 kann die Lüftung pausiert werden.  
 
-In Bereich 4 kann die Stärke der Lüftung angepasst werden. Bei stark rußenden Materialien sollte die Lüftung auch stark belüften.  
-
-Um die Ohren zu schonen, kann der Motor der Lüftung in Bereich 4 runter gedreht  oder in Bereich 3 pausiert werden, solange kein Job läuft. *Dies darf jedoch nicht vergessen werden wieder zu aktivieren.*  
+In Bereich 4 kann die Stärke der Lüftung angepasst werden. Der Lüfter ist immer auf Stufe 4 zu nutzen. Gegen den dadurch entstehenden hohen Geräuschpegel gibt es Hörschutz.  
 
 
 ### Arbeitsfläche leeren
