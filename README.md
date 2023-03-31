@@ -733,7 +733,12 @@ Requirements: NodeJS & Python
 ```
 sudo apt-get update
 sudo apt-get install pandoc
-sudo apt-get isntall texlive
+    texlive
+    texlive-latex-base
+    texlive-fonts-recommended
+    texlive-extra-utils
+    texlive-latex-extra
+    texlive-xetex
 pip[3] install pandoc-fignos
 ```
 
