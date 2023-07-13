@@ -621,14 +621,21 @@ Kosten sind innerhalb von zwei Wochen zu begleichen!
 
 ### Kostenberechnung
 
+*Wichtiger Hinweis für Architekt\*innen und andere Nicht-Design Studierende am Ende des Abschnitts!*
+
 Merkt euch die Zeit, wann ihr den Laser einschaltet.
 
-1. Nutzt euer Laptop/Smartphone/etc. und loggt euch in das WLAN "LASER" ein. (Nicht wundern, aus Sicherheits- und Datenschutzgründen ist "LASER" nicht mit dem Internet verbunden.) *Am einfachsten ist es mit dem Laptop, weil Smartphones manchmal rumjammern, weil der Hotspot kein Internet hat und sich dann einfach wieder abmelden.*
-2. Nachdem ihr euch eingeloggt habt gebt folgende URL in eurem Browser an: http://192.168.1.5 oder http://laser.local (funktioniert nicht auf allen Endgeräten) (QR-Code auf dem Laser)
+1. Auf dem Desktop des Laser-Rechners findet ihr einen Link (Mitte des Desktops), der euch direkt zum Abrechnungssystem führt.
 3. Füllt das Formular aus (siehe +@fig:lasercounter).
 4. Nach dem Abschicken des Formulars werden die Kosten berechnet und ihr erhaltet eine Referenznummer. Speichert euch die Referenznummer und überweist die Kosten am Kassenautomaten (siehe nächster Schritt).
 
 ![Interface für die Laserabrechnung](assets/images/payment-screenshot.png){#fig:lasercounter}  
+
+Solltet ihr gerade nicht den Desktop nutzen können, weil z.B. jemand anders schon lasert, dann könnt ihr auch alternativ euren eigenen Laptop/Smartphone/etc. nutzen und loggt euch in das WLAN "LASER" ein. Nicht wundern, aus Sicherheits- und Datenschutzgründen ist "LASER" nicht mit dem Internet verbunden. *Am einfachsten ist es mit dem Laptop, weil Smartphones manchmal rumjammern, weil der Hotspot kein Internet hat und sich dann einfach wieder abmelden.*, Nachdem ihr euch eingeloggt habt gebt folgende URL in eurem Browser an: http://192.168.1.5 oder http://laser.local (funktioniert nicht auf allen Endgeräten) (QR-Code auf dem Laser)
+
+#### Nicht-Design Studierende am Laser
+
+Alle Studierende, die nicht am Fachbereich Design studieren, machen ein Häkchen bei der Abrechnung, dass sie nicht vom FB-Design sind. Für diese Studierenden ergibt sich eine Abrechnung, die auf dem Kostenmodell des Lasers der Architektur ergibt, um eine vergleichbare Abrechnung zu ermöglichen. Das Begleichen der Kosten ist für alle Studierende gleich (siehe nächster Abschnitt).
 
 ### Begleichen der Kosten
 
