@@ -51,7 +51,7 @@ monofontoptions:
 
 ![Offizieller (und ultimative) Splash Screen](assets/images/splash.png){#fig:splash}  
 
-Dieses Dokument ist der Versuch, den gesamten Prozess der Bedienung der Laser Anlage an der Fachhochschule Potsdam zu dokumentieren. Es sollte aufmerksam gelesen werden, bevor die Anlage durch Studierende in Betrieb genommen wird. Am Ende des Dokuments befindet sich eine [Checkliste](#checklist), die ausgedruckt und als Spickzettel beim Betrieb verwendet werden kann. Das Handbuch bietet auch einige [Tipps und Tricks](#Tipps-und-Tricks), die bei der Aufbereitung der Dateien hilfreich sein könnten, aber eine Aufbereitung von Daten und der Bedienung der Software geht es nicht in die Tiefe. Wir hoffen, dass dies als ein "lebendes" Dokument genutzt wird und zukünftig, um nützliche Bereiche erweitert wird. Anregungen, Fragen, Fehler können auf [GitHub als Issue](https://github.com/FH-Potsdam/the-ultimate-laser-guide/issues) vorgebracht werden oder per Mail an die Autoren gesendet werden. Das Dokument selber kann als PDF [hier](https://github.com/FH-Potsdam/the-ultimate-laser-guide/raw/master/The-Ultimate-Laser-Guide.pdf) runtergeladen werden. Eine HTML-Version ist [hier](https://fh-potsdam.github.io/the-ultimate-laser-guide/) zu finden. Wir freuen uns über jede Art von Beitrag. Gerne nehmen wir auch weitere Kapitel an (siehe Abschnitt [Über dieses Dokument](#über-dieses-dokument))
+Dieses Dokument ist der Versuch, den gesamten Prozess der Bedienung der Laser Anlage an der Fachhochschule Potsdam zu dokumentieren. Es sollte aufmerksam gelesen werden, bevor die Anlage durch Studierende in Betrieb genommen wird. Am Ende des Dokuments befindet sich eine [Checkliste](#checklist), die ausgedruckt und als Spickzettel beim Betrieb verwendet werden kann. Das Handbuch bietet einige [Tipps und Tricks](#Tipps-und-Tricks), die beim Laserprozess hilfreich sein könnten, aber eine gründliche Aufbereitung von Daten und der Bedienung der Software geht es hier nicht in die Tiefe. Wir hoffen, dass dies als ein "lebendes" Dokument genutzt wird und zukünftig, um nützliche Bereiche erweitert wird. Anregungen, Fragen, Fehler können auf [GitHub als Issue](https://github.com/FH-Potsdam/the-ultimate-laser-guide/issues) vorgebracht werden oder per Mail an die Autoren gesendet werden. Das Dokument selber kann als PDF [hier](https://github.com/FH-Potsdam/the-ultimate-laser-guide/raw/master/The-Ultimate-Laser-Guide.pdf) runtergeladen werden. Eine HTML-Version ist [hier](https://fh-potsdam.github.io/the-ultimate-laser-guide/) zu finden. Wir freuen uns über jede Art von Beitrag. Gerne nehmen wir auch weitere Kapitel an (siehe Abschnitt [Über dieses Dokument](#über-dieses-dokument))
 
 Viel Spaß mit dem "Ultimativen Laser Handbuch"[^ulg]!
 
@@ -59,7 +59,7 @@ Viel Spaß mit dem "Ultimativen Laser Handbuch"[^ulg]!
 ## Grundlegende Voraussetzungen sind... 
 
 - Die Unterzeichnung und Anerkennung der Werkstattordnung.
-- Die Teilnahme an der Sicherheitseinweisung durch Anne Boenisch und oder eine Freigabe durch sie.
+- Die Teilnahme an der Sicherheitseinweisung durch Anne Boenisch und/oder eine Freigabe durch sie.
 - Der Laser wird immer in Gruppen von 2 oder mehr Personen betrieben.  
 - Der Laser wird nicht alleine gelassen, während er läuft.  
 - Die Werkstatt wird nach Nutzung wieder aufgeräumt.  
@@ -77,7 +77,7 @@ Im Falle eines Feuers in der Anlage gilt es Ruhe zu bewahren. Folgende Schritte 
 
 1. Laservorgang stoppen! (Notaus oder `Start/Stop` Knopf)
 2. Lüftung abschalten!
-3. CO2 Feuerlöscher benutzen! (Falls es immer noch brennen sollte)
+3. Im Notfall den CO2 Feuerlöscher benutzen! (Falls das Feuer sich nicht selbständig erlöscht)
 4. Die Feuerwehr rufen, wenn der Brand nicht zu löschen ist!
 
 **Hinweise:**  
@@ -95,23 +95,55 @@ Der Notaus (siehe +@fig:steuerung) ist für den Notfall. Wenn dieser gedrückt w
 > Eine verschmutzte Maschine ist bald eine defekte Maschine.  
 > – Fabian Morón Zirfas
 
-Damit der Laser lange betrieben werden kann, muss er regelmäßig gereinigt werden. Dies passiert durch die Studierenden. Sie sind selber dazu angehalten dies zu organisieren. Nach jedem Gebrauch muss der Innenraum der Anlage ausgesaugt werden und etwaige Reste müssen entfernt werden. Ebenfalls muss der Taster gereinigt werden. Die Reinigung wird nur bei ausgeschalteter Anlage durchgeführt.
+Damit der Laser lange betrieben werden kann, muss er regelmäßig gereinigt werden. Dies passiert durch die Studierenden. Sie sind selber dazu angehalten dies zu organisieren. Nach jedem Gebrauch müssen etwaige Reste entfernt werden. Ebenfalls muss der Distanztaster gereinigt werden. Die Reinigung wird nur bei ausgeschalteter Anlage durchgeführt.
 
 In der Metallwerkstatt stehen hinter der Tür zwei Kisten. In der einen gibt es saubere Tücher. Diese dürfen verwendet werden, um den Laser sauber zu machen.  
 
-### Wechseln der Filter
+Eine gründliche Reinigung erfolgt durch die zuständigen Personen.
 
-to be defined…
+### Filter
+
+Die Filter müssen von den zuständigen Personen bestellt, gewechselt und entsorgt werden.
+
+## Daten unserer Filteranlage
+LN 610TS
+Maschinen-Nr: 218274
+FH;Potsdam kdnr: 17298
+Taschenfilter F6 (730x640x300 mm)
+Partikelfilter H 13 (730x640x292 mm)
+
+## Wechsel der Filter
+
+Die Lüftungsanlage hat 2 Filter. Je nachdem wie viel gelasert wird, sollte der kleinere Taschenfilter ungefähr alle 3-6 Monate, der große Partikelfilter ca 1x Jahr gewechselt werden. 
+Den Taschenfilter kann man auch mit dem Staubsauger (Das Festo CTM 48 E Saugmobil) etwas aussaugen, um den Wechsel noch etwas zu verzögen. Sobald die Kontrollleute der Lüftungsanlage im Bereich Filter Prüfen oder Wechsel leuchtet, sollte einer der Filter gewechselt werden. Welcher genau, kann durch Wechseln von nur einem Filter getestet werden.
+Die Filter sammeln winzige Partikel, somit ist es wichtig eine Atemschutzmaske, eine Sicherheitsbrille, Handschuhe und bei Bedarf Einweg-Overall zu tragen.
+
+![Die Lüftungsanlage](assets/images/Lüftungsanlage.JPG) {#fig:lüftungsanlage}
+
+Um die Klappe der Filter zu öffnen müssen die schwarzen Hebel gedreht werden. Die Filter selbst können herausgezogen werden und müssen anschließend luftdicht verschlossen werden, um die Partikel nicht freizusetzen. Bei dem großen Partikelfilter ist eine 2 Person nötig, da dieser sehr schwer und sperrig ist.
+
+
+## Entsorgen der Filter
+
+Filter sind Sondermüll. Sondermüll muss von Fachbereichen auf eigene Kosten entsorgt werden. Dafür gibt es im FB Design keine Abläufe beim (betrieblichen) Wertstoffhof in Potsdam, weil es aber in der Regel auch keinen Sondermüll gibt. (Kosten ca. 60€, Großteil der Kosten auf den sperrigen Partikelilter) Abgerechnet wird das dann über den Fachbereich. Bei den Filtern handelt es sich um „ungebundene Partikel“. Bei der Entsorgung ist dabei zu achten eine Atemschutzmaske, eine Sicherheitsbrille, Handschuhe und bei Bedarf Einweg-Overall zu tragen, ebenso müssen die Filter luftdicht verschlossen sein.
 
 ### Reinigung der Spiegel
 
 ![Die Spiegel](assets/images/laser-spiegel.png){#fig:spiegel}  
 
-Zur Reinigung der Spiegel (siehe +@fig:spiegel) darf nur Isopropanol und Q-Tip verwendet werden. Dies sollte mindestens einmal im Monat durchgeführt werden, um eine konstante Leistung des Lasers zu garantieren.  
+Zur Reinigung der Spiegel (siehe +@fig:spiegel) darf nur Isopropanol und Q-Tip verwendet werden. Dies sollte mindestens einmal im Monat durchgeführt werden, um eine konstante Leistung des Lasers zu garantieren.
+
+Die Spiegel müssen auch nachjustiert werden. Um zu überprüfen, dass die Spiegel den Laserstrahl alle richtig abspiegeln kann man das wie folgt testen.
+Die Laserspiegel mit Tape kleben anschließend nach der `Zustimmungstaste` `Pulse` drücken (Achtung! Power darf nicht zu stark sein, sonst brennt das Tape ab!) Diesen Prozess wiederholt man bei allen 4 Seiten vom Gitter und kontrolliert so, ob der Laserpunkt auf allen 4 Seiten an der gleichen Stelle abgespiegelt werden. Sollte das nicht der Fall sein, müssen die Spiegel nachjustiert werden.
+
 
 ### Reinigung der Sichtscheiben
 
-Zur Reinigung der Sichtscheiben darf kein alkoholhaltiges Mittel benutzen werden. Normale Lappen oder Papiertücher zerkratzen die Scheibe schnell und stark. Die Scheibe ist aus PolyCarbonat und kann somit auch nicht so leicht wieder aufpoliert werden wie zum Beispiel Acrylglas. Daher sollten zur Reiniung nur mit Wasser befeuchtete Microfasertücher genutzt werden.  
+Zur Reinigung der Sichtscheiben darf kein alkoholhaltiges Mittel benutzen werden. Normale Lappen oder Papiertücher zerkratzen die Scheibe schnell und stark. Die Scheibe ist aus PolyCarbonat und kann somit auch nicht so leicht wieder aufpoliert werden wie zum Beispiel Acrylglas. Daher sollten zur Reiniung nur mit Wasser befeuchtete Microfasertücher genutzt werden.
+
+### Reinigung der Gewindestangen
+Die Gewindestangen müssen ab und zu nachgefettet oder mit einem Tuch abwischen werden.
+Diese sorgen dafür, dass sich das Gitter reibungslos nach oben und unten Fahren lässt. Dazu kann man das Gitter herunter fahren lassen oder durch die untere Öffnung vom Laser unter dem Gitter die Gewindestangen reinigen.
 
 ### Reinigung des Arbeitsraums
 
