@@ -119,12 +119,12 @@ Partikelfilter H 13 (730x640x292 mm)
 #### Wechsel der Filter
 
 Die Lüftungsanlage hat 2 Filter. Je nachdem wie viel gelasert wird, sollte der kleinere Taschenfilter ungefähr alle 3-6 Monate und der große Partikelfilter ca 1x Jahr gewechselt werden. 
-Den Taschenfilter kann man auch mit dem Staubsauger (siehe [Saugmobil](Saugmobil) (#fig:saugmobil) etwas aussaugen, um den Wechsel noch etwas zu verzögen. Sobald die Kontrollleute der Lüftungsanlage im Bereich Filter Prüfen oder Wechsel (siehe +fig:luefter width=50%} leuchtet, sollte einer der Filter gewechselt werden, bisdahin kann ist das Lasern untersagt. Welcher genau, kann durch Wechseln von nur einem Filter getestet werden.
+Den Taschenfilter kann man auch mit dem Staubsauger (siehe +fig:Saugmobil) etwas aussaugen, um den Wechsel noch etwas zu verzögen. Sobald die Kontrollleute der Lüftungsanlage im Bereich Filter Prüfen oder Wechsel (siehe +fig:Lüfter} leuchtet, sollte einer der Filter gewechselt werden, bisdahin kann ist das Lasern untersagt. Welcher genau, kann durch Wechseln von nur einem Filter getestet werden.
 Die Filter sammeln winzige Partikel, somit ist es wichtig eine Atemschutzmaske, eine Sicherheitsbrille, Handschuhe und bei Bedarf Einweg-Overall beim Wechseln zu tragen.
 
-![Die Lüftungsanlage](https://github.com/FH-Potsdam/the-ultimate-laser-guide/assets/150827483/3a3264c4-3682-42b7-acdb-983ec0ef11e9){#fig:lüftung}
+![Die Lüftungsanlage](https://github.com/FH-Potsdam/the-ultimate-laser-guide/assets/150827483/3a3264c4-3682-42b7-acdb-983ec0ef11e9){#fig:Lüftungsanlage}
 
-Um die Klappe der Filter zu öffnen müssen die schwarzen Drehhebel (siehe +fig:lüftung) gedreht werden. Die Filter selbst können herausgezogen werden und müssen anschließend luftdicht verschlossen werden, um die Partikel nicht freizusetzen. Bei Wechseln des großen Partikelfilter ist eine 2te Person nötig, da dieser sehr schwer und sperrig ist.
+Um die Klappe der Filter zu öffnen müssen die schwarzen Drehhebel (siehe +fig:Lüftungsanlage) gedreht werden. Die Filter selbst können herausgezogen werden und müssen anschließend luftdicht verschlossen werden, um die Partikel nicht freizusetzen. Bei Wechseln des großen Partikelfilter ist eine 2te Person nötig, da dieser sehr schwer und sperrig ist.
 
 #### Entsorgen der Filter
 
@@ -163,10 +163,9 @@ Das Gitter, dass im Arbeitsraum der Anlage liegt, sollte regelmäßig gereinigt 
 
 Um das Gitter zu reinigen sollte, die Wanne der Siebdruckwerkstatt und deren Kärcher genutzt werden.[^sdw]  
 
-
 ### Entsorgung der Schnittreste
 
-![Der Rollkorb für Schnittreste](assets/images/laser-schnittreste.JPG){#fig:schnitt-reste}  
+![Der Mülltonne für Schnittreste](https://github.com/FH-Potsdam/the-ultimate-laser-guide/assets/150827483/08c6cc90-e250-4fec-8bcd-c199e07537ba){#fig:schnitt-reste}  
 
 Für Schnittreste existiert ein eigener Abfallbehälter (siehe +@fig:schnitt-reste). Dieser muss selbständig und regelmäßig entleert werden.  
 
