@@ -114,15 +114,13 @@ Partikelfilter H 13 (730x640x292 mm)
 
 ## Wechsel der Filter
 
-Die Lüftungsanlage hat 2 Filter. Je nachdem wie viel gelasert wird, sollte der kleinere Taschenfilter ungefähr alle 3-6 Monate, der große Partikelfilter ca 1x Jahr gewechselt werden. 
-Den Taschenfilter kann man auch mit dem Staubsauger (Das Festo CTM 48 E Saugmobil) etwas aussaugen, um den Wechsel noch etwas zu verzögen. Sobald die Kontrollleute der Lüftungsanlage im Bereich Filter Prüfen oder Wechsel leuchtet, sollte einer der Filter gewechselt werden. Welcher genau, kann durch Wechseln von nur einem Filter getestet werden.
-Die Filter sammeln winzige Partikel, somit ist es wichtig eine Atemschutzmaske, eine Sicherheitsbrille, Handschuhe und bei Bedarf Einweg-Overall zu tragen.
+Die Lüftungsanlage hat 2 Filter. Je nachdem wie viel gelasert wird, sollte der kleinere Taschenfilter ungefähr alle 3-6 Monate und der große Partikelfilter ca 1x Jahr gewechselt werden. 
+Den Taschenfilter kann man auch mit dem Staubsauger (siehe +fig:saugmobil) etwas aussaugen, um den Wechsel noch etwas zu verzögen. Sobald die Kontrollleute der Lüftungsanlage im Bereich Filter Prüfen oder Wechsel (siehe +fig:luefter width=50%} leuchtet, sollte einer der Filter gewechselt werden, bisdahin kann ist das Lasern untersagt. Welcher genau, kann durch Wechseln von nur einem Filter getestet werden.
+Die Filter sammeln winzige Partikel, somit ist es wichtig eine Atemschutzmaske, eine Sicherheitsbrille, Handschuhe und bei Bedarf Einweg-Overall beim Wechseln zu tragen.
 
-![Die Lüftungsanlage]
+![Die Lüftungsanlage](https://github.com/FH-Potsdam/the-ultimate-laser-guide/assets/150827483/3a3264c4-3682-42b7-acdb-983ec0ef11e9){#fig:lüftung}
 
-Um die Klappe der Filter zu öffnen müssen die schwarzen Hebel gedreht werden. Die Filter selbst können herausgezogen werden und müssen anschließend luftdicht verschlossen werden, um die Partikel nicht freizusetzen. Bei dem großen Partikelfilter ist eine 2 Person nötig, da dieser sehr schwer und sperrig ist.
-
-![Lüftungsanlage](https://github.com/FH-Potsdam/the-ultimate-laser-guide/assets/150827483/3a3264c4-3682-42b7-acdb-983ec0ef11e9){#fig:Lüftung}
+Um die Klappe der Filter zu öffnen müssen die schwarzen Drehhebel (siehe +fig:lüftung) gedreht werden. Die Filter selbst können herausgezogen werden und müssen anschließend luftdicht verschlossen werden, um die Partikel nicht freizusetzen. Bei Wechseln des großen Partikelfilter ist eine 2te Person nötig, da dieser sehr schwer und sperrig ist.
 
 ## Entsorgen der Filter
 
@@ -136,7 +134,6 @@ Zur Reinigung der Spiegel (siehe +@fig:spiegel) darf nur Isopropanol und Q-Tip v
 
 Die Spiegel müssen auch nachjustiert werden. Um zu überprüfen, dass die Spiegel den Laserstrahl alle richtig abspiegeln kann man das wie folgt testen.
 Die Laserspiegel mit Tape kleben anschließend nach der `Zustimmungstaste` `Pulse` drücken (Achtung! Power darf nicht zu stark sein, sonst brennt das Tape ab!) Diesen Prozess wiederholt man bei allen 4 Seiten vom Gitter und kontrolliert so, ob der Laserpunkt auf allen 4 Seiten an der gleichen Stelle abgespiegelt werden. Sollte das nicht der Fall sein, müssen die Spiegel nachjustiert werden.
-
 
 ### Reinigung der Sichtscheiben
 
