@@ -118,7 +118,7 @@ Die Lüftungsanlage hat 2 Filter. Je nachdem wie viel gelasert wird, sollte der 
 Den Taschenfilter kann man auch mit dem Staubsauger (Das Festo CTM 48 E Saugmobil) etwas aussaugen, um den Wechsel noch etwas zu verzögen. Sobald die Kontrollleute der Lüftungsanlage im Bereich Filter Prüfen oder Wechsel leuchtet, sollte einer der Filter gewechselt werden. Welcher genau, kann durch Wechseln von nur einem Filter getestet werden.
 Die Filter sammeln winzige Partikel, somit ist es wichtig eine Atemschutzmaske, eine Sicherheitsbrille, Handschuhe und bei Bedarf Einweg-Overall zu tragen.
 
-![Lüftungsanlage](https://github.com/FH-Potsdam/the-ultimate-laser-guide/assets/150827483/cb569b62-b9ff-40f4-9795-d3931bf8bc34){#fig:Lüftungsanlage}
+Bild
 
 Um die Klappe der Filter zu öffnen müssen die schwarzen Hebel gedreht werden. Die Filter selbst können herausgezogen werden und müssen anschließend luftdicht verschlossen werden, um die Partikel nicht freizusetzen. Bei dem großen Partikelfilter ist eine 2 Person nötig, da dieser sehr schwer und sperrig ist.
 
