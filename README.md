@@ -105,24 +105,28 @@ Eine gründliche Reinigung erfolgt durch die zuständigen Personen.
 
 Die Filter müssen von den zuständigen Personen bestellt, gewechselt und entsorgt werden.
 
-## Daten unserer Filteranlage
+#### Daten unserer Filteranlage
 LN 610TS
+
 Maschinen-Nr: 218274
+
 FH;Potsdam kdnr: 17298
+
 Taschenfilter F6 (730x640x300 mm)
+
 Partikelfilter H 13 (730x640x292 mm)
 
-## Wechsel der Filter
+#### Wechsel der Filter
 
 Die Lüftungsanlage hat 2 Filter. Je nachdem wie viel gelasert wird, sollte der kleinere Taschenfilter ungefähr alle 3-6 Monate und der große Partikelfilter ca 1x Jahr gewechselt werden. 
-Den Taschenfilter kann man auch mit dem Staubsauger (siehe +fig:saugmobil) etwas aussaugen, um den Wechsel noch etwas zu verzögen. Sobald die Kontrollleute der Lüftungsanlage im Bereich Filter Prüfen oder Wechsel (siehe +fig:luefter width=50%} leuchtet, sollte einer der Filter gewechselt werden, bisdahin kann ist das Lasern untersagt. Welcher genau, kann durch Wechseln von nur einem Filter getestet werden.
+Den Taschenfilter kann man auch mit dem Staubsauger (siehe [Saugmobil](Saugmobil) (#fig:saugmobil) etwas aussaugen, um den Wechsel noch etwas zu verzögen. Sobald die Kontrollleute der Lüftungsanlage im Bereich Filter Prüfen oder Wechsel (siehe +fig:luefter width=50%} leuchtet, sollte einer der Filter gewechselt werden, bisdahin kann ist das Lasern untersagt. Welcher genau, kann durch Wechseln von nur einem Filter getestet werden.
 Die Filter sammeln winzige Partikel, somit ist es wichtig eine Atemschutzmaske, eine Sicherheitsbrille, Handschuhe und bei Bedarf Einweg-Overall beim Wechseln zu tragen.
 
 ![Die Lüftungsanlage](https://github.com/FH-Potsdam/the-ultimate-laser-guide/assets/150827483/3a3264c4-3682-42b7-acdb-983ec0ef11e9){#fig:lüftung}
 
 Um die Klappe der Filter zu öffnen müssen die schwarzen Drehhebel (siehe +fig:lüftung) gedreht werden. Die Filter selbst können herausgezogen werden und müssen anschließend luftdicht verschlossen werden, um die Partikel nicht freizusetzen. Bei Wechseln des großen Partikelfilter ist eine 2te Person nötig, da dieser sehr schwer und sperrig ist.
 
-## Entsorgen der Filter
+#### Entsorgen der Filter
 
 Filter sind Sondermüll. Sondermüll muss von Fachbereichen auf eigene Kosten entsorgt werden. Dafür gibt es im FB Design keine Abläufe beim (betrieblichen) Wertstoffhof in Potsdam, weil es aber in der Regel auch keinen Sondermüll gibt. (Kosten ca. 60€, Großteil der Kosten auf den sperrigen Partikelilter) Abgerechnet wird das dann über den Fachbereich. Bei den Filtern handelt es sich um „ungebundene Partikel“. Bei der Entsorgung ist dabei zu achten eine Atemschutzmaske, eine Sicherheitsbrille, Handschuhe und bei Bedarf Einweg-Overall zu tragen, ebenso müssen die Filter luftdicht verschlossen sein.
 
